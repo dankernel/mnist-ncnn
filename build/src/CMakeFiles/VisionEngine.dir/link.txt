@@ -1,0 +1,2 @@
+/usr/bin/ar qc libVisionEngine.a  CMakeFiles/VisionEngine.dir/mnist/mnist_engine.cpp.o
+/usr/bin/ranlib libVisionEngine.a

@@ -1,0 +1,1 @@
+/usr/bin/c++  -O3 -DNDEBUG  -rdynamic CMakeFiles/ncnnoptimize.dir/ncnnoptimize.cpp.o  -o ncnnoptimize ../src/libncnn.a -lgomp -lpthread -pthread 

@@ -1,0 +1,1 @@
+/usr/bin/c++  -O3 -DNDEBUG  -rdynamic CMakeFiles/yolov4.dir/yolov4.cpp.o  -o yolov4 -Wl,-rpath,/usr/local/lib ../src/libncnn.a /usr/local/lib/libopencv_highgui.so.4.2.0 /usr/local/lib/libopencv_videoio.so.4.2.0 -lgomp -lpthread -pthread /usr/local/lib/libopencv_imgcodecs.so.4.2.0 /usr/local/lib/libopencv_imgproc.so.4.2.0 /usr/local/lib/libopencv_core.so.4.2.0 

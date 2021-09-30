@@ -1,0 +1,1 @@
+/usr/bin/c++  -O3 -DNDEBUG  -rdynamic CMakeFiles/darknet2ncnn.dir/darknet2ncnn.cpp.o  -o darknet2ncnn 
