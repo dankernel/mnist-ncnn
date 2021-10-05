@@ -40,33 +40,8 @@ target_include_directories(VisionEngine
     PUBLIC
         $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/../include>
         $<INSTALL_INTERFACE:include/vision>
-        $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/common>
-
-        $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/face>
-        $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/face/align>
-        $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/face/common>
-        $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/face/database>
-        $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/face/detecter>
-        $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/face/detecter/centerface>
-        $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/face/detecter/mtcnn>
-        $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/face/detecter/anticonv>
+        $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/mnist>
         
-        $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/face/landmarker>
-        $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/face/landmarker/zqlandmarker>
-        $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/face/landmarker/insightface>
-
-        $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/face/recognizer>
-        $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/face/recognizer/mobilefacenet>
-        $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/face/tracker>
-
-        $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/object>
-        $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/object/object>
-        $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/object/common>
-        $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/object/object/mobilenetssd>
-
-        $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/classifier>
-        $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/classifier/classifier>
-        $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/classifier/classifier/mobilenet>
 )
 
 if(MIRROR_INSTALL_SDK)

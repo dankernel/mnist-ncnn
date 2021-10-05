@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-../ncnn-20210525-full-source/src/allocator.h
+../ncnn/src/allocator.h
 windows.h
 -
 platform.h
-../ncnn-20210525-full-source/src/platform.h
+../ncnn/src/platform.h
 stdlib.h
 -
 vulkan/vulkan.h
@@ -18,51 +18,63 @@ vulkan/vulkan.h
 android/hardware_buffer.h
 -
 
-../ncnn-20210525-full-source/src/blob.h
+../ncnn/src/blob.h
 mat.h
-../ncnn-20210525-full-source/src/mat.h
+../ncnn/src/mat.h
 platform.h
-../ncnn-20210525-full-source/src/platform.h
+../ncnn/src/platform.h
 
-../ncnn-20210525-full-source/src/command.h
+../ncnn/src/command.h
 platform.h
-../ncnn-20210525-full-source/src/platform.h
+../ncnn/src/platform.h
 mat.h
-../ncnn-20210525-full-source/src/mat.h
+../ncnn/src/mat.h
 vulkan/vulkan.h
 -
 
-../ncnn-20210525-full-source/src/gpu.h
+../ncnn/src/cpu.h
+stddef.h
+-
+sched.h
+-
 platform.h
-../ncnn-20210525-full-source/src/platform.h
+../ncnn/src/platform.h
+
+../ncnn/src/gpu.h
+platform.h
+../ncnn/src/platform.h
 mat.h
-../ncnn-20210525-full-source/src/mat.h
+../ncnn/src/mat.h
 vulkan/vulkan.h
 -
 vulkan_header_fix.h
-../ncnn-20210525-full-source/src/vulkan_header_fix.h
+../ncnn/src/vulkan_header_fix.h
 
-../ncnn-20210525-full-source/src/layer.h
+../ncnn/src/layer.h
 mat.h
-../ncnn-20210525-full-source/src/mat.h
+../ncnn/src/mat.h
 modelbin.h
-../ncnn-20210525-full-source/src/modelbin.h
+../ncnn/src/modelbin.h
 option.h
-../ncnn-20210525-full-source/src/option.h
+../ncnn/src/option.h
 paramdict.h
-../ncnn-20210525-full-source/src/paramdict.h
+../ncnn/src/paramdict.h
 platform.h
-../ncnn-20210525-full-source/src/platform.h
+../ncnn/src/platform.h
 math.h
 -
 command.h
-../ncnn-20210525-full-source/src/command.h
+../ncnn/src/command.h
 pipeline.h
-../ncnn-20210525-full-source/src/pipeline.h
+../ncnn/src/pipeline.h
 vulkan/vulkan.h
 -
 
-../ncnn-20210525-full-source/src/mat.h
+../ncnn/src/layer/riscv/riscv_v_071_fix.h
+riscv-vector.h
+-
+
+../ncnn/src/mat.h
 stdlib.h
 -
 string.h
@@ -71,12 +83,20 @@ arm_neon.h
 -
 immintrin.h
 -
+msa.h
+-
+layer/riscv/riscv_v_071_fix.h
+../ncnn/src/layer/riscv/riscv_v_071_fix.h
+riscv_vector.h
+-
+cpu.h
+../ncnn/src/cpu.h
 allocator.h
-../ncnn-20210525-full-source/src/allocator.h
+../ncnn/src/allocator.h
 option.h
-../ncnn-20210525-full-source/src/option.h
+../ncnn/src/option.h
 platform.h
-../ncnn-20210525-full-source/src/platform.h
+../ncnn/src/platform.h
 vulkan/vulkan.h
 -
 android/bitmap.h
@@ -84,43 +104,43 @@ android/bitmap.h
 jni.h
 -
 
-../ncnn-20210525-full-source/src/modelbin.h
+../ncnn/src/modelbin.h
 mat.h
-../ncnn-20210525-full-source/src/mat.h
+../ncnn/src/mat.h
 
-../ncnn-20210525-full-source/src/net.h
+../ncnn/src/net.h
 blob.h
-../ncnn-20210525-full-source/src/blob.h
+../ncnn/src/blob.h
 layer.h
-../ncnn-20210525-full-source/src/layer.h
+../ncnn/src/layer.h
 mat.h
-../ncnn-20210525-full-source/src/mat.h
+../ncnn/src/mat.h
 option.h
-../ncnn-20210525-full-source/src/option.h
+../ncnn/src/option.h
 platform.h
-../ncnn-20210525-full-source/src/platform.h
+../ncnn/src/platform.h
 android/asset_manager.h
 -
 
-../ncnn-20210525-full-source/src/option.h
+../ncnn/src/option.h
 platform.h
-../ncnn-20210525-full-source/src/platform.h
+../ncnn/src/platform.h
 
-../ncnn-20210525-full-source/src/paramdict.h
+../ncnn/src/paramdict.h
 mat.h
-../ncnn-20210525-full-source/src/mat.h
+../ncnn/src/mat.h
 
-../ncnn-20210525-full-source/src/pipeline.h
+../ncnn/src/pipeline.h
 mat.h
-../ncnn-20210525-full-source/src/mat.h
+../ncnn/src/mat.h
 platform.h
-../ncnn-20210525-full-source/src/platform.h
+../ncnn/src/platform.h
 gpu.h
-../ncnn-20210525-full-source/src/gpu.h
+../ncnn/src/gpu.h
 vulkan/vulkan.h
 -
 
-../ncnn-20210525-full-source/src/simplestl.h
+../ncnn/src/simplestl.h
 stddef.h
 -
 stdint.h
@@ -130,9 +150,15 @@ string.h
 new
 -
 
-../ncnn-20210525-full-source/src/vulkan_header_fix.h
+../ncnn/src/vulkan_header_fix.h
 vulkan/vulkan.h
 -
+
+../src/mnist/mnist_engine.hpp
+opencv2/opencv.hpp
+../src/mnist/opencv2/opencv.hpp
+net.h
+../src/mnist/net.h
 
 /home/dkdk/git/mnist-ncnn/examples/mnist.cpp
 stdlib.h
@@ -149,6 +175,8 @@ opencv2/opencv.hpp
 /home/dkdk/git/mnist-ncnn/examples/mnist.hpp
 net.h
 /home/dkdk/git/mnist-ncnn/examples/net.h
+mnist_engine.hpp
+/home/dkdk/git/mnist-ncnn/examples/mnist_engine.hpp
 vector
 -
 opencv2/opencv.hpp
@@ -1394,11 +1422,11 @@ opencv2/videostab/global_motion.hpp
 opencv2/videostab/log.hpp
 /usr/local/include/opencv4/opencv2/videostab/opencv2/videostab/log.hpp
 
-ncnn-20210525-full-source/src/ncnn_export.h
+ncnn/src/ncnn_export.h
 
-ncnn-20210525-full-source/src/platform.h
+ncnn/src/platform.h
 ncnn_export.h
-ncnn-20210525-full-source/src/ncnn_export.h
+ncnn/src/ncnn_export.h
 windows.h
 -
 process.h
@@ -1406,7 +1434,7 @@ process.h
 pthread.h
 -
 simplestl.h
-ncnn-20210525-full-source/src/simplestl.h
+ncnn/src/simplestl.h
 algorithm
 -
 list

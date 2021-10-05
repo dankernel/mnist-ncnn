@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/dkdk/git/mnist-ncnn/build/ncnn-20210525-full-source/cmake_install.cmake")
+  include("/home/dkdk/git/mnist-ncnn/build/ncnn/cmake_install.cmake")
   include("/home/dkdk/git/mnist-ncnn/build/src/cmake_install.cmake")
 
 endif()

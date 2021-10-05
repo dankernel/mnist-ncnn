@@ -139,7 +139,14 @@ src/mnist: /usr/local/lib/libopencv_xphoto.so.4.2.0
 src/mnist: /usr/local/lib/libopencv_photo.so.4.2.0
 src/mnist: /usr/local/lib/libopencv_imgproc.so.4.2.0
 src/mnist: /usr/local/lib/libopencv_core.so.4.2.0
-src/mnist: ncnn-20210525-full-source/src/libncnn.a
+src/mnist: ncnn/src/libncnn.a
+src/mnist: /usr/lib/x86_64-linux-gnu/libvulkan.so
+src/mnist: ncnn/glslang/glslang/libglslang.a
+src/mnist: ncnn/glslang/SPIRV/libSPIRV.a
+src/mnist: ncnn/glslang/glslang/libMachineIndependent.a
+src/mnist: ncnn/glslang/OGLCompilersDLL/libOGLCompiler.a
+src/mnist: ncnn/glslang/glslang/OSDependent/Unix/libOSDependent.a
+src/mnist: ncnn/glslang/glslang/libGenericCodeGen.a
 src/mnist: /usr/lib/gcc/x86_64-linux-gnu/7/libgomp.so
 src/mnist: /usr/lib/x86_64-linux-gnu/libpthread.so
 src/mnist: src/CMakeFiles/mnist.dir/link.txt

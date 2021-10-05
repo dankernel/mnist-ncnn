@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/dkdk/git/mnist-ncnn/ncnn/tools/darknet/darknet2ncnn.cpp
+algorithm
+-
+assert.h
+-
+cctype
+-
+deque
+-
+fstream
+-
+iostream
+-
+locale
+-
+sstream
+-
+stdio.h
+-
+stdlib.h
+-
+string
+-
+unordered_map
+-
+vector
+-
+

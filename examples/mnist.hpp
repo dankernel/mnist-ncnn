@@ -20,6 +20,7 @@
 #define NCNN_H_
 
 #include "net.h"
+#include "mnist_engine.hpp"
 
 #include <vector>
 #include <opencv2/opencv.hpp>

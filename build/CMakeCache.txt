@@ -14,6 +14,12 @@
 # EXTERNAL cache entries
 ########################
 
+//Build external dependencies in /External
+BUILD_EXTERNAL:BOOL=OFF
+
+//Build Shared Libraries
+BUILD_SHARED_LIBS:BOOL=OFF
+
 //Path to a program.
 CMAKE_AR:FILEPATH=/usr/bin/ar
 
@@ -95,8 +101,56 @@ CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 //Enable/Disable output of compile commands during generation.
 CMAKE_EXPORT_COMPILE_COMMANDS:BOOL=OFF
 
+//User executables (bin)
+CMAKE_INSTALL_BINDIR:PATH=bin
+
+//Read-only architecture-independent data (DATAROOTDIR)
+CMAKE_INSTALL_DATADIR:PATH=
+
+//Read-only architecture-independent data root (share)
+CMAKE_INSTALL_DATAROOTDIR:PATH=share
+
+//Documentation root (DATAROOTDIR/doc/PROJECT_NAME)
+CMAKE_INSTALL_DOCDIR:PATH=
+
+//C header files (include)
+CMAKE_INSTALL_INCLUDEDIR:PATH=include
+
+//Info documentation (DATAROOTDIR/info)
+CMAKE_INSTALL_INFODIR:PATH=
+
+//Object code libraries (lib)
+CMAKE_INSTALL_LIBDIR:PATH=lib
+
+//Program executables (libexec)
+CMAKE_INSTALL_LIBEXECDIR:PATH=libexec
+
+//Locale-dependent data (DATAROOTDIR/locale)
+CMAKE_INSTALL_LOCALEDIR:PATH=
+
+//Modifiable single-machine data (var)
+CMAKE_INSTALL_LOCALSTATEDIR:PATH=var
+
+//Man documentation (DATAROOTDIR/man)
+CMAKE_INSTALL_MANDIR:PATH=
+
+//C header files for non-gcc (/usr/include)
+CMAKE_INSTALL_OLDINCLUDEDIR:PATH=/usr/include
+
 //Install path prefix, prepended onto install directories.
 CMAKE_INSTALL_PREFIX:PATH=/usr/local
+
+//Run-time variable data (LOCALSTATEDIR/run)
+CMAKE_INSTALL_RUNSTATEDIR:PATH=
+
+//System admin executables (sbin)
+CMAKE_INSTALL_SBINDIR:PATH=sbin
+
+//Modifiable architecture-independent data (com)
+CMAKE_INSTALL_SHAREDSTATEDIR:PATH=com
+
+//Read-only single-machine data (etc)
+CMAKE_INSTALL_SYSCONFDIR:PATH=etc
 
 //Path to a program.
 CMAKE_LINKER:FILEPATH=/usr/bin/ld
@@ -180,6 +234,40 @@ CMAKE_STRIP:FILEPATH=/usr/bin/strip
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
+//Enables testing
+ENABLE_CTEST:BOOL=OFF
+
+//Enables Exceptions
+ENABLE_EXCEPTIONS:BOOL=OFF
+
+//Builds glslangValidator and spirv-remap
+ENABLE_GLSLANG_BINARIES:BOOL=OFF
+
+//If using Emscripten, build glslang.js. Otherwise, builds a sample
+// executable for binary-size testing.
+ENABLE_GLSLANG_JS:BOOL=OFF
+
+//Enables HLSL input support
+ENABLE_HLSL:BOOL=OFF
+
+//Enables spirv-opt capability if present
+ENABLE_OPT:BOOL=OFF
+
+//Enables Precompiled header
+ENABLE_PCH:BOOL=OFF
+
+//Enables RTTI
+ENABLE_RTTI:BOOL=OFF
+
+//Enables building of SPVRemapper
+ENABLE_SPVREMAPPER:BOOL=OFF
+
+//Absolute path to glslangTargets.cmake directory
+GLSLANG_TARGET_DIR:PATH=GLSLANG-NOTFOUND
+
+//Dependencies for target
+GenericCodeGen_LIB_DEPENDS:STATIC=
+
 //build classifier test
 MIRROR_BUILD_CLASSIFIER:BOOL=ON
 
@@ -201,11 +289,20 @@ MIRROR_OPENMP:BOOL=ON
 //vulkan compute used
 MIRROR_VULKAN:BOOL=OFF
 
+//Dependencies for the target
+MachineIndependent_LIB_DEPENDS:STATIC=general;OGLCompiler;general;OSDependent;general;GenericCodeGen;
+
+//optimize x86 platform with avx
+NCNN_AVX:BOOL=ON
+
 //optimize x86 platform with avx2
 NCNN_AVX2:BOOL=ON
 
 //print benchmark information for every layer
 NCNN_BENCHMARK:BOOL=OFF
+
+//bf16 inference
+NCNN_BF16:BOOL=ON
 
 //build benchmark
 NCNN_BUILD_BENCHMARK:BOOL=ON
@@ -289,13 +386,19 @@ NCNN_STDIO:BOOL=ON
 NCNN_STRING:BOOL=ON
 
 //use system glslang library
-NCNN_SYSTEM_GLSLANG:BOOL=OFF
+NCNN_SYSTEM_GLSLANG:BOOL=ON
 
 //build with threads
 NCNN_THREADS:BOOL=ON
 
 //vulkan compute support
-NCNN_VULKAN:BOOL=OFF
+NCNN_VULKAN:BOOL=ON
+
+//Dependencies for target
+OGLCompiler_LIB_DEPENDS:STATIC=
+
+//Dependencies for target
+OSDependent_LIB_DEPENDS:STATIC=
 
 //The directory containing a CMake configuration file for OpenCV.
 OpenCV_DIR:PATH=/usr/local/lib/cmake/opencv4
@@ -342,6 +445,18 @@ Protobuf_PROTOC_LIBRARY_DEBUG:FILEPATH=Protobuf_PROTOC_LIBRARY_DEBUG-NOTFOUND
 //Path to a library.
 Protobuf_PROTOC_LIBRARY_RELEASE:FILEPATH=Protobuf_PROTOC_LIBRARY_RELEASE-NOTFOUND
 
+//Skip installation
+SKIP_GLSLANG_INSTALL:BOOL=OFF
+
+//Dependencies for the target
+SPIRV_LIB_DEPENDS:STATIC=general;MachineIndependent;
+
+//Use ccache
+USE_CCACHE:BOOL=OFF
+
+//vulkan inference
+VULKAN_INF:BOOL=ON
+
 //Value Computed by CMake
 VisionEngine_BINARY_DIR:STATIC=/home/dkdk/git/mnist-ncnn/build
 
@@ -350,6 +465,12 @@ VisionEngine_LIB_DEPENDS:STATIC=general;opencv_calib3d;general;opencv_core;gener
 
 //Value Computed by CMake
 VisionEngine_SOURCE_DIR:STATIC=/home/dkdk/git/mnist-ncnn
+
+//Path to a file.
+Vulkan_INCLUDE_DIR:PATH=/usr/include
+
+//Path to a library.
+Vulkan_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libvulkan.so
 
 //build with layer absval
 WITH_LAYER_absval:BOOL=ON
@@ -380,6 +501,9 @@ WITH_LAYER_concat:BOOL=ON
 
 //build with layer convolution
 WITH_LAYER_convolution:BOOL=ON
+
+//build with layer convolution1d
+WITH_LAYER_convolution1d:BOOL=ON
 
 //build with layer convolutiondepthwise
 WITH_LAYER_convolutiondepthwise:BOOL=ON
@@ -498,6 +622,9 @@ WITH_LAYER_pixelshuffle:BOOL=ON
 //build with layer pooling
 WITH_LAYER_pooling:BOOL=ON
 
+//build with layer pooling1d
+WITH_LAYER_pooling1d:BOOL=ON
+
 //build with layer power
 WITH_LAYER_power:BOOL=ON
 
@@ -595,13 +722,22 @@ WITH_LAYER_yolodetectionoutput:BOOL=ON
 WITH_LAYER_yolov3detectionoutput:BOOL=ON
 
 //Value Computed by CMake
-ncnn_BINARY_DIR:STATIC=/home/dkdk/git/mnist-ncnn/build/ncnn-20210525-full-source
+glslang_BINARY_DIR:STATIC=/home/dkdk/git/mnist-ncnn/build/ncnn/glslang
 
-//Dependencies for target
-ncnn_LIB_DEPENDS:STATIC=
+//Dependencies for the target
+glslang_LIB_DEPENDS:STATIC=general;OGLCompiler;general;OSDependent;general;MachineIndependent;
 
 //Value Computed by CMake
-ncnn_SOURCE_DIR:STATIC=/home/dkdk/git/mnist-ncnn/ncnn-20210525-full-source
+glslang_SOURCE_DIR:STATIC=/home/dkdk/git/mnist-ncnn/ncnn/glslang
+
+//Value Computed by CMake
+ncnn_BINARY_DIR:STATIC=/home/dkdk/git/mnist-ncnn/build/ncnn
+
+//Dependencies for the target
+ncnn_LIB_DEPENDS:STATIC=general;Vulkan::Vulkan;general;glslang;general;SPIRV;
+
+//Value Computed by CMake
+ncnn_SOURCE_DIR:STATIC=/home/dkdk/git/mnist-ncnn/ncnn
 
 
 ########################
@@ -691,8 +827,40 @@ CMAKE_HAVE_PTHREAD_H:INTERNAL=1
 //Source directory with the top level CMakeLists.txt file for this
 // project
 CMAKE_HOME_DIRECTORY:INTERNAL=/home/dkdk/git/mnist-ncnn
+//ADVANCED property for variable: CMAKE_INSTALL_BINDIR
+CMAKE_INSTALL_BINDIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_INSTALL_DATADIR
+CMAKE_INSTALL_DATADIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_INSTALL_DATAROOTDIR
+CMAKE_INSTALL_DATAROOTDIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_INSTALL_DOCDIR
+CMAKE_INSTALL_DOCDIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_INSTALL_INCLUDEDIR
+CMAKE_INSTALL_INCLUDEDIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_INSTALL_INFODIR
+CMAKE_INSTALL_INFODIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_INSTALL_LIBDIR
+CMAKE_INSTALL_LIBDIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_INSTALL_LIBEXECDIR
+CMAKE_INSTALL_LIBEXECDIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_INSTALL_LOCALEDIR
+CMAKE_INSTALL_LOCALEDIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_INSTALL_LOCALSTATEDIR
+CMAKE_INSTALL_LOCALSTATEDIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_INSTALL_MANDIR
+CMAKE_INSTALL_MANDIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_INSTALL_OLDINCLUDEDIR
+CMAKE_INSTALL_OLDINCLUDEDIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_INSTALL_RUNSTATEDIR
+CMAKE_INSTALL_RUNSTATEDIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_INSTALL_SBINDIR
+CMAKE_INSTALL_SBINDIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_INSTALL_SHAREDSTATEDIR
+CMAKE_INSTALL_SHAREDSTATEDIR-ADVANCED:INTERNAL=1
 //Install .so files without execute permission.
 CMAKE_INSTALL_SO_NO_EXE:INTERNAL=1
+//ADVANCED property for variable: CMAKE_INSTALL_SYSCONFDIR
+CMAKE_INSTALL_SYSCONFDIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_LINKER
 CMAKE_LINKER-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_MAKE_PROGRAM
@@ -710,7 +878,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=12
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=17
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -813,4 +981,10 @@ Protobuf_PROTOC_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
 Protobuf_PROTOC_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
 //Result of TRY_COMPILE
 THREADS_HAVE_PTHREAD_ARG:INTERNAL=TRUE
+//ADVANCED property for variable: Vulkan_INCLUDE_DIR
+Vulkan_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: Vulkan_LIBRARY
+Vulkan_LIBRARY-ADVANCED:INTERNAL=1
+//CMAKE_INSTALL_PREFIX during last run
+_GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX:INTERNAL=/usr/local
 

@@ -11,36 +11,21 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../src/../include"
-  "../src/common"
-  "../src/face"
-  "../src/face/align"
-  "../src/face/common"
-  "../src/face/database"
-  "../src/face/detecter"
-  "../src/face/detecter/centerface"
-  "../src/face/detecter/mtcnn"
-  "../src/face/detecter/anticonv"
-  "../src/face/landmarker"
-  "../src/face/landmarker/zqlandmarker"
-  "../src/face/landmarker/insightface"
-  "../src/face/recognizer"
-  "../src/face/recognizer/mobilefacenet"
-  "../src/face/tracker"
-  "../src/object"
-  "../src/object/object"
-  "../src/object/common"
-  "../src/object/object/mobilenetssd"
-  "../src/classifier"
-  "../src/classifier/classifier"
-  "../src/classifier/classifier/mobilenet"
+  "../src/mnist"
   "/usr/local/include/opencv4"
-  "../ncnn-20210525-full-source/src"
-  "ncnn-20210525-full-source/src"
+  "../ncnn/src"
+  "ncnn/src"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/dkdk/git/mnist-ncnn/build/ncnn-20210525-full-source/src/CMakeFiles/ncnn.dir/DependInfo.cmake"
+  "/home/dkdk/git/mnist-ncnn/build/ncnn/src/CMakeFiles/ncnn.dir/DependInfo.cmake"
+  "/home/dkdk/git/mnist-ncnn/build/ncnn/glslang/glslang/CMakeFiles/glslang.dir/DependInfo.cmake"
+  "/home/dkdk/git/mnist-ncnn/build/ncnn/glslang/SPIRV/CMakeFiles/SPIRV.dir/DependInfo.cmake"
+  "/home/dkdk/git/mnist-ncnn/build/ncnn/glslang/glslang/CMakeFiles/MachineIndependent.dir/DependInfo.cmake"
+  "/home/dkdk/git/mnist-ncnn/build/ncnn/glslang/OGLCompilersDLL/CMakeFiles/OGLCompiler.dir/DependInfo.cmake"
+  "/home/dkdk/git/mnist-ncnn/build/ncnn/glslang/glslang/OSDependent/Unix/CMakeFiles/OSDependent.dir/DependInfo.cmake"
+  "/home/dkdk/git/mnist-ncnn/build/ncnn/glslang/glslang/CMakeFiles/GenericCodeGen.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

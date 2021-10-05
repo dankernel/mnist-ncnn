@@ -1,0 +1,207 @@
+[
+{
+  "directory": "/home/dkdk/git/mnist-ncnn/build/ncnn/glslang/glslang",
+  "command": "/usr/bin/c++  -DENABLE_OPT=0 -DGLSLANG_OSINCLUDE_UNIX -I/home/dkdk/git/mnist-ncnn/build/include  -O3 -DNDEBUG -fPIC   -Wall -Wmaybe-uninitialized -Wuninitialized -Wunused -Wunused-local-typedefs -Wunused-parameter -Wunused-value -Wunused-variable -Wunused-but-set-parameter -Wunused-but-set-variable -fno-exceptions -Wno-reorder -fno-rtti -pthread -std=c++11 -o CMakeFiles/MachineIndependent.dir/MachineIndependent/glslang_tab.cpp.o -c /home/dkdk/git/mnist-ncnn/ncnn/glslang/glslang/MachineIndependent/glslang_tab.cpp",
+  "file": "/home/dkdk/git/mnist-ncnn/ncnn/glslang/glslang/MachineIndependent/glslang_tab.cpp"
+},
+{
+  "directory": "/home/dkdk/git/mnist-ncnn/build/ncnn/glslang/glslang",
+  "command": "/usr/bin/c++  -DENABLE_OPT=0 -DGLSLANG_OSINCLUDE_UNIX -I/home/dkdk/git/mnist-ncnn/build/include  -O3 -DNDEBUG -fPIC   -Wall -Wmaybe-uninitialized -Wuninitialized -Wunused -Wunused-local-typedefs -Wunused-parameter -Wunused-value -Wunused-variable -Wunused-but-set-parameter -Wunused-but-set-variable -fno-exceptions -Wno-reorder -fno-rtti -pthread -std=c++11 -o CMakeFiles/MachineIndependent.dir/MachineIndependent/attribute.cpp.o -c /home/dkdk/git/mnist-ncnn/ncnn/glslang/glslang/MachineIndependent/attribute.cpp",
+  "file": "/home/dkdk/git/mnist-ncnn/ncnn/glslang/glslang/MachineIndependent/attribute.cpp"
+},
+{
+  "directory": "/home/dkdk/git/mnist-ncnn/build/ncnn/glslang/glslang",
+  "command": "/usr/bin/c++  -DENABLE_OPT=0 -DGLSLANG_OSINCLUDE_UNIX -I/home/dkdk/git/mnist-ncnn/build/include  -O3 -DNDEBUG -fPIC   -Wall -Wmaybe-uninitialized -Wuninitialized -Wunused -Wunused-local-typedefs -Wunused-parameter -Wunused-value -Wunused-variable -Wunused-but-set-parameter -Wunused-but-set-variable -fno-exceptions -Wno-reorder -fno-rtti -pthread -std=c++11 -o CMakeFiles/MachineIndependent.dir/MachineIndependent/Constant.cpp.o -c /home/dkdk/git/mnist-ncnn/ncnn/glslang/glslang/MachineIndependent/Constant.cpp",
+  "file": "/home/dkdk/git/mnist-ncnn/ncnn/glslang/glslang/MachineIndependent/Constant.cpp"
+},
+{
+  "directory": "/home/dkdk/git/mnist-ncnn/build/ncnn/glslang/glslang",
+  "command": "/usr/bin/c++  -DENABLE_OPT=0 -DGLSLANG_OSINCLUDE_UNIX -I/home/dkdk/git/mnist-ncnn/build/include  -O3 -DNDEBUG -fPIC   -Wall -Wmaybe-uninitialized -Wuninitialized -Wunused -Wunused-local-typedefs -Wunused-parameter -Wunused-value -Wunused-variable -Wunused-but-set-parameter -Wunused-but-set-variable -fno-exceptions -Wno-reorder -fno-rtti -pthread -std=c++11 -o CMakeFiles/MachineIndependent.dir/MachineIndependent/iomapper.cpp.o -c /home/dkdk/git/mnist-ncnn/ncnn/glslang/glslang/MachineIndependent/iomapper.cpp",
+  "file": "/home/dkdk/git/mnist-ncnn/ncnn/glslang/glslang/MachineIndependent/iomapper.cpp"
+},
+{
+  "directory": "/home/dkdk/git/mnist-ncnn/build/ncnn/glslang/glslang",
+  "command": "/usr/bin/c++  -DENABLE_OPT=0 -DGLSLANG_OSINCLUDE_UNIX -I/home/dkdk/git/mnist-ncnn/build/include  -O3 -DNDEBUG -fPIC   -Wall -Wmaybe-uninitialized -Wuninitialized -Wunused -Wunused-local-typedefs -Wunused-parameter -Wunused-value -Wunused-variable -Wunused-but-set-parameter -Wunused-but-set-variable -fno-exceptions -Wno-reorder -fno-rtti -pthread -std=c++11 -o CMakeFiles/MachineIndependent.dir/MachineIndependent/InfoSink.cpp.o -c /home/dkdk/git/mnist-ncnn/ncnn/glslang/glslang/MachineIndependent/InfoSink.cpp",
+  "file": "/home/dkdk/git/mnist-ncnn/ncnn/glslang/glslang/MachineIndependent/InfoSink.cpp"
+},
+{
+  "directory": "/home/dkdk/git/mnist-ncnn/build/ncnn/glslang/glslang",
+  "command": "/usr/bin/c++  -DENABLE_OPT=0 -DGLSLANG_OSINCLUDE_UNIX -I/home/dkdk/git/mnist-ncnn/build/include  -O3 -DNDEBUG -fPIC   -Wall -Wmaybe-uninitialized -Wuninitialized -Wunused -Wunused-local-typedefs -Wunused-parameter -Wunused-value -Wunused-variable -Wunused-but-set-parameter -Wunused-but-set-variable -fno-exceptions -Wno-reorder -fno-rtti -pthread -std=c++11 -o CMakeFiles/MachineIndependent.dir/MachineIndependent/Initialize.cpp.o -c /home/dkdk/git/mnist-ncnn/ncnn/glslang/glslang/MachineIndependent/Initialize.cpp",
+  "file": "/home/dkdk/git/mnist-ncnn/ncnn/glslang/glslang/MachineIndependent/Initialize.cpp"
+},
+{
+  "directory": "/home/dkdk/git/mnist-ncnn/build/ncnn/glslang/glslang",
+  "command": "/usr/bin/c++  -DENABLE_OPT=0 -DGLSLANG_OSINCLUDE_UNIX -I/home/dkdk/git/mnist-ncnn/build/include  -O3 -DNDEBUG -fPIC   -Wall -Wmaybe-uninitialized -Wuninitialized -Wunused -Wunused-local-typedefs -Wunused-parameter -Wunused-value -Wunused-variable -Wunused-but-set-parameter -Wunused-but-set-variable -fno-exceptions -Wno-reorder -fno-rtti -pthread -std=c++11 -o CMakeFiles/MachineIndependent.dir/MachineIndependent/IntermTraverse.cpp.o -c /home/dkdk/git/mnist-ncnn/ncnn/glslang/glslang/MachineIndependent/IntermTraverse.cpp",
+  "file": "/home/dkdk/git/mnist-ncnn/ncnn/glslang/glslang/MachineIndependent/IntermTraverse.cpp"
+},
+{
+  "directory": "/home/dkdk/git/mnist-ncnn/build/ncnn/glslang/glslang",
+  "command": "/usr/bin/c++  -DENABLE_OPT=0 -DGLSLANG_OSINCLUDE_UNIX -I/home/dkdk/git/mnist-ncnn/build/include  -O3 -DNDEBUG -fPIC   -Wall -Wmaybe-uninitialized -Wuninitialized -Wunused -Wunused-local-typedefs -Wunused-parameter -Wunused-value -Wunused-variable -Wunused-but-set-parameter -Wunused-but-set-variable -fno-exceptions -Wno-reorder -fno-rtti -pthread -std=c++11 -o CMakeFiles/MachineIndependent.dir/MachineIndependent/Intermediate.cpp.o -c /home/dkdk/git/mnist-ncnn/ncnn/glslang/glslang/MachineIndependent/Intermediate.cpp",
+  "file": "/home/dkdk/git/mnist-ncnn/ncnn/glslang/glslang/MachineIndependent/Intermediate.cpp"
+},
+{
+  "directory": "/home/dkdk/git/mnist-ncnn/build/ncnn/glslang/glslang",
+  "command": "/usr/bin/c++  -DENABLE_OPT=0 -DGLSLANG_OSINCLUDE_UNIX -I/home/dkdk/git/mnist-ncnn/build/include  -O3 -DNDEBUG -fPIC   -Wall -Wmaybe-uninitialized -Wuninitialized -Wunused -Wunused-local-typedefs -Wunused-parameter -Wunused-value -Wunused-variable -Wunused-but-set-parameter -Wunused-but-set-variable -fno-exceptions -Wno-reorder -fno-rtti -pthread -std=c++11 -o CMakeFiles/MachineIndependent.dir/MachineIndependent/ParseContextBase.cpp.o -c /home/dkdk/git/mnist-ncnn/ncnn/glslang/glslang/MachineIndependent/ParseContextBase.cpp",
+  "file": "/home/dkdk/git/mnist-ncnn/ncnn/glslang/glslang/MachineIndependent/ParseContextBase.cpp"
+},
+{
+  "directory": "/home/dkdk/git/mnist-ncnn/build/ncnn/glslang/glslang",
+  "command": "/usr/bin/c++  -DENABLE_OPT=0 -DGLSLANG_OSINCLUDE_UNIX -I/home/dkdk/git/mnist-ncnn/build/include  -O3 -DNDEBUG -fPIC   -Wall -Wmaybe-uninitialized -Wuninitialized -Wunused -Wunused-local-typedefs -Wunused-parameter -Wunused-value -Wunused-variable -Wunused-but-set-parameter -Wunused-but-set-variable -fno-exceptions -Wno-reorder -fno-rtti -pthread -std=c++11 -o CMakeFiles/MachineIndependent.dir/MachineIndependent/ParseHelper.cpp.o -c /home/dkdk/git/mnist-ncnn/ncnn/glslang/glslang/MachineIndependent/ParseHelper.cpp",
+  "file": "/home/dkdk/git/mnist-ncnn/ncnn/glslang/glslang/MachineIndependent/ParseHelper.cpp"
+},
+{
+  "directory": "/home/dkdk/git/mnist-ncnn/build/ncnn/glslang/glslang",
+  "command": "/usr/bin/c++  -DENABLE_OPT=0 -DGLSLANG_OSINCLUDE_UNIX -I/home/dkdk/git/mnist-ncnn/build/include  -O3 -DNDEBUG -fPIC   -Wall -Wmaybe-uninitialized -Wuninitialized -Wunused -Wunused-local-typedefs -Wunused-parameter -Wunused-value -Wunused-variable -Wunused-but-set-parameter -Wunused-but-set-variable -fno-exceptions -Wno-reorder -fno-rtti -pthread -std=c++11 -o CMakeFiles/MachineIndependent.dir/MachineIndependent/PoolAlloc.cpp.o -c /home/dkdk/git/mnist-ncnn/ncnn/glslang/glslang/MachineIndependent/PoolAlloc.cpp",
+  "file": "/home/dkdk/git/mnist-ncnn/ncnn/glslang/glslang/MachineIndependent/PoolAlloc.cpp"
+},
+{
+  "directory": "/home/dkdk/git/mnist-ncnn/build/ncnn/glslang/glslang",
+  "command": "/usr/bin/c++  -DENABLE_OPT=0 -DGLSLANG_OSINCLUDE_UNIX -I/home/dkdk/git/mnist-ncnn/build/include  -O3 -DNDEBUG -fPIC   -Wall -Wmaybe-uninitialized -Wuninitialized -Wunused -Wunused-local-typedefs -Wunused-parameter -Wunused-value -Wunused-variable -Wunused-but-set-parameter -Wunused-but-set-variable -fno-exceptions -Wno-reorder -fno-rtti -pthread -std=c++11 -o CMakeFiles/MachineIndependent.dir/MachineIndependent/RemoveTree.cpp.o -c /home/dkdk/git/mnist-ncnn/ncnn/glslang/glslang/MachineIndependent/RemoveTree.cpp",
+  "file": "/home/dkdk/git/mnist-ncnn/ncnn/glslang/glslang/MachineIndependent/RemoveTree.cpp"
+},
+{
+  "directory": "/home/dkdk/git/mnist-ncnn/build/ncnn/glslang/glslang",
+  "command": "/usr/bin/c++  -DENABLE_OPT=0 -DGLSLANG_OSINCLUDE_UNIX -I/home/dkdk/git/mnist-ncnn/build/include  -O3 -DNDEBUG -fPIC   -Wall -Wmaybe-uninitialized -Wuninitialized -Wunused -Wunused-local-typedefs -Wunused-parameter -Wunused-value -Wunused-variable -Wunused-but-set-parameter -Wunused-but-set-variable -fno-exceptions -Wno-reorder -fno-rtti -pthread -std=c++11 -o CMakeFiles/MachineIndependent.dir/MachineIndependent/Scan.cpp.o -c /home/dkdk/git/mnist-ncnn/ncnn/glslang/glslang/MachineIndependent/Scan.cpp",
+  "file": "/home/dkdk/git/mnist-ncnn/ncnn/glslang/glslang/MachineIndependent/Scan.cpp"
+},
+{
+  "directory": "/home/dkdk/git/mnist-ncnn/build/ncnn/glslang/glslang",
+  "command": "/usr/bin/c++  -DENABLE_OPT=0 -DGLSLANG_OSINCLUDE_UNIX -I/home/dkdk/git/mnist-ncnn/build/include  -O3 -DNDEBUG -fPIC   -Wall -Wmaybe-uninitialized -Wuninitialized -Wunused -Wunused-local-typedefs -Wunused-parameter -Wunused-value -Wunused-variable -Wunused-but-set-parameter -Wunused-but-set-variable -fno-exceptions -Wno-reorder -fno-rtti -pthread -std=c++11 -o CMakeFiles/MachineIndependent.dir/MachineIndependent/ShaderLang.cpp.o -c /home/dkdk/git/mnist-ncnn/ncnn/glslang/glslang/MachineIndependent/ShaderLang.cpp",
+  "file": "/home/dkdk/git/mnist-ncnn/ncnn/glslang/glslang/MachineIndependent/ShaderLang.cpp"
+},
+{
+  "directory": "/home/dkdk/git/mnist-ncnn/build/ncnn/glslang/glslang",
+  "command": "/usr/bin/c++  -DENABLE_OPT=0 -DGLSLANG_OSINCLUDE_UNIX -I/home/dkdk/git/mnist-ncnn/build/include  -O3 -DNDEBUG -fPIC   -Wall -Wmaybe-uninitialized -Wuninitialized -Wunused -Wunused-local-typedefs -Wunused-parameter -Wunused-value -Wunused-variable -Wunused-but-set-parameter -Wunused-but-set-variable -fno-exceptions -Wno-reorder -fno-rtti -pthread -std=c++11 -o CMakeFiles/MachineIndependent.dir/MachineIndependent/SymbolTable.cpp.o -c /home/dkdk/git/mnist-ncnn/ncnn/glslang/glslang/MachineIndependent/SymbolTable.cpp",
+  "file": "/home/dkdk/git/mnist-ncnn/ncnn/glslang/glslang/MachineIndependent/SymbolTable.cpp"
+},
+{
+  "directory": "/home/dkdk/git/mnist-ncnn/build/ncnn/glslang/glslang",
+  "command": "/usr/bin/c++  -DENABLE_OPT=0 -DGLSLANG_OSINCLUDE_UNIX -I/home/dkdk/git/mnist-ncnn/build/include  -O3 -DNDEBUG -fPIC   -Wall -Wmaybe-uninitialized -Wuninitialized -Wunused -Wunused-local-typedefs -Wunused-parameter -Wunused-value -Wunused-variable -Wunused-but-set-parameter -Wunused-but-set-variable -fno-exceptions -Wno-reorder -fno-rtti -pthread -std=c++11 -o CMakeFiles/MachineIndependent.dir/MachineIndependent/Versions.cpp.o -c /home/dkdk/git/mnist-ncnn/ncnn/glslang/glslang/MachineIndependent/Versions.cpp",
+  "file": "/home/dkdk/git/mnist-ncnn/ncnn/glslang/glslang/MachineIndependent/Versions.cpp"
+},
+{
+  "directory": "/home/dkdk/git/mnist-ncnn/build/ncnn/glslang/glslang",
+  "command": "/usr/bin/c++  -DENABLE_OPT=0 -DGLSLANG_OSINCLUDE_UNIX -I/home/dkdk/git/mnist-ncnn/build/include  -O3 -DNDEBUG -fPIC   -Wall -Wmaybe-uninitialized -Wuninitialized -Wunused -Wunused-local-typedefs -Wunused-parameter -Wunused-value -Wunused-variable -Wunused-but-set-parameter -Wunused-but-set-variable -fno-exceptions -Wno-reorder -fno-rtti -pthread -std=c++11 -o CMakeFiles/MachineIndependent.dir/MachineIndependent/intermOut.cpp.o -c /home/dkdk/git/mnist-ncnn/ncnn/glslang/glslang/MachineIndependent/intermOut.cpp",
+  "file": "/home/dkdk/git/mnist-ncnn/ncnn/glslang/glslang/MachineIndependent/intermOut.cpp"
+},
+{
+  "directory": "/home/dkdk/git/mnist-ncnn/build/ncnn/glslang/glslang",
+  "command": "/usr/bin/c++  -DENABLE_OPT=0 -DGLSLANG_OSINCLUDE_UNIX -I/home/dkdk/git/mnist-ncnn/build/include  -O3 -DNDEBUG -fPIC   -Wall -Wmaybe-uninitialized -Wuninitialized -Wunused -Wunused-local-typedefs -Wunused-parameter -Wunused-value -Wunused-variable -Wunused-but-set-parameter -Wunused-but-set-variable -fno-exceptions -Wno-reorder -fno-rtti -pthread -std=c++11 -o CMakeFiles/MachineIndependent.dir/MachineIndependent/limits.cpp.o -c /home/dkdk/git/mnist-ncnn/ncnn/glslang/glslang/MachineIndependent/limits.cpp",
+  "file": "/home/dkdk/git/mnist-ncnn/ncnn/glslang/glslang/MachineIndependent/limits.cpp"
+},
+{
+  "directory": "/home/dkdk/git/mnist-ncnn/build/ncnn/glslang/glslang",
+  "command": "/usr/bin/c++  -DENABLE_OPT=0 -DGLSLANG_OSINCLUDE_UNIX -I/home/dkdk/git/mnist-ncnn/build/include  -O3 -DNDEBUG -fPIC   -Wall -Wmaybe-uninitialized -Wuninitialized -Wunused -Wunused-local-typedefs -Wunused-parameter -Wunused-value -Wunused-variable -Wunused-but-set-parameter -Wunused-but-set-variable -fno-exceptions -Wno-reorder -fno-rtti -pthread -std=c++11 -o CMakeFiles/MachineIndependent.dir/MachineIndependent/linkValidate.cpp.o -c /home/dkdk/git/mnist-ncnn/ncnn/glslang/glslang/MachineIndependent/linkValidate.cpp",
+  "file": "/home/dkdk/git/mnist-ncnn/ncnn/glslang/glslang/MachineIndependent/linkValidate.cpp"
+},
+{
+  "directory": "/home/dkdk/git/mnist-ncnn/build/ncnn/glslang/glslang",
+  "command": "/usr/bin/c++  -DENABLE_OPT=0 -DGLSLANG_OSINCLUDE_UNIX -I/home/dkdk/git/mnist-ncnn/build/include  -O3 -DNDEBUG -fPIC   -Wall -Wmaybe-uninitialized -Wuninitialized -Wunused -Wunused-local-typedefs -Wunused-parameter -Wunused-value -Wunused-variable -Wunused-but-set-parameter -Wunused-but-set-variable -fno-exceptions -Wno-reorder -fno-rtti -pthread -std=c++11 -o CMakeFiles/MachineIndependent.dir/MachineIndependent/parseConst.cpp.o -c /home/dkdk/git/mnist-ncnn/ncnn/glslang/glslang/MachineIndependent/parseConst.cpp",
+  "file": "/home/dkdk/git/mnist-ncnn/ncnn/glslang/glslang/MachineIndependent/parseConst.cpp"
+},
+{
+  "directory": "/home/dkdk/git/mnist-ncnn/build/ncnn/glslang/glslang",
+  "command": "/usr/bin/c++  -DENABLE_OPT=0 -DGLSLANG_OSINCLUDE_UNIX -I/home/dkdk/git/mnist-ncnn/build/include  -O3 -DNDEBUG -fPIC   -Wall -Wmaybe-uninitialized -Wuninitialized -Wunused -Wunused-local-typedefs -Wunused-parameter -Wunused-value -Wunused-variable -Wunused-but-set-parameter -Wunused-but-set-variable -fno-exceptions -Wno-reorder -fno-rtti -pthread -std=c++11 -o CMakeFiles/MachineIndependent.dir/MachineIndependent/reflection.cpp.o -c /home/dkdk/git/mnist-ncnn/ncnn/glslang/glslang/MachineIndependent/reflection.cpp",
+  "file": "/home/dkdk/git/mnist-ncnn/ncnn/glslang/glslang/MachineIndependent/reflection.cpp"
+},
+{
+  "directory": "/home/dkdk/git/mnist-ncnn/build/ncnn/glslang/glslang",
+  "command": "/usr/bin/c++  -DENABLE_OPT=0 -DGLSLANG_OSINCLUDE_UNIX -I/home/dkdk/git/mnist-ncnn/build/include  -O3 -DNDEBUG -fPIC   -Wall -Wmaybe-uninitialized -Wuninitialized -Wunused -Wunused-local-typedefs -Wunused-parameter -Wunused-value -Wunused-variable -Wunused-but-set-parameter -Wunused-but-set-variable -fno-exceptions -Wno-reorder -fno-rtti -pthread -std=c++11 -o CMakeFiles/MachineIndependent.dir/MachineIndependent/preprocessor/Pp.cpp.o -c /home/dkdk/git/mnist-ncnn/ncnn/glslang/glslang/MachineIndependent/preprocessor/Pp.cpp",
+  "file": "/home/dkdk/git/mnist-ncnn/ncnn/glslang/glslang/MachineIndependent/preprocessor/Pp.cpp"
+},
+{
+  "directory": "/home/dkdk/git/mnist-ncnn/build/ncnn/glslang/glslang",
+  "command": "/usr/bin/c++  -DENABLE_OPT=0 -DGLSLANG_OSINCLUDE_UNIX -I/home/dkdk/git/mnist-ncnn/build/include  -O3 -DNDEBUG -fPIC   -Wall -Wmaybe-uninitialized -Wuninitialized -Wunused -Wunused-local-typedefs -Wunused-parameter -Wunused-value -Wunused-variable -Wunused-but-set-parameter -Wunused-but-set-variable -fno-exceptions -Wno-reorder -fno-rtti -pthread -std=c++11 -o CMakeFiles/MachineIndependent.dir/MachineIndependent/preprocessor/PpAtom.cpp.o -c /home/dkdk/git/mnist-ncnn/ncnn/glslang/glslang/MachineIndependent/preprocessor/PpAtom.cpp",
+  "file": "/home/dkdk/git/mnist-ncnn/ncnn/glslang/glslang/MachineIndependent/preprocessor/PpAtom.cpp"
+},
+{
+  "directory": "/home/dkdk/git/mnist-ncnn/build/ncnn/glslang/glslang",
+  "command": "/usr/bin/c++  -DENABLE_OPT=0 -DGLSLANG_OSINCLUDE_UNIX -I/home/dkdk/git/mnist-ncnn/build/include  -O3 -DNDEBUG -fPIC   -Wall -Wmaybe-uninitialized -Wuninitialized -Wunused -Wunused-local-typedefs -Wunused-parameter -Wunused-value -Wunused-variable -Wunused-but-set-parameter -Wunused-but-set-variable -fno-exceptions -Wno-reorder -fno-rtti -pthread -std=c++11 -o CMakeFiles/MachineIndependent.dir/MachineIndependent/preprocessor/PpContext.cpp.o -c /home/dkdk/git/mnist-ncnn/ncnn/glslang/glslang/MachineIndependent/preprocessor/PpContext.cpp",
+  "file": "/home/dkdk/git/mnist-ncnn/ncnn/glslang/glslang/MachineIndependent/preprocessor/PpContext.cpp"
+},
+{
+  "directory": "/home/dkdk/git/mnist-ncnn/build/ncnn/glslang/glslang",
+  "command": "/usr/bin/c++  -DENABLE_OPT=0 -DGLSLANG_OSINCLUDE_UNIX -I/home/dkdk/git/mnist-ncnn/build/include  -O3 -DNDEBUG -fPIC   -Wall -Wmaybe-uninitialized -Wuninitialized -Wunused -Wunused-local-typedefs -Wunused-parameter -Wunused-value -Wunused-variable -Wunused-but-set-parameter -Wunused-but-set-variable -fno-exceptions -Wno-reorder -fno-rtti -pthread -std=c++11 -o CMakeFiles/MachineIndependent.dir/MachineIndependent/preprocessor/PpScanner.cpp.o -c /home/dkdk/git/mnist-ncnn/ncnn/glslang/glslang/MachineIndependent/preprocessor/PpScanner.cpp",
+  "file": "/home/dkdk/git/mnist-ncnn/ncnn/glslang/glslang/MachineIndependent/preprocessor/PpScanner.cpp"
+},
+{
+  "directory": "/home/dkdk/git/mnist-ncnn/build/ncnn/glslang/glslang",
+  "command": "/usr/bin/c++  -DENABLE_OPT=0 -DGLSLANG_OSINCLUDE_UNIX -I/home/dkdk/git/mnist-ncnn/build/include  -O3 -DNDEBUG -fPIC   -Wall -Wmaybe-uninitialized -Wuninitialized -Wunused -Wunused-local-typedefs -Wunused-parameter -Wunused-value -Wunused-variable -Wunused-but-set-parameter -Wunused-but-set-variable -fno-exceptions -Wno-reorder -fno-rtti -pthread -std=c++11 -o CMakeFiles/MachineIndependent.dir/MachineIndependent/preprocessor/PpTokens.cpp.o -c /home/dkdk/git/mnist-ncnn/ncnn/glslang/glslang/MachineIndependent/preprocessor/PpTokens.cpp",
+  "file": "/home/dkdk/git/mnist-ncnn/ncnn/glslang/glslang/MachineIndependent/preprocessor/PpTokens.cpp"
+},
+{
+  "directory": "/home/dkdk/git/mnist-ncnn/build/ncnn/glslang/glslang",
+  "command": "/usr/bin/c++  -DENABLE_OPT=0 -DGLSLANG_OSINCLUDE_UNIX -I/home/dkdk/git/mnist-ncnn/build/include  -O3 -DNDEBUG -fPIC   -Wall -Wmaybe-uninitialized -Wuninitialized -Wunused -Wunused-local-typedefs -Wunused-parameter -Wunused-value -Wunused-variable -Wunused-but-set-parameter -Wunused-but-set-variable -fno-exceptions -Wno-reorder -fno-rtti -pthread -std=c++11 -o CMakeFiles/MachineIndependent.dir/MachineIndependent/propagateNoContraction.cpp.o -c /home/dkdk/git/mnist-ncnn/ncnn/glslang/glslang/MachineIndependent/propagateNoContraction.cpp",
+  "file": "/home/dkdk/git/mnist-ncnn/ncnn/glslang/glslang/MachineIndependent/propagateNoContraction.cpp"
+},
+{
+  "directory": "/home/dkdk/git/mnist-ncnn/build/ncnn/glslang/glslang",
+  "command": "/usr/bin/c++  -DENABLE_OPT=0 -DGLSLANG_OSINCLUDE_UNIX  -O3 -DNDEBUG -fPIC   -Wall -Wmaybe-uninitialized -Wuninitialized -Wunused -Wunused-local-typedefs -Wunused-parameter -Wunused-value -Wunused-variable -Wunused-but-set-parameter -Wunused-but-set-variable -fno-exceptions -Wno-reorder -fno-rtti -std=c++11 -o CMakeFiles/GenericCodeGen.dir/GenericCodeGen/CodeGen.cpp.o -c /home/dkdk/git/mnist-ncnn/ncnn/glslang/glslang/GenericCodeGen/CodeGen.cpp",
+  "file": "/home/dkdk/git/mnist-ncnn/ncnn/glslang/glslang/GenericCodeGen/CodeGen.cpp"
+},
+{
+  "directory": "/home/dkdk/git/mnist-ncnn/build/ncnn/glslang/glslang",
+  "command": "/usr/bin/c++  -DENABLE_OPT=0 -DGLSLANG_OSINCLUDE_UNIX  -O3 -DNDEBUG -fPIC   -Wall -Wmaybe-uninitialized -Wuninitialized -Wunused -Wunused-local-typedefs -Wunused-parameter -Wunused-value -Wunused-variable -Wunused-but-set-parameter -Wunused-but-set-variable -fno-exceptions -Wno-reorder -fno-rtti -std=c++11 -o CMakeFiles/GenericCodeGen.dir/GenericCodeGen/Link.cpp.o -c /home/dkdk/git/mnist-ncnn/ncnn/glslang/glslang/GenericCodeGen/Link.cpp",
+  "file": "/home/dkdk/git/mnist-ncnn/ncnn/glslang/glslang/GenericCodeGen/Link.cpp"
+},
+{
+  "directory": "/home/dkdk/git/mnist-ncnn/build/ncnn/glslang/glslang",
+  "command": "/usr/bin/c++  -DENABLE_OPT=0 -DGLSLANG_OSINCLUDE_UNIX -I/home/dkdk/git/mnist-ncnn/ncnn/glslang/glslang/.. -I/home/dkdk/git/mnist-ncnn/build/include  -O3 -DNDEBUG -fPIC   -Wall -Wmaybe-uninitialized -Wuninitialized -Wunused -Wunused-local-typedefs -Wunused-parameter -Wunused-value -Wunused-variable -Wunused-but-set-parameter -Wunused-but-set-variable -fno-exceptions -Wno-reorder -fno-rtti -pthread -std=c++11 -o CMakeFiles/glslang.dir/CInterface/glslang_c_interface.cpp.o -c /home/dkdk/git/mnist-ncnn/ncnn/glslang/glslang/CInterface/glslang_c_interface.cpp",
+  "file": "/home/dkdk/git/mnist-ncnn/ncnn/glslang/glslang/CInterface/glslang_c_interface.cpp"
+},
+{
+  "directory": "/home/dkdk/git/mnist-ncnn/build/ncnn/glslang/glslang/OSDependent/Unix",
+  "command": "/usr/bin/c++  -DENABLE_OPT=0 -DGLSLANG_OSINCLUDE_UNIX  -O3 -DNDEBUG -fPIC   -Wall -Wmaybe-uninitialized -Wuninitialized -Wunused -Wunused-local-typedefs -Wunused-parameter -Wunused-value -Wunused-variable -Wunused-but-set-parameter -Wunused-but-set-variable -fno-exceptions -Wno-reorder -fno-rtti -pthread -std=c++11 -o CMakeFiles/OSDependent.dir/ossource.cpp.o -c /home/dkdk/git/mnist-ncnn/ncnn/glslang/glslang/OSDependent/Unix/ossource.cpp",
+  "file": "/home/dkdk/git/mnist-ncnn/ncnn/glslang/glslang/OSDependent/Unix/ossource.cpp"
+},
+{
+  "directory": "/home/dkdk/git/mnist-ncnn/build/ncnn/glslang/OGLCompilersDLL",
+  "command": "/usr/bin/c++  -DENABLE_OPT=0 -DGLSLANG_OSINCLUDE_UNIX  -O3 -DNDEBUG -fPIC   -Wall -Wmaybe-uninitialized -Wuninitialized -Wunused -Wunused-local-typedefs -Wunused-parameter -Wunused-value -Wunused-variable -Wunused-but-set-parameter -Wunused-but-set-variable -fno-exceptions -Wno-reorder -fno-rtti -std=c++11 -o CMakeFiles/OGLCompiler.dir/InitializeDll.cpp.o -c /home/dkdk/git/mnist-ncnn/ncnn/glslang/OGLCompilersDLL/InitializeDll.cpp",
+  "file": "/home/dkdk/git/mnist-ncnn/ncnn/glslang/OGLCompilersDLL/InitializeDll.cpp"
+},
+{
+  "directory": "/home/dkdk/git/mnist-ncnn/build/ncnn/glslang/SPIRV",
+  "command": "/usr/bin/c++  -DENABLE_OPT=0 -DGLSLANG_OSINCLUDE_UNIX -I/home/dkdk/git/mnist-ncnn/ncnn/glslang/SPIRV/.. -I/home/dkdk/git/mnist-ncnn/build/include  -O3 -DNDEBUG -fPIC   -Wall -Wmaybe-uninitialized -Wuninitialized -Wunused -Wunused-local-typedefs -Wunused-parameter -Wunused-value -Wunused-variable -Wunused-but-set-parameter -Wunused-but-set-variable -fno-exceptions -Wno-reorder -fno-rtti -std=c++11 -o CMakeFiles/SPIRV.dir/GlslangToSpv.cpp.o -c /home/dkdk/git/mnist-ncnn/ncnn/glslang/SPIRV/GlslangToSpv.cpp",
+  "file": "/home/dkdk/git/mnist-ncnn/ncnn/glslang/SPIRV/GlslangToSpv.cpp"
+},
+{
+  "directory": "/home/dkdk/git/mnist-ncnn/build/ncnn/glslang/SPIRV",
+  "command": "/usr/bin/c++  -DENABLE_OPT=0 -DGLSLANG_OSINCLUDE_UNIX -I/home/dkdk/git/mnist-ncnn/ncnn/glslang/SPIRV/.. -I/home/dkdk/git/mnist-ncnn/build/include  -O3 -DNDEBUG -fPIC   -Wall -Wmaybe-uninitialized -Wuninitialized -Wunused -Wunused-local-typedefs -Wunused-parameter -Wunused-value -Wunused-variable -Wunused-but-set-parameter -Wunused-but-set-variable -fno-exceptions -Wno-reorder -fno-rtti -std=c++11 -o CMakeFiles/SPIRV.dir/InReadableOrder.cpp.o -c /home/dkdk/git/mnist-ncnn/ncnn/glslang/SPIRV/InReadableOrder.cpp",
+  "file": "/home/dkdk/git/mnist-ncnn/ncnn/glslang/SPIRV/InReadableOrder.cpp"
+},
+{
+  "directory": "/home/dkdk/git/mnist-ncnn/build/ncnn/glslang/SPIRV",
+  "command": "/usr/bin/c++  -DENABLE_OPT=0 -DGLSLANG_OSINCLUDE_UNIX -I/home/dkdk/git/mnist-ncnn/ncnn/glslang/SPIRV/.. -I/home/dkdk/git/mnist-ncnn/build/include  -O3 -DNDEBUG -fPIC   -Wall -Wmaybe-uninitialized -Wuninitialized -Wunused -Wunused-local-typedefs -Wunused-parameter -Wunused-value -Wunused-variable -Wunused-but-set-parameter -Wunused-but-set-variable -fno-exceptions -Wno-reorder -fno-rtti -std=c++11 -o CMakeFiles/SPIRV.dir/Logger.cpp.o -c /home/dkdk/git/mnist-ncnn/ncnn/glslang/SPIRV/Logger.cpp",
+  "file": "/home/dkdk/git/mnist-ncnn/ncnn/glslang/SPIRV/Logger.cpp"
+},
+{
+  "directory": "/home/dkdk/git/mnist-ncnn/build/ncnn/glslang/SPIRV",
+  "command": "/usr/bin/c++  -DENABLE_OPT=0 -DGLSLANG_OSINCLUDE_UNIX -I/home/dkdk/git/mnist-ncnn/ncnn/glslang/SPIRV/.. -I/home/dkdk/git/mnist-ncnn/build/include  -O3 -DNDEBUG -fPIC   -Wall -Wmaybe-uninitialized -Wuninitialized -Wunused -Wunused-local-typedefs -Wunused-parameter -Wunused-value -Wunused-variable -Wunused-but-set-parameter -Wunused-but-set-variable -fno-exceptions -Wno-reorder -fno-rtti -std=c++11 -o CMakeFiles/SPIRV.dir/SpvBuilder.cpp.o -c /home/dkdk/git/mnist-ncnn/ncnn/glslang/SPIRV/SpvBuilder.cpp",
+  "file": "/home/dkdk/git/mnist-ncnn/ncnn/glslang/SPIRV/SpvBuilder.cpp"
+},
+{
+  "directory": "/home/dkdk/git/mnist-ncnn/build/ncnn/glslang/SPIRV",
+  "command": "/usr/bin/c++  -DENABLE_OPT=0 -DGLSLANG_OSINCLUDE_UNIX -I/home/dkdk/git/mnist-ncnn/ncnn/glslang/SPIRV/.. -I/home/dkdk/git/mnist-ncnn/build/include  -O3 -DNDEBUG -fPIC   -Wall -Wmaybe-uninitialized -Wuninitialized -Wunused -Wunused-local-typedefs -Wunused-parameter -Wunused-value -Wunused-variable -Wunused-but-set-parameter -Wunused-but-set-variable -fno-exceptions -Wno-reorder -fno-rtti -std=c++11 -o CMakeFiles/SPIRV.dir/SpvPostProcess.cpp.o -c /home/dkdk/git/mnist-ncnn/ncnn/glslang/SPIRV/SpvPostProcess.cpp",
+  "file": "/home/dkdk/git/mnist-ncnn/ncnn/glslang/SPIRV/SpvPostProcess.cpp"
+},
+{
+  "directory": "/home/dkdk/git/mnist-ncnn/build/ncnn/glslang/SPIRV",
+  "command": "/usr/bin/c++  -DENABLE_OPT=0 -DGLSLANG_OSINCLUDE_UNIX -I/home/dkdk/git/mnist-ncnn/ncnn/glslang/SPIRV/.. -I/home/dkdk/git/mnist-ncnn/build/include  -O3 -DNDEBUG -fPIC   -Wall -Wmaybe-uninitialized -Wuninitialized -Wunused -Wunused-local-typedefs -Wunused-parameter -Wunused-value -Wunused-variable -Wunused-but-set-parameter -Wunused-but-set-variable -fno-exceptions -Wno-reorder -fno-rtti -std=c++11 -o CMakeFiles/SPIRV.dir/doc.cpp.o -c /home/dkdk/git/mnist-ncnn/ncnn/glslang/SPIRV/doc.cpp",
+  "file": "/home/dkdk/git/mnist-ncnn/ncnn/glslang/SPIRV/doc.cpp"
+},
+{
+  "directory": "/home/dkdk/git/mnist-ncnn/build/ncnn/glslang/SPIRV",
+  "command": "/usr/bin/c++  -DENABLE_OPT=0 -DGLSLANG_OSINCLUDE_UNIX -I/home/dkdk/git/mnist-ncnn/ncnn/glslang/SPIRV/.. -I/home/dkdk/git/mnist-ncnn/build/include  -O3 -DNDEBUG -fPIC   -Wall -Wmaybe-uninitialized -Wuninitialized -Wunused -Wunused-local-typedefs -Wunused-parameter -Wunused-value -Wunused-variable -Wunused-but-set-parameter -Wunused-but-set-variable -fno-exceptions -Wno-reorder -fno-rtti -std=c++11 -o CMakeFiles/SPIRV.dir/SpvTools.cpp.o -c /home/dkdk/git/mnist-ncnn/ncnn/glslang/SPIRV/SpvTools.cpp",
+  "file": "/home/dkdk/git/mnist-ncnn/ncnn/glslang/SPIRV/SpvTools.cpp"
+},
+{
+  "directory": "/home/dkdk/git/mnist-ncnn/build/ncnn/glslang/SPIRV",
+  "command": "/usr/bin/c++  -DENABLE_OPT=0 -DGLSLANG_OSINCLUDE_UNIX -I/home/dkdk/git/mnist-ncnn/ncnn/glslang/SPIRV/.. -I/home/dkdk/git/mnist-ncnn/build/include  -O3 -DNDEBUG -fPIC   -Wall -Wmaybe-uninitialized -Wuninitialized -Wunused -Wunused-local-typedefs -Wunused-parameter -Wunused-value -Wunused-variable -Wunused-but-set-parameter -Wunused-but-set-variable -fno-exceptions -Wno-reorder -fno-rtti -std=c++11 -o CMakeFiles/SPIRV.dir/disassemble.cpp.o -c /home/dkdk/git/mnist-ncnn/ncnn/glslang/SPIRV/disassemble.cpp",
+  "file": "/home/dkdk/git/mnist-ncnn/ncnn/glslang/SPIRV/disassemble.cpp"
+},
+{
+  "directory": "/home/dkdk/git/mnist-ncnn/build/ncnn/glslang/SPIRV",
+  "command": "/usr/bin/c++  -DENABLE_OPT=0 -DGLSLANG_OSINCLUDE_UNIX -I/home/dkdk/git/mnist-ncnn/ncnn/glslang/SPIRV/.. -I/home/dkdk/git/mnist-ncnn/build/include  -O3 -DNDEBUG -fPIC   -Wall -Wmaybe-uninitialized -Wuninitialized -Wunused -Wunused-local-typedefs -Wunused-parameter -Wunused-value -Wunused-variable -Wunused-but-set-parameter -Wunused-but-set-variable -fno-exceptions -Wno-reorder -fno-rtti -std=c++11 -o CMakeFiles/SPIRV.dir/CInterface/spirv_c_interface.cpp.o -c /home/dkdk/git/mnist-ncnn/ncnn/glslang/SPIRV/CInterface/spirv_c_interface.cpp",
+  "file": "/home/dkdk/git/mnist-ncnn/ncnn/glslang/SPIRV/CInterface/spirv_c_interface.cpp"
+}
+]

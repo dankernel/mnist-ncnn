@@ -157,6 +157,84 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named MachineIndependent
+
+# Build rule for target.
+MachineIndependent: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 MachineIndependent
+.PHONY : MachineIndependent
+
+# fast build rule for target.
+MachineIndependent/fast:
+	$(MAKE) -f ncnn/glslang/glslang/CMakeFiles/MachineIndependent.dir/build.make ncnn/glslang/glslang/CMakeFiles/MachineIndependent.dir/build
+.PHONY : MachineIndependent/fast
+
+#=============================================================================
+# Target rules for targets named GenericCodeGen
+
+# Build rule for target.
+GenericCodeGen: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 GenericCodeGen
+.PHONY : GenericCodeGen
+
+# fast build rule for target.
+GenericCodeGen/fast:
+	$(MAKE) -f ncnn/glslang/glslang/CMakeFiles/GenericCodeGen.dir/build.make ncnn/glslang/glslang/CMakeFiles/GenericCodeGen.dir/build
+.PHONY : GenericCodeGen/fast
+
+#=============================================================================
+# Target rules for targets named glslang
+
+# Build rule for target.
+glslang: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 glslang
+.PHONY : glslang
+
+# fast build rule for target.
+glslang/fast:
+	$(MAKE) -f ncnn/glslang/glslang/CMakeFiles/glslang.dir/build.make ncnn/glslang/glslang/CMakeFiles/glslang.dir/build
+.PHONY : glslang/fast
+
+#=============================================================================
+# Target rules for targets named OSDependent
+
+# Build rule for target.
+OSDependent: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 OSDependent
+.PHONY : OSDependent
+
+# fast build rule for target.
+OSDependent/fast:
+	$(MAKE) -f ncnn/glslang/glslang/OSDependent/Unix/CMakeFiles/OSDependent.dir/build.make ncnn/glslang/glslang/OSDependent/Unix/CMakeFiles/OSDependent.dir/build
+.PHONY : OSDependent/fast
+
+#=============================================================================
+# Target rules for targets named OGLCompiler
+
+# Build rule for target.
+OGLCompiler: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 OGLCompiler
+.PHONY : OGLCompiler
+
+# fast build rule for target.
+OGLCompiler/fast:
+	$(MAKE) -f ncnn/glslang/OGLCompilersDLL/CMakeFiles/OGLCompiler.dir/build.make ncnn/glslang/OGLCompilersDLL/CMakeFiles/OGLCompiler.dir/build
+.PHONY : OGLCompiler/fast
+
+#=============================================================================
+# Target rules for targets named SPIRV
+
+# Build rule for target.
+SPIRV: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 SPIRV
+.PHONY : SPIRV
+
+# fast build rule for target.
+SPIRV/fast:
+	$(MAKE) -f ncnn/glslang/SPIRV/CMakeFiles/SPIRV.dir/build.make ncnn/glslang/SPIRV/CMakeFiles/SPIRV.dir/build
+.PHONY : SPIRV/fast
+
+#=============================================================================
 # Target rules for targets named ncnn
 
 # Build rule for target.
@@ -166,7 +244,7 @@ ncnn: cmake_check_build_system
 
 # fast build rule for target.
 ncnn/fast:
-	$(MAKE) -f ncnn-20210525-full-source/src/CMakeFiles/ncnn.dir/build.make ncnn-20210525-full-source/src/CMakeFiles/ncnn.dir/build
+	$(MAKE) -f ncnn/src/CMakeFiles/ncnn.dir/build.make ncnn/src/CMakeFiles/ncnn.dir/build
 .PHONY : ncnn/fast
 
 #=============================================================================
@@ -179,7 +257,7 @@ ncnn-generate-spirv: cmake_check_build_system
 
 # fast build rule for target.
 ncnn-generate-spirv/fast:
-	$(MAKE) -f ncnn-20210525-full-source/src/CMakeFiles/ncnn-generate-spirv.dir/build.make ncnn-20210525-full-source/src/CMakeFiles/ncnn-generate-spirv.dir/build
+	$(MAKE) -f ncnn/src/CMakeFiles/ncnn-generate-spirv.dir/build.make ncnn/src/CMakeFiles/ncnn-generate-spirv.dir/build
 .PHONY : ncnn-generate-spirv/fast
 
 #=============================================================================
@@ -192,8 +270,34 @@ benchncnn: cmake_check_build_system
 
 # fast build rule for target.
 benchncnn/fast:
-	$(MAKE) -f ncnn-20210525-full-source/benchmark/CMakeFiles/benchncnn.dir/build.make ncnn-20210525-full-source/benchmark/CMakeFiles/benchncnn.dir/build
+	$(MAKE) -f ncnn/benchmark/CMakeFiles/benchncnn.dir/build.make ncnn/benchmark/CMakeFiles/benchncnn.dir/build
 .PHONY : benchncnn/fast
+
+#=============================================================================
+# Target rules for targets named rvm
+
+# Build rule for target.
+rvm: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rvm
+.PHONY : rvm
+
+# fast build rule for target.
+rvm/fast:
+	$(MAKE) -f ncnn/examples/CMakeFiles/rvm.dir/build.make ncnn/examples/CMakeFiles/rvm.dir/build
+.PHONY : rvm/fast
+
+#=============================================================================
+# Target rules for targets named scrfd_crowdhuman
+
+# Build rule for target.
+scrfd_crowdhuman: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 scrfd_crowdhuman
+.PHONY : scrfd_crowdhuman
+
+# fast build rule for target.
+scrfd_crowdhuman/fast:
+	$(MAKE) -f ncnn/examples/CMakeFiles/scrfd_crowdhuman.dir/build.make ncnn/examples/CMakeFiles/scrfd_crowdhuman.dir/build
+.PHONY : scrfd_crowdhuman/fast
 
 #=============================================================================
 # Target rules for targets named scrfd
@@ -205,8 +309,21 @@ scrfd: cmake_check_build_system
 
 # fast build rule for target.
 scrfd/fast:
-	$(MAKE) -f ncnn-20210525-full-source/examples/CMakeFiles/scrfd.dir/build.make ncnn-20210525-full-source/examples/CMakeFiles/scrfd.dir/build
+	$(MAKE) -f ncnn/examples/CMakeFiles/scrfd.dir/build.make ncnn/examples/CMakeFiles/scrfd.dir/build
 .PHONY : scrfd/fast
+
+#=============================================================================
+# Target rules for targets named yolact
+
+# Build rule for target.
+yolact: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 yolact
+.PHONY : yolact
+
+# fast build rule for target.
+yolact/fast:
+	$(MAKE) -f ncnn/examples/CMakeFiles/yolact.dir/build.make ncnn/examples/CMakeFiles/yolact.dir/build
+.PHONY : yolact/fast
 
 #=============================================================================
 # Target rules for targets named yolov3
@@ -218,7 +335,7 @@ yolov3: cmake_check_build_system
 
 # fast build rule for target.
 yolov3/fast:
-	$(MAKE) -f ncnn-20210525-full-source/examples/CMakeFiles/yolov3.dir/build.make ncnn-20210525-full-source/examples/CMakeFiles/yolov3.dir/build
+	$(MAKE) -f ncnn/examples/CMakeFiles/yolov3.dir/build.make ncnn/examples/CMakeFiles/yolov3.dir/build
 .PHONY : yolov3/fast
 
 #=============================================================================
@@ -231,21 +348,8 @@ simplepose: cmake_check_build_system
 
 # fast build rule for target.
 simplepose/fast:
-	$(MAKE) -f ncnn-20210525-full-source/examples/CMakeFiles/simplepose.dir/build.make ncnn-20210525-full-source/examples/CMakeFiles/simplepose.dir/build
+	$(MAKE) -f ncnn/examples/CMakeFiles/simplepose.dir/build.make ncnn/examples/CMakeFiles/simplepose.dir/build
 .PHONY : simplepose/fast
-
-#=============================================================================
-# Target rules for targets named rfcn
-
-# Build rule for target.
-rfcn: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 rfcn
-.PHONY : rfcn
-
-# fast build rule for target.
-rfcn/fast:
-	$(MAKE) -f ncnn-20210525-full-source/examples/CMakeFiles/rfcn.dir/build.make ncnn-20210525-full-source/examples/CMakeFiles/rfcn.dir/build
-.PHONY : rfcn/fast
 
 #=============================================================================
 # Target rules for targets named nanodet
@@ -257,7 +361,7 @@ nanodet: cmake_check_build_system
 
 # fast build rule for target.
 nanodet/fast:
-	$(MAKE) -f ncnn-20210525-full-source/examples/CMakeFiles/nanodet.dir/build.make ncnn-20210525-full-source/examples/CMakeFiles/nanodet.dir/build
+	$(MAKE) -f ncnn/examples/CMakeFiles/nanodet.dir/build.make ncnn/examples/CMakeFiles/nanodet.dir/build
 .PHONY : nanodet/fast
 
 #=============================================================================
@@ -270,7 +374,7 @@ shufflenetv2: cmake_check_build_system
 
 # fast build rule for target.
 shufflenetv2/fast:
-	$(MAKE) -f ncnn-20210525-full-source/examples/CMakeFiles/shufflenetv2.dir/build.make ncnn-20210525-full-source/examples/CMakeFiles/shufflenetv2.dir/build
+	$(MAKE) -f ncnn/examples/CMakeFiles/shufflenetv2.dir/build.make ncnn/examples/CMakeFiles/shufflenetv2.dir/build
 .PHONY : shufflenetv2/fast
 
 #=============================================================================
@@ -283,7 +387,7 @@ yolov4: cmake_check_build_system
 
 # fast build rule for target.
 yolov4/fast:
-	$(MAKE) -f ncnn-20210525-full-source/examples/CMakeFiles/yolov4.dir/build.make ncnn-20210525-full-source/examples/CMakeFiles/yolov4.dir/build
+	$(MAKE) -f ncnn/examples/CMakeFiles/yolov4.dir/build.make ncnn/examples/CMakeFiles/yolov4.dir/build
 .PHONY : yolov4/fast
 
 #=============================================================================
@@ -296,7 +400,7 @@ squeezenet: cmake_check_build_system
 
 # fast build rule for target.
 squeezenet/fast:
-	$(MAKE) -f ncnn-20210525-full-source/examples/CMakeFiles/squeezenet.dir/build.make ncnn-20210525-full-source/examples/CMakeFiles/squeezenet.dir/build
+	$(MAKE) -f ncnn/examples/CMakeFiles/squeezenet.dir/build.make ncnn/examples/CMakeFiles/squeezenet.dir/build
 .PHONY : squeezenet/fast
 
 #=============================================================================
@@ -309,7 +413,7 @@ squeezenet_c_api: cmake_check_build_system
 
 # fast build rule for target.
 squeezenet_c_api/fast:
-	$(MAKE) -f ncnn-20210525-full-source/examples/CMakeFiles/squeezenet_c_api.dir/build.make ncnn-20210525-full-source/examples/CMakeFiles/squeezenet_c_api.dir/build
+	$(MAKE) -f ncnn/examples/CMakeFiles/squeezenet_c_api.dir/build.make ncnn/examples/CMakeFiles/squeezenet_c_api.dir/build
 .PHONY : squeezenet_c_api/fast
 
 #=============================================================================
@@ -322,8 +426,34 @@ yolov5: cmake_check_build_system
 
 # fast build rule for target.
 yolov5/fast:
-	$(MAKE) -f ncnn-20210525-full-source/examples/CMakeFiles/yolov5.dir/build.make ncnn-20210525-full-source/examples/CMakeFiles/yolov5.dir/build
+	$(MAKE) -f ncnn/examples/CMakeFiles/yolov5.dir/build.make ncnn/examples/CMakeFiles/yolov5.dir/build
 .PHONY : yolov5/fast
+
+#=============================================================================
+# Target rules for targets named rfcn
+
+# Build rule for target.
+rfcn: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rfcn
+.PHONY : rfcn
+
+# fast build rule for target.
+rfcn/fast:
+	$(MAKE) -f ncnn/examples/CMakeFiles/rfcn.dir/build.make ncnn/examples/CMakeFiles/rfcn.dir/build
+.PHONY : rfcn/fast
+
+#=============================================================================
+# Target rules for targets named yolox
+
+# Build rule for target.
+yolox: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 yolox
+.PHONY : yolox
+
+# fast build rule for target.
+yolox/fast:
+	$(MAKE) -f ncnn/examples/CMakeFiles/yolox.dir/build.make ncnn/examples/CMakeFiles/yolox.dir/build
+.PHONY : yolox/fast
 
 #=============================================================================
 # Target rules for targets named yolov2
@@ -335,7 +465,7 @@ yolov2: cmake_check_build_system
 
 # fast build rule for target.
 yolov2/fast:
-	$(MAKE) -f ncnn-20210525-full-source/examples/CMakeFiles/yolov2.dir/build.make ncnn-20210525-full-source/examples/CMakeFiles/yolov2.dir/build
+	$(MAKE) -f ncnn/examples/CMakeFiles/yolov2.dir/build.make ncnn/examples/CMakeFiles/yolov2.dir/build
 .PHONY : yolov2/fast
 
 #=============================================================================
@@ -348,7 +478,7 @@ mobilenetv2ssdlite: cmake_check_build_system
 
 # fast build rule for target.
 mobilenetv2ssdlite/fast:
-	$(MAKE) -f ncnn-20210525-full-source/examples/CMakeFiles/mobilenetv2ssdlite.dir/build.make ncnn-20210525-full-source/examples/CMakeFiles/mobilenetv2ssdlite.dir/build
+	$(MAKE) -f ncnn/examples/CMakeFiles/mobilenetv2ssdlite.dir/build.make ncnn/examples/CMakeFiles/mobilenetv2ssdlite.dir/build
 .PHONY : mobilenetv2ssdlite/fast
 
 #=============================================================================
@@ -361,7 +491,7 @@ mobilenetssd: cmake_check_build_system
 
 # fast build rule for target.
 mobilenetssd/fast:
-	$(MAKE) -f ncnn-20210525-full-source/examples/CMakeFiles/mobilenetssd.dir/build.make ncnn-20210525-full-source/examples/CMakeFiles/mobilenetssd.dir/build
+	$(MAKE) -f ncnn/examples/CMakeFiles/mobilenetssd.dir/build.make ncnn/examples/CMakeFiles/mobilenetssd.dir/build
 .PHONY : mobilenetssd/fast
 
 #=============================================================================
@@ -374,7 +504,7 @@ squeezenetssd: cmake_check_build_system
 
 # fast build rule for target.
 squeezenetssd/fast:
-	$(MAKE) -f ncnn-20210525-full-source/examples/CMakeFiles/squeezenetssd.dir/build.make ncnn-20210525-full-source/examples/CMakeFiles/squeezenetssd.dir/build
+	$(MAKE) -f ncnn/examples/CMakeFiles/squeezenetssd.dir/build.make ncnn/examples/CMakeFiles/squeezenetssd.dir/build
 .PHONY : squeezenetssd/fast
 
 #=============================================================================
@@ -387,7 +517,7 @@ peleenetssd_seg: cmake_check_build_system
 
 # fast build rule for target.
 peleenetssd_seg/fast:
-	$(MAKE) -f ncnn-20210525-full-source/examples/CMakeFiles/peleenetssd_seg.dir/build.make ncnn-20210525-full-source/examples/CMakeFiles/peleenetssd_seg.dir/build
+	$(MAKE) -f ncnn/examples/CMakeFiles/peleenetssd_seg.dir/build.make ncnn/examples/CMakeFiles/peleenetssd_seg.dir/build
 .PHONY : peleenetssd_seg/fast
 
 #=============================================================================
@@ -400,7 +530,7 @@ fasterrcnn: cmake_check_build_system
 
 # fast build rule for target.
 fasterrcnn/fast:
-	$(MAKE) -f ncnn-20210525-full-source/examples/CMakeFiles/fasterrcnn.dir/build.make ncnn-20210525-full-source/examples/CMakeFiles/fasterrcnn.dir/build
+	$(MAKE) -f ncnn/examples/CMakeFiles/fasterrcnn.dir/build.make ncnn/examples/CMakeFiles/fasterrcnn.dir/build
 .PHONY : fasterrcnn/fast
 
 #=============================================================================
@@ -413,21 +543,8 @@ retinaface: cmake_check_build_system
 
 # fast build rule for target.
 retinaface/fast:
-	$(MAKE) -f ncnn-20210525-full-source/examples/CMakeFiles/retinaface.dir/build.make ncnn-20210525-full-source/examples/CMakeFiles/retinaface.dir/build
+	$(MAKE) -f ncnn/examples/CMakeFiles/retinaface.dir/build.make ncnn/examples/CMakeFiles/retinaface.dir/build
 .PHONY : retinaface/fast
-
-#=============================================================================
-# Target rules for targets named yolact
-
-# Build rule for target.
-yolact: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 yolact
-.PHONY : yolact
-
-# fast build rule for target.
-yolact/fast:
-	$(MAKE) -f ncnn-20210525-full-source/examples/CMakeFiles/yolact.dir/build.make ncnn-20210525-full-source/examples/CMakeFiles/yolact.dir/build
-.PHONY : yolact/fast
 
 #=============================================================================
 # Target rules for targets named ncnnoptimize
@@ -439,7 +556,7 @@ ncnnoptimize: cmake_check_build_system
 
 # fast build rule for target.
 ncnnoptimize/fast:
-	$(MAKE) -f ncnn-20210525-full-source/tools/CMakeFiles/ncnnoptimize.dir/build.make ncnn-20210525-full-source/tools/CMakeFiles/ncnnoptimize.dir/build
+	$(MAKE) -f ncnn/tools/CMakeFiles/ncnnoptimize.dir/build.make ncnn/tools/CMakeFiles/ncnnoptimize.dir/build
 .PHONY : ncnnoptimize/fast
 
 #=============================================================================
@@ -452,7 +569,7 @@ ncnnmerge: cmake_check_build_system
 
 # fast build rule for target.
 ncnnmerge/fast:
-	$(MAKE) -f ncnn-20210525-full-source/tools/CMakeFiles/ncnnmerge.dir/build.make ncnn-20210525-full-source/tools/CMakeFiles/ncnnmerge.dir/build
+	$(MAKE) -f ncnn/tools/CMakeFiles/ncnnmerge.dir/build.make ncnn/tools/CMakeFiles/ncnnmerge.dir/build
 .PHONY : ncnnmerge/fast
 
 #=============================================================================
@@ -465,7 +582,7 @@ ncnn2mem: cmake_check_build_system
 
 # fast build rule for target.
 ncnn2mem/fast:
-	$(MAKE) -f ncnn-20210525-full-source/tools/CMakeFiles/ncnn2mem.dir/build.make ncnn-20210525-full-source/tools/CMakeFiles/ncnn2mem.dir/build
+	$(MAKE) -f ncnn/tools/CMakeFiles/ncnn2mem.dir/build.make ncnn/tools/CMakeFiles/ncnn2mem.dir/build
 .PHONY : ncnn2mem/fast
 
 #=============================================================================
@@ -478,7 +595,7 @@ caffe2ncnn: cmake_check_build_system
 
 # fast build rule for target.
 caffe2ncnn/fast:
-	$(MAKE) -f ncnn-20210525-full-source/tools/caffe/CMakeFiles/caffe2ncnn.dir/build.make ncnn-20210525-full-source/tools/caffe/CMakeFiles/caffe2ncnn.dir/build
+	$(MAKE) -f ncnn/tools/caffe/CMakeFiles/caffe2ncnn.dir/build.make ncnn/tools/caffe/CMakeFiles/caffe2ncnn.dir/build
 .PHONY : caffe2ncnn/fast
 
 #=============================================================================
@@ -491,7 +608,7 @@ mxnet2ncnn: cmake_check_build_system
 
 # fast build rule for target.
 mxnet2ncnn/fast:
-	$(MAKE) -f ncnn-20210525-full-source/tools/mxnet/CMakeFiles/mxnet2ncnn.dir/build.make ncnn-20210525-full-source/tools/mxnet/CMakeFiles/mxnet2ncnn.dir/build
+	$(MAKE) -f ncnn/tools/mxnet/CMakeFiles/mxnet2ncnn.dir/build.make ncnn/tools/mxnet/CMakeFiles/mxnet2ncnn.dir/build
 .PHONY : mxnet2ncnn/fast
 
 #=============================================================================
@@ -504,7 +621,7 @@ onnx2ncnn: cmake_check_build_system
 
 # fast build rule for target.
 onnx2ncnn/fast:
-	$(MAKE) -f ncnn-20210525-full-source/tools/onnx/CMakeFiles/onnx2ncnn.dir/build.make ncnn-20210525-full-source/tools/onnx/CMakeFiles/onnx2ncnn.dir/build
+	$(MAKE) -f ncnn/tools/onnx/CMakeFiles/onnx2ncnn.dir/build.make ncnn/tools/onnx/CMakeFiles/onnx2ncnn.dir/build
 .PHONY : onnx2ncnn/fast
 
 #=============================================================================
@@ -517,7 +634,7 @@ darknet2ncnn: cmake_check_build_system
 
 # fast build rule for target.
 darknet2ncnn/fast:
-	$(MAKE) -f ncnn-20210525-full-source/tools/darknet/CMakeFiles/darknet2ncnn.dir/build.make ncnn-20210525-full-source/tools/darknet/CMakeFiles/darknet2ncnn.dir/build
+	$(MAKE) -f ncnn/tools/darknet/CMakeFiles/darknet2ncnn.dir/build.make ncnn/tools/darknet/CMakeFiles/darknet2ncnn.dir/build
 .PHONY : darknet2ncnn/fast
 
 #=============================================================================
@@ -530,7 +647,7 @@ ncnn2int8: cmake_check_build_system
 
 # fast build rule for target.
 ncnn2int8/fast:
-	$(MAKE) -f ncnn-20210525-full-source/tools/quantize/CMakeFiles/ncnn2int8.dir/build.make ncnn-20210525-full-source/tools/quantize/CMakeFiles/ncnn2int8.dir/build
+	$(MAKE) -f ncnn/tools/quantize/CMakeFiles/ncnn2int8.dir/build.make ncnn/tools/quantize/CMakeFiles/ncnn2int8.dir/build
 .PHONY : ncnn2int8/fast
 
 #=============================================================================
@@ -543,7 +660,7 @@ ncnn2table: cmake_check_build_system
 
 # fast build rule for target.
 ncnn2table/fast:
-	$(MAKE) -f ncnn-20210525-full-source/tools/quantize/CMakeFiles/ncnn2table.dir/build.make ncnn-20210525-full-source/tools/quantize/CMakeFiles/ncnn2table.dir/build
+	$(MAKE) -f ncnn/tools/quantize/CMakeFiles/ncnn2table.dir/build.make ncnn/tools/quantize/CMakeFiles/ncnn2table.dir/build
 .PHONY : ncnn2table/fast
 
 #=============================================================================
@@ -584,19 +701,29 @@ help:
 	@echo "... list_install_components"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... MachineIndependent"
+	@echo "... GenericCodeGen"
+	@echo "... glslang"
+	@echo "... OSDependent"
+	@echo "... OGLCompiler"
+	@echo "... SPIRV"
 	@echo "... ncnn"
 	@echo "... ncnn-generate-spirv"
 	@echo "... benchncnn"
+	@echo "... rvm"
+	@echo "... scrfd_crowdhuman"
 	@echo "... scrfd"
+	@echo "... yolact"
 	@echo "... yolov3"
 	@echo "... simplepose"
-	@echo "... rfcn"
 	@echo "... nanodet"
 	@echo "... shufflenetv2"
 	@echo "... yolov4"
 	@echo "... squeezenet"
 	@echo "... squeezenet_c_api"
 	@echo "... yolov5"
+	@echo "... rfcn"
+	@echo "... yolox"
 	@echo "... yolov2"
 	@echo "... mobilenetv2ssdlite"
 	@echo "... mobilenetssd"
@@ -604,7 +731,6 @@ help:
 	@echo "... peleenetssd_seg"
 	@echo "... fasterrcnn"
 	@echo "... retinaface"
-	@echo "... yolact"
 	@echo "... ncnnoptimize"
 	@echo "... ncnnmerge"
 	@echo "... ncnn2mem"

@@ -60,1351 +60,1965 @@ CMAKE_SOURCE_DIR = /home/dkdk/git/mnist-ncnn
 CMAKE_BINARY_DIR = /home/dkdk/git/mnist-ncnn/build
 
 #=============================================================================
-# Directory level rules for directory ncnn-20210525-full-source
+# Directory level rules for directory ncnn
 
 # Convenience name for "all" pass in the directory.
-ncnn-20210525-full-source/all: ncnn-20210525-full-source/src/all
-ncnn-20210525-full-source/all: ncnn-20210525-full-source/benchmark/all
-ncnn-20210525-full-source/all: ncnn-20210525-full-source/examples/all
-ncnn-20210525-full-source/all: ncnn-20210525-full-source/tools/all
+ncnn/all: ncnn/glslang/all
+ncnn/all: ncnn/src/all
+ncnn/all: ncnn/benchmark/all
+ncnn/all: ncnn/examples/all
+ncnn/all: ncnn/tools/all
 
-.PHONY : ncnn-20210525-full-source/all
+.PHONY : ncnn/all
 
 # Convenience name for "clean" pass in the directory.
-ncnn-20210525-full-source/clean: ncnn-20210525-full-source/src/clean
-ncnn-20210525-full-source/clean: ncnn-20210525-full-source/benchmark/clean
-ncnn-20210525-full-source/clean: ncnn-20210525-full-source/examples/clean
-ncnn-20210525-full-source/clean: ncnn-20210525-full-source/tools/clean
+ncnn/clean: ncnn/glslang/clean
+ncnn/clean: ncnn/src/clean
+ncnn/clean: ncnn/benchmark/clean
+ncnn/clean: ncnn/examples/clean
+ncnn/clean: ncnn/tools/clean
 
-.PHONY : ncnn-20210525-full-source/clean
+.PHONY : ncnn/clean
 
 # Convenience name for "preinstall" pass in the directory.
-ncnn-20210525-full-source/preinstall: ncnn-20210525-full-source/src/preinstall
-ncnn-20210525-full-source/preinstall: ncnn-20210525-full-source/benchmark/preinstall
-ncnn-20210525-full-source/preinstall: ncnn-20210525-full-source/examples/preinstall
-ncnn-20210525-full-source/preinstall: ncnn-20210525-full-source/tools/preinstall
+ncnn/preinstall: ncnn/glslang/preinstall
+ncnn/preinstall: ncnn/src/preinstall
+ncnn/preinstall: ncnn/benchmark/preinstall
+ncnn/preinstall: ncnn/examples/preinstall
+ncnn/preinstall: ncnn/tools/preinstall
 
-.PHONY : ncnn-20210525-full-source/preinstall
+.PHONY : ncnn/preinstall
 
 #=============================================================================
-# Directory level rules for directory ncnn-20210525-full-source/src
+# Directory level rules for directory ncnn/glslang
 
 # Convenience name for "all" pass in the directory.
-ncnn-20210525-full-source/src/all: ncnn-20210525-full-source/src/CMakeFiles/ncnn.dir/all
+ncnn/glslang/all: ncnn/glslang/glslang/all
+ncnn/glslang/all: ncnn/glslang/OGLCompilersDLL/all
+ncnn/glslang/all: ncnn/glslang/SPIRV/all
 
-.PHONY : ncnn-20210525-full-source/src/all
+.PHONY : ncnn/glslang/all
 
 # Convenience name for "clean" pass in the directory.
-ncnn-20210525-full-source/src/clean: ncnn-20210525-full-source/src/CMakeFiles/ncnn.dir/clean
-ncnn-20210525-full-source/src/clean: ncnn-20210525-full-source/src/CMakeFiles/ncnn-generate-spirv.dir/clean
+ncnn/glslang/clean: ncnn/glslang/glslang/clean
+ncnn/glslang/clean: ncnn/glslang/OGLCompilersDLL/clean
+ncnn/glslang/clean: ncnn/glslang/SPIRV/clean
 
-.PHONY : ncnn-20210525-full-source/src/clean
+.PHONY : ncnn/glslang/clean
 
 # Convenience name for "preinstall" pass in the directory.
-ncnn-20210525-full-source/src/preinstall:
+ncnn/glslang/preinstall: ncnn/glslang/glslang/preinstall
+ncnn/glslang/preinstall: ncnn/glslang/OGLCompilersDLL/preinstall
+ncnn/glslang/preinstall: ncnn/glslang/SPIRV/preinstall
 
-.PHONY : ncnn-20210525-full-source/src/preinstall
+.PHONY : ncnn/glslang/preinstall
 
 #=============================================================================
-# Target rules for target ncnn-20210525-full-source/src/CMakeFiles/ncnn.dir
+# Directory level rules for directory ncnn/glslang/glslang
+
+# Convenience name for "all" pass in the directory.
+ncnn/glslang/glslang/all: ncnn/glslang/glslang/CMakeFiles/MachineIndependent.dir/all
+ncnn/glslang/glslang/all: ncnn/glslang/glslang/CMakeFiles/GenericCodeGen.dir/all
+ncnn/glslang/glslang/all: ncnn/glslang/glslang/CMakeFiles/glslang.dir/all
+ncnn/glslang/glslang/all: ncnn/glslang/glslang/OSDependent/Unix/all
+
+.PHONY : ncnn/glslang/glslang/all
+
+# Convenience name for "clean" pass in the directory.
+ncnn/glslang/glslang/clean: ncnn/glslang/glslang/CMakeFiles/MachineIndependent.dir/clean
+ncnn/glslang/glslang/clean: ncnn/glslang/glslang/CMakeFiles/GenericCodeGen.dir/clean
+ncnn/glslang/glslang/clean: ncnn/glslang/glslang/CMakeFiles/glslang.dir/clean
+ncnn/glslang/glslang/clean: ncnn/glslang/glslang/OSDependent/Unix/clean
+
+.PHONY : ncnn/glslang/glslang/clean
+
+# Convenience name for "preinstall" pass in the directory.
+ncnn/glslang/glslang/preinstall: ncnn/glslang/glslang/OSDependent/Unix/preinstall
+
+.PHONY : ncnn/glslang/glslang/preinstall
+
+#=============================================================================
+# Target rules for target ncnn/glslang/glslang/CMakeFiles/MachineIndependent.dir
 
 # All Build rule for target.
-ncnn-20210525-full-source/src/CMakeFiles/ncnn.dir/all: ncnn-20210525-full-source/src/CMakeFiles/ncnn-generate-spirv.dir/all
-	$(MAKE) -f ncnn-20210525-full-source/src/CMakeFiles/ncnn.dir/build.make ncnn-20210525-full-source/src/CMakeFiles/ncnn.dir/depend
-	$(MAKE) -f ncnn-20210525-full-source/src/CMakeFiles/ncnn.dir/build.make ncnn-20210525-full-source/src/CMakeFiles/ncnn.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dkdk/git/mnist-ncnn/build/CMakeFiles --progress-num=8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85 "Built target ncnn"
-.PHONY : ncnn-20210525-full-source/src/CMakeFiles/ncnn.dir/all
+ncnn/glslang/glslang/CMakeFiles/MachineIndependent.dir/all: ncnn/glslang/glslang/CMakeFiles/GenericCodeGen.dir/all
+ncnn/glslang/glslang/CMakeFiles/MachineIndependent.dir/all: ncnn/glslang/glslang/OSDependent/Unix/CMakeFiles/OSDependent.dir/all
+ncnn/glslang/glslang/CMakeFiles/MachineIndependent.dir/all: ncnn/glslang/OGLCompilersDLL/CMakeFiles/OGLCompiler.dir/all
+	$(MAKE) -f ncnn/glslang/glslang/CMakeFiles/MachineIndependent.dir/build.make ncnn/glslang/glslang/CMakeFiles/MachineIndependent.dir/depend
+	$(MAKE) -f ncnn/glslang/glslang/CMakeFiles/MachineIndependent.dir/build.make ncnn/glslang/glslang/CMakeFiles/MachineIndependent.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dkdk/git/mnist-ncnn/build/CMakeFiles --progress-num=1,2,3 "Built target MachineIndependent"
+.PHONY : ncnn/glslang/glslang/CMakeFiles/MachineIndependent.dir/all
 
 # Include target in all.
-all: ncnn-20210525-full-source/src/CMakeFiles/ncnn.dir/all
+all: ncnn/glslang/glslang/CMakeFiles/MachineIndependent.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-ncnn-20210525-full-source/src/CMakeFiles/ncnn.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 78
-	$(MAKE) -f CMakeFiles/Makefile2 ncnn-20210525-full-source/src/CMakeFiles/ncnn.dir/all
+ncnn/glslang/glslang/CMakeFiles/MachineIndependent.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 4
+	$(MAKE) -f CMakeFiles/Makefile2 ncnn/glslang/glslang/CMakeFiles/MachineIndependent.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 0
-.PHONY : ncnn-20210525-full-source/src/CMakeFiles/ncnn.dir/rule
+.PHONY : ncnn/glslang/glslang/CMakeFiles/MachineIndependent.dir/rule
 
 # Convenience name for target.
-ncnn: ncnn-20210525-full-source/src/CMakeFiles/ncnn.dir/rule
+MachineIndependent: ncnn/glslang/glslang/CMakeFiles/MachineIndependent.dir/rule
+
+.PHONY : MachineIndependent
+
+# clean rule for target.
+ncnn/glslang/glslang/CMakeFiles/MachineIndependent.dir/clean:
+	$(MAKE) -f ncnn/glslang/glslang/CMakeFiles/MachineIndependent.dir/build.make ncnn/glslang/glslang/CMakeFiles/MachineIndependent.dir/clean
+.PHONY : ncnn/glslang/glslang/CMakeFiles/MachineIndependent.dir/clean
+
+# clean rule for target.
+clean: ncnn/glslang/glslang/CMakeFiles/MachineIndependent.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target ncnn/glslang/glslang/CMakeFiles/GenericCodeGen.dir
+
+# All Build rule for target.
+ncnn/glslang/glslang/CMakeFiles/GenericCodeGen.dir/all:
+	$(MAKE) -f ncnn/glslang/glslang/CMakeFiles/GenericCodeGen.dir/build.make ncnn/glslang/glslang/CMakeFiles/GenericCodeGen.dir/depend
+	$(MAKE) -f ncnn/glslang/glslang/CMakeFiles/GenericCodeGen.dir/build.make ncnn/glslang/glslang/CMakeFiles/GenericCodeGen.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dkdk/git/mnist-ncnn/build/CMakeFiles --progress-num= "Built target GenericCodeGen"
+.PHONY : ncnn/glslang/glslang/CMakeFiles/GenericCodeGen.dir/all
+
+# Include target in all.
+all: ncnn/glslang/glslang/CMakeFiles/GenericCodeGen.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+ncnn/glslang/glslang/CMakeFiles/GenericCodeGen.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 ncnn/glslang/glslang/CMakeFiles/GenericCodeGen.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 0
+.PHONY : ncnn/glslang/glslang/CMakeFiles/GenericCodeGen.dir/rule
+
+# Convenience name for target.
+GenericCodeGen: ncnn/glslang/glslang/CMakeFiles/GenericCodeGen.dir/rule
+
+.PHONY : GenericCodeGen
+
+# clean rule for target.
+ncnn/glslang/glslang/CMakeFiles/GenericCodeGen.dir/clean:
+	$(MAKE) -f ncnn/glslang/glslang/CMakeFiles/GenericCodeGen.dir/build.make ncnn/glslang/glslang/CMakeFiles/GenericCodeGen.dir/clean
+.PHONY : ncnn/glslang/glslang/CMakeFiles/GenericCodeGen.dir/clean
+
+# clean rule for target.
+clean: ncnn/glslang/glslang/CMakeFiles/GenericCodeGen.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target ncnn/glslang/glslang/CMakeFiles/glslang.dir
+
+# All Build rule for target.
+ncnn/glslang/glslang/CMakeFiles/glslang.dir/all: ncnn/glslang/glslang/CMakeFiles/MachineIndependent.dir/all
+ncnn/glslang/glslang/CMakeFiles/glslang.dir/all: ncnn/glslang/glslang/CMakeFiles/GenericCodeGen.dir/all
+ncnn/glslang/glslang/CMakeFiles/glslang.dir/all: ncnn/glslang/glslang/OSDependent/Unix/CMakeFiles/OSDependent.dir/all
+ncnn/glslang/glslang/CMakeFiles/glslang.dir/all: ncnn/glslang/OGLCompilersDLL/CMakeFiles/OGLCompiler.dir/all
+	$(MAKE) -f ncnn/glslang/glslang/CMakeFiles/glslang.dir/build.make ncnn/glslang/glslang/CMakeFiles/glslang.dir/depend
+	$(MAKE) -f ncnn/glslang/glslang/CMakeFiles/glslang.dir/build.make ncnn/glslang/glslang/CMakeFiles/glslang.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dkdk/git/mnist-ncnn/build/CMakeFiles --progress-num= "Built target glslang"
+.PHONY : ncnn/glslang/glslang/CMakeFiles/glslang.dir/all
+
+# Include target in all.
+all: ncnn/glslang/glslang/CMakeFiles/glslang.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+ncnn/glslang/glslang/CMakeFiles/glslang.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 4
+	$(MAKE) -f CMakeFiles/Makefile2 ncnn/glslang/glslang/CMakeFiles/glslang.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 0
+.PHONY : ncnn/glslang/glslang/CMakeFiles/glslang.dir/rule
+
+# Convenience name for target.
+glslang: ncnn/glslang/glslang/CMakeFiles/glslang.dir/rule
+
+.PHONY : glslang
+
+# clean rule for target.
+ncnn/glslang/glslang/CMakeFiles/glslang.dir/clean:
+	$(MAKE) -f ncnn/glslang/glslang/CMakeFiles/glslang.dir/build.make ncnn/glslang/glslang/CMakeFiles/glslang.dir/clean
+.PHONY : ncnn/glslang/glslang/CMakeFiles/glslang.dir/clean
+
+# clean rule for target.
+clean: ncnn/glslang/glslang/CMakeFiles/glslang.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory ncnn/glslang/glslang/OSDependent/Unix
+
+# Convenience name for "all" pass in the directory.
+ncnn/glslang/glslang/OSDependent/Unix/all: ncnn/glslang/glslang/OSDependent/Unix/CMakeFiles/OSDependent.dir/all
+
+.PHONY : ncnn/glslang/glslang/OSDependent/Unix/all
+
+# Convenience name for "clean" pass in the directory.
+ncnn/glslang/glslang/OSDependent/Unix/clean: ncnn/glslang/glslang/OSDependent/Unix/CMakeFiles/OSDependent.dir/clean
+
+.PHONY : ncnn/glslang/glslang/OSDependent/Unix/clean
+
+# Convenience name for "preinstall" pass in the directory.
+ncnn/glslang/glslang/OSDependent/Unix/preinstall:
+
+.PHONY : ncnn/glslang/glslang/OSDependent/Unix/preinstall
+
+#=============================================================================
+# Target rules for target ncnn/glslang/glslang/OSDependent/Unix/CMakeFiles/OSDependent.dir
+
+# All Build rule for target.
+ncnn/glslang/glslang/OSDependent/Unix/CMakeFiles/OSDependent.dir/all:
+	$(MAKE) -f ncnn/glslang/glslang/OSDependent/Unix/CMakeFiles/OSDependent.dir/build.make ncnn/glslang/glslang/OSDependent/Unix/CMakeFiles/OSDependent.dir/depend
+	$(MAKE) -f ncnn/glslang/glslang/OSDependent/Unix/CMakeFiles/OSDependent.dir/build.make ncnn/glslang/glslang/OSDependent/Unix/CMakeFiles/OSDependent.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dkdk/git/mnist-ncnn/build/CMakeFiles --progress-num= "Built target OSDependent"
+.PHONY : ncnn/glslang/glslang/OSDependent/Unix/CMakeFiles/OSDependent.dir/all
+
+# Include target in all.
+all: ncnn/glslang/glslang/OSDependent/Unix/CMakeFiles/OSDependent.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+ncnn/glslang/glslang/OSDependent/Unix/CMakeFiles/OSDependent.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 ncnn/glslang/glslang/OSDependent/Unix/CMakeFiles/OSDependent.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 0
+.PHONY : ncnn/glslang/glslang/OSDependent/Unix/CMakeFiles/OSDependent.dir/rule
+
+# Convenience name for target.
+OSDependent: ncnn/glslang/glslang/OSDependent/Unix/CMakeFiles/OSDependent.dir/rule
+
+.PHONY : OSDependent
+
+# clean rule for target.
+ncnn/glslang/glslang/OSDependent/Unix/CMakeFiles/OSDependent.dir/clean:
+	$(MAKE) -f ncnn/glslang/glslang/OSDependent/Unix/CMakeFiles/OSDependent.dir/build.make ncnn/glslang/glslang/OSDependent/Unix/CMakeFiles/OSDependent.dir/clean
+.PHONY : ncnn/glslang/glslang/OSDependent/Unix/CMakeFiles/OSDependent.dir/clean
+
+# clean rule for target.
+clean: ncnn/glslang/glslang/OSDependent/Unix/CMakeFiles/OSDependent.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory ncnn/glslang/OGLCompilersDLL
+
+# Convenience name for "all" pass in the directory.
+ncnn/glslang/OGLCompilersDLL/all: ncnn/glslang/OGLCompilersDLL/CMakeFiles/OGLCompiler.dir/all
+
+.PHONY : ncnn/glslang/OGLCompilersDLL/all
+
+# Convenience name for "clean" pass in the directory.
+ncnn/glslang/OGLCompilersDLL/clean: ncnn/glslang/OGLCompilersDLL/CMakeFiles/OGLCompiler.dir/clean
+
+.PHONY : ncnn/glslang/OGLCompilersDLL/clean
+
+# Convenience name for "preinstall" pass in the directory.
+ncnn/glslang/OGLCompilersDLL/preinstall:
+
+.PHONY : ncnn/glslang/OGLCompilersDLL/preinstall
+
+#=============================================================================
+# Target rules for target ncnn/glslang/OGLCompilersDLL/CMakeFiles/OGLCompiler.dir
+
+# All Build rule for target.
+ncnn/glslang/OGLCompilersDLL/CMakeFiles/OGLCompiler.dir/all:
+	$(MAKE) -f ncnn/glslang/OGLCompilersDLL/CMakeFiles/OGLCompiler.dir/build.make ncnn/glslang/OGLCompilersDLL/CMakeFiles/OGLCompiler.dir/depend
+	$(MAKE) -f ncnn/glslang/OGLCompilersDLL/CMakeFiles/OGLCompiler.dir/build.make ncnn/glslang/OGLCompilersDLL/CMakeFiles/OGLCompiler.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dkdk/git/mnist-ncnn/build/CMakeFiles --progress-num=4 "Built target OGLCompiler"
+.PHONY : ncnn/glslang/OGLCompilersDLL/CMakeFiles/OGLCompiler.dir/all
+
+# Include target in all.
+all: ncnn/glslang/OGLCompilersDLL/CMakeFiles/OGLCompiler.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+ncnn/glslang/OGLCompilersDLL/CMakeFiles/OGLCompiler.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 ncnn/glslang/OGLCompilersDLL/CMakeFiles/OGLCompiler.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 0
+.PHONY : ncnn/glslang/OGLCompilersDLL/CMakeFiles/OGLCompiler.dir/rule
+
+# Convenience name for target.
+OGLCompiler: ncnn/glslang/OGLCompilersDLL/CMakeFiles/OGLCompiler.dir/rule
+
+.PHONY : OGLCompiler
+
+# clean rule for target.
+ncnn/glslang/OGLCompilersDLL/CMakeFiles/OGLCompiler.dir/clean:
+	$(MAKE) -f ncnn/glslang/OGLCompilersDLL/CMakeFiles/OGLCompiler.dir/build.make ncnn/glslang/OGLCompilersDLL/CMakeFiles/OGLCompiler.dir/clean
+.PHONY : ncnn/glslang/OGLCompilersDLL/CMakeFiles/OGLCompiler.dir/clean
+
+# clean rule for target.
+clean: ncnn/glslang/OGLCompilersDLL/CMakeFiles/OGLCompiler.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory ncnn/glslang/SPIRV
+
+# Convenience name for "all" pass in the directory.
+ncnn/glslang/SPIRV/all: ncnn/glslang/SPIRV/CMakeFiles/SPIRV.dir/all
+
+.PHONY : ncnn/glslang/SPIRV/all
+
+# Convenience name for "clean" pass in the directory.
+ncnn/glslang/SPIRV/clean: ncnn/glslang/SPIRV/CMakeFiles/SPIRV.dir/clean
+
+.PHONY : ncnn/glslang/SPIRV/clean
+
+# Convenience name for "preinstall" pass in the directory.
+ncnn/glslang/SPIRV/preinstall:
+
+.PHONY : ncnn/glslang/SPIRV/preinstall
+
+#=============================================================================
+# Target rules for target ncnn/glslang/SPIRV/CMakeFiles/SPIRV.dir
+
+# All Build rule for target.
+ncnn/glslang/SPIRV/CMakeFiles/SPIRV.dir/all: ncnn/glslang/glslang/CMakeFiles/MachineIndependent.dir/all
+ncnn/glslang/SPIRV/CMakeFiles/SPIRV.dir/all: ncnn/glslang/glslang/CMakeFiles/GenericCodeGen.dir/all
+ncnn/glslang/SPIRV/CMakeFiles/SPIRV.dir/all: ncnn/glslang/glslang/OSDependent/Unix/CMakeFiles/OSDependent.dir/all
+ncnn/glslang/SPIRV/CMakeFiles/SPIRV.dir/all: ncnn/glslang/OGLCompilersDLL/CMakeFiles/OGLCompiler.dir/all
+	$(MAKE) -f ncnn/glslang/SPIRV/CMakeFiles/SPIRV.dir/build.make ncnn/glslang/SPIRV/CMakeFiles/SPIRV.dir/depend
+	$(MAKE) -f ncnn/glslang/SPIRV/CMakeFiles/SPIRV.dir/build.make ncnn/glslang/SPIRV/CMakeFiles/SPIRV.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dkdk/git/mnist-ncnn/build/CMakeFiles --progress-num=5 "Built target SPIRV"
+.PHONY : ncnn/glslang/SPIRV/CMakeFiles/SPIRV.dir/all
+
+# Include target in all.
+all: ncnn/glslang/SPIRV/CMakeFiles/SPIRV.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+ncnn/glslang/SPIRV/CMakeFiles/SPIRV.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 5
+	$(MAKE) -f CMakeFiles/Makefile2 ncnn/glslang/SPIRV/CMakeFiles/SPIRV.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 0
+.PHONY : ncnn/glslang/SPIRV/CMakeFiles/SPIRV.dir/rule
+
+# Convenience name for target.
+SPIRV: ncnn/glslang/SPIRV/CMakeFiles/SPIRV.dir/rule
+
+.PHONY : SPIRV
+
+# clean rule for target.
+ncnn/glslang/SPIRV/CMakeFiles/SPIRV.dir/clean:
+	$(MAKE) -f ncnn/glslang/SPIRV/CMakeFiles/SPIRV.dir/build.make ncnn/glslang/SPIRV/CMakeFiles/SPIRV.dir/clean
+.PHONY : ncnn/glslang/SPIRV/CMakeFiles/SPIRV.dir/clean
+
+# clean rule for target.
+clean: ncnn/glslang/SPIRV/CMakeFiles/SPIRV.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory ncnn/src
+
+# Convenience name for "all" pass in the directory.
+ncnn/src/all: ncnn/src/CMakeFiles/ncnn.dir/all
+
+.PHONY : ncnn/src/all
+
+# Convenience name for "clean" pass in the directory.
+ncnn/src/clean: ncnn/src/CMakeFiles/ncnn.dir/clean
+ncnn/src/clean: ncnn/src/CMakeFiles/ncnn-generate-spirv.dir/clean
+
+.PHONY : ncnn/src/clean
+
+# Convenience name for "preinstall" pass in the directory.
+ncnn/src/preinstall:
+
+.PHONY : ncnn/src/preinstall
+
+#=============================================================================
+# Target rules for target ncnn/src/CMakeFiles/ncnn.dir
+
+# All Build rule for target.
+ncnn/src/CMakeFiles/ncnn.dir/all: ncnn/glslang/glslang/CMakeFiles/MachineIndependent.dir/all
+ncnn/src/CMakeFiles/ncnn.dir/all: ncnn/glslang/glslang/CMakeFiles/GenericCodeGen.dir/all
+ncnn/src/CMakeFiles/ncnn.dir/all: ncnn/glslang/glslang/CMakeFiles/glslang.dir/all
+ncnn/src/CMakeFiles/ncnn.dir/all: ncnn/glslang/glslang/OSDependent/Unix/CMakeFiles/OSDependent.dir/all
+ncnn/src/CMakeFiles/ncnn.dir/all: ncnn/glslang/OGLCompilersDLL/CMakeFiles/OGLCompiler.dir/all
+ncnn/src/CMakeFiles/ncnn.dir/all: ncnn/glslang/SPIRV/CMakeFiles/SPIRV.dir/all
+ncnn/src/CMakeFiles/ncnn.dir/all: ncnn/src/CMakeFiles/ncnn-generate-spirv.dir/all
+	$(MAKE) -f ncnn/src/CMakeFiles/ncnn.dir/build.make ncnn/src/CMakeFiles/ncnn.dir/depend
+	$(MAKE) -f ncnn/src/CMakeFiles/ncnn.dir/build.make ncnn/src/CMakeFiles/ncnn.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dkdk/git/mnist-ncnn/build/CMakeFiles --progress-num=9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56 "Built target ncnn"
+.PHONY : ncnn/src/CMakeFiles/ncnn.dir/all
+
+# Include target in all.
+all: ncnn/src/CMakeFiles/ncnn.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+ncnn/src/CMakeFiles/ncnn.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 90
+	$(MAKE) -f CMakeFiles/Makefile2 ncnn/src/CMakeFiles/ncnn.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 0
+.PHONY : ncnn/src/CMakeFiles/ncnn.dir/rule
+
+# Convenience name for target.
+ncnn: ncnn/src/CMakeFiles/ncnn.dir/rule
 
 .PHONY : ncnn
 
 # clean rule for target.
-ncnn-20210525-full-source/src/CMakeFiles/ncnn.dir/clean:
-	$(MAKE) -f ncnn-20210525-full-source/src/CMakeFiles/ncnn.dir/build.make ncnn-20210525-full-source/src/CMakeFiles/ncnn.dir/clean
-.PHONY : ncnn-20210525-full-source/src/CMakeFiles/ncnn.dir/clean
+ncnn/src/CMakeFiles/ncnn.dir/clean:
+	$(MAKE) -f ncnn/src/CMakeFiles/ncnn.dir/build.make ncnn/src/CMakeFiles/ncnn.dir/clean
+.PHONY : ncnn/src/CMakeFiles/ncnn.dir/clean
 
 # clean rule for target.
-clean: ncnn-20210525-full-source/src/CMakeFiles/ncnn.dir/clean
+clean: ncnn/src/CMakeFiles/ncnn.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target ncnn-20210525-full-source/src/CMakeFiles/ncnn-generate-spirv.dir
+# Target rules for target ncnn/src/CMakeFiles/ncnn-generate-spirv.dir
 
 # All Build rule for target.
-ncnn-20210525-full-source/src/CMakeFiles/ncnn-generate-spirv.dir/all:
-	$(MAKE) -f ncnn-20210525-full-source/src/CMakeFiles/ncnn-generate-spirv.dir/build.make ncnn-20210525-full-source/src/CMakeFiles/ncnn-generate-spirv.dir/depend
-	$(MAKE) -f ncnn-20210525-full-source/src/CMakeFiles/ncnn-generate-spirv.dir/build.make ncnn-20210525-full-source/src/CMakeFiles/ncnn-generate-spirv.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dkdk/git/mnist-ncnn/build/CMakeFiles --progress-num= "Built target ncnn-generate-spirv"
-.PHONY : ncnn-20210525-full-source/src/CMakeFiles/ncnn-generate-spirv.dir/all
+ncnn/src/CMakeFiles/ncnn-generate-spirv.dir/all:
+	$(MAKE) -f ncnn/src/CMakeFiles/ncnn-generate-spirv.dir/build.make ncnn/src/CMakeFiles/ncnn-generate-spirv.dir/depend
+	$(MAKE) -f ncnn/src/CMakeFiles/ncnn-generate-spirv.dir/build.make ncnn/src/CMakeFiles/ncnn-generate-spirv.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dkdk/git/mnist-ncnn/build/CMakeFiles --progress-num=57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93 "Built target ncnn-generate-spirv"
+.PHONY : ncnn/src/CMakeFiles/ncnn-generate-spirv.dir/all
 
 # Build rule for subdir invocation for target.
-ncnn-20210525-full-source/src/CMakeFiles/ncnn-generate-spirv.dir/rule: cmake_check_build_system
+ncnn/src/CMakeFiles/ncnn-generate-spirv.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 37
+	$(MAKE) -f CMakeFiles/Makefile2 ncnn/src/CMakeFiles/ncnn-generate-spirv.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 ncnn-20210525-full-source/src/CMakeFiles/ncnn-generate-spirv.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 0
-.PHONY : ncnn-20210525-full-source/src/CMakeFiles/ncnn-generate-spirv.dir/rule
+.PHONY : ncnn/src/CMakeFiles/ncnn-generate-spirv.dir/rule
 
 # Convenience name for target.
-ncnn-generate-spirv: ncnn-20210525-full-source/src/CMakeFiles/ncnn-generate-spirv.dir/rule
+ncnn-generate-spirv: ncnn/src/CMakeFiles/ncnn-generate-spirv.dir/rule
 
 .PHONY : ncnn-generate-spirv
 
 # clean rule for target.
-ncnn-20210525-full-source/src/CMakeFiles/ncnn-generate-spirv.dir/clean:
-	$(MAKE) -f ncnn-20210525-full-source/src/CMakeFiles/ncnn-generate-spirv.dir/build.make ncnn-20210525-full-source/src/CMakeFiles/ncnn-generate-spirv.dir/clean
-.PHONY : ncnn-20210525-full-source/src/CMakeFiles/ncnn-generate-spirv.dir/clean
+ncnn/src/CMakeFiles/ncnn-generate-spirv.dir/clean:
+	$(MAKE) -f ncnn/src/CMakeFiles/ncnn-generate-spirv.dir/build.make ncnn/src/CMakeFiles/ncnn-generate-spirv.dir/clean
+.PHONY : ncnn/src/CMakeFiles/ncnn-generate-spirv.dir/clean
 
 # clean rule for target.
-clean: ncnn-20210525-full-source/src/CMakeFiles/ncnn-generate-spirv.dir/clean
+clean: ncnn/src/CMakeFiles/ncnn-generate-spirv.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Directory level rules for directory ncnn-20210525-full-source/benchmark
+# Directory level rules for directory ncnn/benchmark
 
 # Convenience name for "all" pass in the directory.
-ncnn-20210525-full-source/benchmark/all: ncnn-20210525-full-source/benchmark/CMakeFiles/benchncnn.dir/all
+ncnn/benchmark/all: ncnn/benchmark/CMakeFiles/benchncnn.dir/all
 
-.PHONY : ncnn-20210525-full-source/benchmark/all
+.PHONY : ncnn/benchmark/all
 
 # Convenience name for "clean" pass in the directory.
-ncnn-20210525-full-source/benchmark/clean: ncnn-20210525-full-source/benchmark/CMakeFiles/benchncnn.dir/clean
+ncnn/benchmark/clean: ncnn/benchmark/CMakeFiles/benchncnn.dir/clean
 
-.PHONY : ncnn-20210525-full-source/benchmark/clean
+.PHONY : ncnn/benchmark/clean
 
 # Convenience name for "preinstall" pass in the directory.
-ncnn-20210525-full-source/benchmark/preinstall:
+ncnn/benchmark/preinstall:
 
-.PHONY : ncnn-20210525-full-source/benchmark/preinstall
+.PHONY : ncnn/benchmark/preinstall
 
 #=============================================================================
-# Target rules for target ncnn-20210525-full-source/benchmark/CMakeFiles/benchncnn.dir
+# Target rules for target ncnn/benchmark/CMakeFiles/benchncnn.dir
 
 # All Build rule for target.
-ncnn-20210525-full-source/benchmark/CMakeFiles/benchncnn.dir/all: ncnn-20210525-full-source/src/CMakeFiles/ncnn.dir/all
-	$(MAKE) -f ncnn-20210525-full-source/benchmark/CMakeFiles/benchncnn.dir/build.make ncnn-20210525-full-source/benchmark/CMakeFiles/benchncnn.dir/depend
-	$(MAKE) -f ncnn-20210525-full-source/benchmark/CMakeFiles/benchncnn.dir/build.make ncnn-20210525-full-source/benchmark/CMakeFiles/benchncnn.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dkdk/git/mnist-ncnn/build/CMakeFiles --progress-num=1 "Built target benchncnn"
-.PHONY : ncnn-20210525-full-source/benchmark/CMakeFiles/benchncnn.dir/all
+ncnn/benchmark/CMakeFiles/benchncnn.dir/all: ncnn/glslang/glslang/CMakeFiles/MachineIndependent.dir/all
+ncnn/benchmark/CMakeFiles/benchncnn.dir/all: ncnn/glslang/glslang/CMakeFiles/GenericCodeGen.dir/all
+ncnn/benchmark/CMakeFiles/benchncnn.dir/all: ncnn/glslang/glslang/CMakeFiles/glslang.dir/all
+ncnn/benchmark/CMakeFiles/benchncnn.dir/all: ncnn/glslang/glslang/OSDependent/Unix/CMakeFiles/OSDependent.dir/all
+ncnn/benchmark/CMakeFiles/benchncnn.dir/all: ncnn/glslang/OGLCompilersDLL/CMakeFiles/OGLCompiler.dir/all
+ncnn/benchmark/CMakeFiles/benchncnn.dir/all: ncnn/glslang/SPIRV/CMakeFiles/SPIRV.dir/all
+ncnn/benchmark/CMakeFiles/benchncnn.dir/all: ncnn/src/CMakeFiles/ncnn.dir/all
+	$(MAKE) -f ncnn/benchmark/CMakeFiles/benchncnn.dir/build.make ncnn/benchmark/CMakeFiles/benchncnn.dir/depend
+	$(MAKE) -f ncnn/benchmark/CMakeFiles/benchncnn.dir/build.make ncnn/benchmark/CMakeFiles/benchncnn.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dkdk/git/mnist-ncnn/build/CMakeFiles --progress-num=6 "Built target benchncnn"
+.PHONY : ncnn/benchmark/CMakeFiles/benchncnn.dir/all
 
 # Include target in all.
-all: ncnn-20210525-full-source/benchmark/CMakeFiles/benchncnn.dir/all
+all: ncnn/benchmark/CMakeFiles/benchncnn.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-ncnn-20210525-full-source/benchmark/CMakeFiles/benchncnn.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 79
-	$(MAKE) -f CMakeFiles/Makefile2 ncnn-20210525-full-source/benchmark/CMakeFiles/benchncnn.dir/all
+ncnn/benchmark/CMakeFiles/benchncnn.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 91
+	$(MAKE) -f CMakeFiles/Makefile2 ncnn/benchmark/CMakeFiles/benchncnn.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 0
-.PHONY : ncnn-20210525-full-source/benchmark/CMakeFiles/benchncnn.dir/rule
+.PHONY : ncnn/benchmark/CMakeFiles/benchncnn.dir/rule
 
 # Convenience name for target.
-benchncnn: ncnn-20210525-full-source/benchmark/CMakeFiles/benchncnn.dir/rule
+benchncnn: ncnn/benchmark/CMakeFiles/benchncnn.dir/rule
 
 .PHONY : benchncnn
 
 # clean rule for target.
-ncnn-20210525-full-source/benchmark/CMakeFiles/benchncnn.dir/clean:
-	$(MAKE) -f ncnn-20210525-full-source/benchmark/CMakeFiles/benchncnn.dir/build.make ncnn-20210525-full-source/benchmark/CMakeFiles/benchncnn.dir/clean
-.PHONY : ncnn-20210525-full-source/benchmark/CMakeFiles/benchncnn.dir/clean
+ncnn/benchmark/CMakeFiles/benchncnn.dir/clean:
+	$(MAKE) -f ncnn/benchmark/CMakeFiles/benchncnn.dir/build.make ncnn/benchmark/CMakeFiles/benchncnn.dir/clean
+.PHONY : ncnn/benchmark/CMakeFiles/benchncnn.dir/clean
 
 # clean rule for target.
-clean: ncnn-20210525-full-source/benchmark/CMakeFiles/benchncnn.dir/clean
+clean: ncnn/benchmark/CMakeFiles/benchncnn.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Directory level rules for directory ncnn-20210525-full-source/examples
+# Directory level rules for directory ncnn/examples
 
 # Convenience name for "all" pass in the directory.
-ncnn-20210525-full-source/examples/all: ncnn-20210525-full-source/examples/CMakeFiles/scrfd.dir/all
-ncnn-20210525-full-source/examples/all: ncnn-20210525-full-source/examples/CMakeFiles/yolov3.dir/all
-ncnn-20210525-full-source/examples/all: ncnn-20210525-full-source/examples/CMakeFiles/simplepose.dir/all
-ncnn-20210525-full-source/examples/all: ncnn-20210525-full-source/examples/CMakeFiles/rfcn.dir/all
-ncnn-20210525-full-source/examples/all: ncnn-20210525-full-source/examples/CMakeFiles/nanodet.dir/all
-ncnn-20210525-full-source/examples/all: ncnn-20210525-full-source/examples/CMakeFiles/shufflenetv2.dir/all
-ncnn-20210525-full-source/examples/all: ncnn-20210525-full-source/examples/CMakeFiles/yolov4.dir/all
-ncnn-20210525-full-source/examples/all: ncnn-20210525-full-source/examples/CMakeFiles/squeezenet.dir/all
-ncnn-20210525-full-source/examples/all: ncnn-20210525-full-source/examples/CMakeFiles/squeezenet_c_api.dir/all
-ncnn-20210525-full-source/examples/all: ncnn-20210525-full-source/examples/CMakeFiles/yolov5.dir/all
-ncnn-20210525-full-source/examples/all: ncnn-20210525-full-source/examples/CMakeFiles/yolov2.dir/all
-ncnn-20210525-full-source/examples/all: ncnn-20210525-full-source/examples/CMakeFiles/mobilenetv2ssdlite.dir/all
-ncnn-20210525-full-source/examples/all: ncnn-20210525-full-source/examples/CMakeFiles/mobilenetssd.dir/all
-ncnn-20210525-full-source/examples/all: ncnn-20210525-full-source/examples/CMakeFiles/squeezenetssd.dir/all
-ncnn-20210525-full-source/examples/all: ncnn-20210525-full-source/examples/CMakeFiles/peleenetssd_seg.dir/all
-ncnn-20210525-full-source/examples/all: ncnn-20210525-full-source/examples/CMakeFiles/fasterrcnn.dir/all
-ncnn-20210525-full-source/examples/all: ncnn-20210525-full-source/examples/CMakeFiles/retinaface.dir/all
-ncnn-20210525-full-source/examples/all: ncnn-20210525-full-source/examples/CMakeFiles/yolact.dir/all
+ncnn/examples/all: ncnn/examples/CMakeFiles/rvm.dir/all
+ncnn/examples/all: ncnn/examples/CMakeFiles/scrfd_crowdhuman.dir/all
+ncnn/examples/all: ncnn/examples/CMakeFiles/scrfd.dir/all
+ncnn/examples/all: ncnn/examples/CMakeFiles/yolact.dir/all
+ncnn/examples/all: ncnn/examples/CMakeFiles/yolov3.dir/all
+ncnn/examples/all: ncnn/examples/CMakeFiles/simplepose.dir/all
+ncnn/examples/all: ncnn/examples/CMakeFiles/nanodet.dir/all
+ncnn/examples/all: ncnn/examples/CMakeFiles/shufflenetv2.dir/all
+ncnn/examples/all: ncnn/examples/CMakeFiles/yolov4.dir/all
+ncnn/examples/all: ncnn/examples/CMakeFiles/squeezenet.dir/all
+ncnn/examples/all: ncnn/examples/CMakeFiles/squeezenet_c_api.dir/all
+ncnn/examples/all: ncnn/examples/CMakeFiles/yolov5.dir/all
+ncnn/examples/all: ncnn/examples/CMakeFiles/rfcn.dir/all
+ncnn/examples/all: ncnn/examples/CMakeFiles/yolox.dir/all
+ncnn/examples/all: ncnn/examples/CMakeFiles/yolov2.dir/all
+ncnn/examples/all: ncnn/examples/CMakeFiles/mobilenetv2ssdlite.dir/all
+ncnn/examples/all: ncnn/examples/CMakeFiles/mobilenetssd.dir/all
+ncnn/examples/all: ncnn/examples/CMakeFiles/squeezenetssd.dir/all
+ncnn/examples/all: ncnn/examples/CMakeFiles/peleenetssd_seg.dir/all
+ncnn/examples/all: ncnn/examples/CMakeFiles/fasterrcnn.dir/all
+ncnn/examples/all: ncnn/examples/CMakeFiles/retinaface.dir/all
 
-.PHONY : ncnn-20210525-full-source/examples/all
+.PHONY : ncnn/examples/all
 
 # Convenience name for "clean" pass in the directory.
-ncnn-20210525-full-source/examples/clean: ncnn-20210525-full-source/examples/CMakeFiles/scrfd.dir/clean
-ncnn-20210525-full-source/examples/clean: ncnn-20210525-full-source/examples/CMakeFiles/yolov3.dir/clean
-ncnn-20210525-full-source/examples/clean: ncnn-20210525-full-source/examples/CMakeFiles/simplepose.dir/clean
-ncnn-20210525-full-source/examples/clean: ncnn-20210525-full-source/examples/CMakeFiles/rfcn.dir/clean
-ncnn-20210525-full-source/examples/clean: ncnn-20210525-full-source/examples/CMakeFiles/nanodet.dir/clean
-ncnn-20210525-full-source/examples/clean: ncnn-20210525-full-source/examples/CMakeFiles/shufflenetv2.dir/clean
-ncnn-20210525-full-source/examples/clean: ncnn-20210525-full-source/examples/CMakeFiles/yolov4.dir/clean
-ncnn-20210525-full-source/examples/clean: ncnn-20210525-full-source/examples/CMakeFiles/squeezenet.dir/clean
-ncnn-20210525-full-source/examples/clean: ncnn-20210525-full-source/examples/CMakeFiles/squeezenet_c_api.dir/clean
-ncnn-20210525-full-source/examples/clean: ncnn-20210525-full-source/examples/CMakeFiles/yolov5.dir/clean
-ncnn-20210525-full-source/examples/clean: ncnn-20210525-full-source/examples/CMakeFiles/yolov2.dir/clean
-ncnn-20210525-full-source/examples/clean: ncnn-20210525-full-source/examples/CMakeFiles/mobilenetv2ssdlite.dir/clean
-ncnn-20210525-full-source/examples/clean: ncnn-20210525-full-source/examples/CMakeFiles/mobilenetssd.dir/clean
-ncnn-20210525-full-source/examples/clean: ncnn-20210525-full-source/examples/CMakeFiles/squeezenetssd.dir/clean
-ncnn-20210525-full-source/examples/clean: ncnn-20210525-full-source/examples/CMakeFiles/peleenetssd_seg.dir/clean
-ncnn-20210525-full-source/examples/clean: ncnn-20210525-full-source/examples/CMakeFiles/fasterrcnn.dir/clean
-ncnn-20210525-full-source/examples/clean: ncnn-20210525-full-source/examples/CMakeFiles/retinaface.dir/clean
-ncnn-20210525-full-source/examples/clean: ncnn-20210525-full-source/examples/CMakeFiles/yolact.dir/clean
+ncnn/examples/clean: ncnn/examples/CMakeFiles/rvm.dir/clean
+ncnn/examples/clean: ncnn/examples/CMakeFiles/scrfd_crowdhuman.dir/clean
+ncnn/examples/clean: ncnn/examples/CMakeFiles/scrfd.dir/clean
+ncnn/examples/clean: ncnn/examples/CMakeFiles/yolact.dir/clean
+ncnn/examples/clean: ncnn/examples/CMakeFiles/yolov3.dir/clean
+ncnn/examples/clean: ncnn/examples/CMakeFiles/simplepose.dir/clean
+ncnn/examples/clean: ncnn/examples/CMakeFiles/nanodet.dir/clean
+ncnn/examples/clean: ncnn/examples/CMakeFiles/shufflenetv2.dir/clean
+ncnn/examples/clean: ncnn/examples/CMakeFiles/yolov4.dir/clean
+ncnn/examples/clean: ncnn/examples/CMakeFiles/squeezenet.dir/clean
+ncnn/examples/clean: ncnn/examples/CMakeFiles/squeezenet_c_api.dir/clean
+ncnn/examples/clean: ncnn/examples/CMakeFiles/yolov5.dir/clean
+ncnn/examples/clean: ncnn/examples/CMakeFiles/rfcn.dir/clean
+ncnn/examples/clean: ncnn/examples/CMakeFiles/yolox.dir/clean
+ncnn/examples/clean: ncnn/examples/CMakeFiles/yolov2.dir/clean
+ncnn/examples/clean: ncnn/examples/CMakeFiles/mobilenetv2ssdlite.dir/clean
+ncnn/examples/clean: ncnn/examples/CMakeFiles/mobilenetssd.dir/clean
+ncnn/examples/clean: ncnn/examples/CMakeFiles/squeezenetssd.dir/clean
+ncnn/examples/clean: ncnn/examples/CMakeFiles/peleenetssd_seg.dir/clean
+ncnn/examples/clean: ncnn/examples/CMakeFiles/fasterrcnn.dir/clean
+ncnn/examples/clean: ncnn/examples/CMakeFiles/retinaface.dir/clean
 
-.PHONY : ncnn-20210525-full-source/examples/clean
+.PHONY : ncnn/examples/clean
 
 # Convenience name for "preinstall" pass in the directory.
-ncnn-20210525-full-source/examples/preinstall:
+ncnn/examples/preinstall:
 
-.PHONY : ncnn-20210525-full-source/examples/preinstall
+.PHONY : ncnn/examples/preinstall
 
 #=============================================================================
-# Target rules for target ncnn-20210525-full-source/examples/CMakeFiles/scrfd.dir
+# Target rules for target ncnn/examples/CMakeFiles/rvm.dir
 
 # All Build rule for target.
-ncnn-20210525-full-source/examples/CMakeFiles/scrfd.dir/all: ncnn-20210525-full-source/src/CMakeFiles/ncnn.dir/all
-	$(MAKE) -f ncnn-20210525-full-source/examples/CMakeFiles/scrfd.dir/build.make ncnn-20210525-full-source/examples/CMakeFiles/scrfd.dir/depend
-	$(MAKE) -f ncnn-20210525-full-source/examples/CMakeFiles/scrfd.dir/build.make ncnn-20210525-full-source/examples/CMakeFiles/scrfd.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dkdk/git/mnist-ncnn/build/CMakeFiles --progress-num=93 "Built target scrfd"
-.PHONY : ncnn-20210525-full-source/examples/CMakeFiles/scrfd.dir/all
+ncnn/examples/CMakeFiles/rvm.dir/all: ncnn/glslang/glslang/CMakeFiles/MachineIndependent.dir/all
+ncnn/examples/CMakeFiles/rvm.dir/all: ncnn/glslang/glslang/CMakeFiles/GenericCodeGen.dir/all
+ncnn/examples/CMakeFiles/rvm.dir/all: ncnn/glslang/glslang/CMakeFiles/glslang.dir/all
+ncnn/examples/CMakeFiles/rvm.dir/all: ncnn/glslang/glslang/OSDependent/Unix/CMakeFiles/OSDependent.dir/all
+ncnn/examples/CMakeFiles/rvm.dir/all: ncnn/glslang/OGLCompilersDLL/CMakeFiles/OGLCompiler.dir/all
+ncnn/examples/CMakeFiles/rvm.dir/all: ncnn/glslang/SPIRV/CMakeFiles/SPIRV.dir/all
+ncnn/examples/CMakeFiles/rvm.dir/all: ncnn/src/CMakeFiles/ncnn.dir/all
+	$(MAKE) -f ncnn/examples/CMakeFiles/rvm.dir/build.make ncnn/examples/CMakeFiles/rvm.dir/depend
+	$(MAKE) -f ncnn/examples/CMakeFiles/rvm.dir/build.make ncnn/examples/CMakeFiles/rvm.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dkdk/git/mnist-ncnn/build/CMakeFiles --progress-num= "Built target rvm"
+.PHONY : ncnn/examples/CMakeFiles/rvm.dir/all
 
 # Include target in all.
-all: ncnn-20210525-full-source/examples/CMakeFiles/scrfd.dir/all
+all: ncnn/examples/CMakeFiles/rvm.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-ncnn-20210525-full-source/examples/CMakeFiles/scrfd.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 79
-	$(MAKE) -f CMakeFiles/Makefile2 ncnn-20210525-full-source/examples/CMakeFiles/scrfd.dir/all
+ncnn/examples/CMakeFiles/rvm.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 90
+	$(MAKE) -f CMakeFiles/Makefile2 ncnn/examples/CMakeFiles/rvm.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 0
-.PHONY : ncnn-20210525-full-source/examples/CMakeFiles/scrfd.dir/rule
+.PHONY : ncnn/examples/CMakeFiles/rvm.dir/rule
 
 # Convenience name for target.
-scrfd: ncnn-20210525-full-source/examples/CMakeFiles/scrfd.dir/rule
+rvm: ncnn/examples/CMakeFiles/rvm.dir/rule
+
+.PHONY : rvm
+
+# clean rule for target.
+ncnn/examples/CMakeFiles/rvm.dir/clean:
+	$(MAKE) -f ncnn/examples/CMakeFiles/rvm.dir/build.make ncnn/examples/CMakeFiles/rvm.dir/clean
+.PHONY : ncnn/examples/CMakeFiles/rvm.dir/clean
+
+# clean rule for target.
+clean: ncnn/examples/CMakeFiles/rvm.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target ncnn/examples/CMakeFiles/scrfd_crowdhuman.dir
+
+# All Build rule for target.
+ncnn/examples/CMakeFiles/scrfd_crowdhuman.dir/all: ncnn/glslang/glslang/CMakeFiles/MachineIndependent.dir/all
+ncnn/examples/CMakeFiles/scrfd_crowdhuman.dir/all: ncnn/glslang/glslang/CMakeFiles/GenericCodeGen.dir/all
+ncnn/examples/CMakeFiles/scrfd_crowdhuman.dir/all: ncnn/glslang/glslang/CMakeFiles/glslang.dir/all
+ncnn/examples/CMakeFiles/scrfd_crowdhuman.dir/all: ncnn/glslang/glslang/OSDependent/Unix/CMakeFiles/OSDependent.dir/all
+ncnn/examples/CMakeFiles/scrfd_crowdhuman.dir/all: ncnn/glslang/OGLCompilersDLL/CMakeFiles/OGLCompiler.dir/all
+ncnn/examples/CMakeFiles/scrfd_crowdhuman.dir/all: ncnn/glslang/SPIRV/CMakeFiles/SPIRV.dir/all
+ncnn/examples/CMakeFiles/scrfd_crowdhuman.dir/all: ncnn/src/CMakeFiles/ncnn.dir/all
+	$(MAKE) -f ncnn/examples/CMakeFiles/scrfd_crowdhuman.dir/build.make ncnn/examples/CMakeFiles/scrfd_crowdhuman.dir/depend
+	$(MAKE) -f ncnn/examples/CMakeFiles/scrfd_crowdhuman.dir/build.make ncnn/examples/CMakeFiles/scrfd_crowdhuman.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dkdk/git/mnist-ncnn/build/CMakeFiles --progress-num= "Built target scrfd_crowdhuman"
+.PHONY : ncnn/examples/CMakeFiles/scrfd_crowdhuman.dir/all
+
+# Include target in all.
+all: ncnn/examples/CMakeFiles/scrfd_crowdhuman.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+ncnn/examples/CMakeFiles/scrfd_crowdhuman.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 90
+	$(MAKE) -f CMakeFiles/Makefile2 ncnn/examples/CMakeFiles/scrfd_crowdhuman.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 0
+.PHONY : ncnn/examples/CMakeFiles/scrfd_crowdhuman.dir/rule
+
+# Convenience name for target.
+scrfd_crowdhuman: ncnn/examples/CMakeFiles/scrfd_crowdhuman.dir/rule
+
+.PHONY : scrfd_crowdhuman
+
+# clean rule for target.
+ncnn/examples/CMakeFiles/scrfd_crowdhuman.dir/clean:
+	$(MAKE) -f ncnn/examples/CMakeFiles/scrfd_crowdhuman.dir/build.make ncnn/examples/CMakeFiles/scrfd_crowdhuman.dir/clean
+.PHONY : ncnn/examples/CMakeFiles/scrfd_crowdhuman.dir/clean
+
+# clean rule for target.
+clean: ncnn/examples/CMakeFiles/scrfd_crowdhuman.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target ncnn/examples/CMakeFiles/scrfd.dir
+
+# All Build rule for target.
+ncnn/examples/CMakeFiles/scrfd.dir/all: ncnn/glslang/glslang/CMakeFiles/MachineIndependent.dir/all
+ncnn/examples/CMakeFiles/scrfd.dir/all: ncnn/glslang/glslang/CMakeFiles/GenericCodeGen.dir/all
+ncnn/examples/CMakeFiles/scrfd.dir/all: ncnn/glslang/glslang/CMakeFiles/glslang.dir/all
+ncnn/examples/CMakeFiles/scrfd.dir/all: ncnn/glslang/glslang/OSDependent/Unix/CMakeFiles/OSDependent.dir/all
+ncnn/examples/CMakeFiles/scrfd.dir/all: ncnn/glslang/OGLCompilersDLL/CMakeFiles/OGLCompiler.dir/all
+ncnn/examples/CMakeFiles/scrfd.dir/all: ncnn/glslang/SPIRV/CMakeFiles/SPIRV.dir/all
+ncnn/examples/CMakeFiles/scrfd.dir/all: ncnn/src/CMakeFiles/ncnn.dir/all
+	$(MAKE) -f ncnn/examples/CMakeFiles/scrfd.dir/build.make ncnn/examples/CMakeFiles/scrfd.dir/depend
+	$(MAKE) -f ncnn/examples/CMakeFiles/scrfd.dir/build.make ncnn/examples/CMakeFiles/scrfd.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dkdk/git/mnist-ncnn/build/CMakeFiles --progress-num=97 "Built target scrfd"
+.PHONY : ncnn/examples/CMakeFiles/scrfd.dir/all
+
+# Include target in all.
+all: ncnn/examples/CMakeFiles/scrfd.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+ncnn/examples/CMakeFiles/scrfd.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 91
+	$(MAKE) -f CMakeFiles/Makefile2 ncnn/examples/CMakeFiles/scrfd.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 0
+.PHONY : ncnn/examples/CMakeFiles/scrfd.dir/rule
+
+# Convenience name for target.
+scrfd: ncnn/examples/CMakeFiles/scrfd.dir/rule
 
 .PHONY : scrfd
 
 # clean rule for target.
-ncnn-20210525-full-source/examples/CMakeFiles/scrfd.dir/clean:
-	$(MAKE) -f ncnn-20210525-full-source/examples/CMakeFiles/scrfd.dir/build.make ncnn-20210525-full-source/examples/CMakeFiles/scrfd.dir/clean
-.PHONY : ncnn-20210525-full-source/examples/CMakeFiles/scrfd.dir/clean
+ncnn/examples/CMakeFiles/scrfd.dir/clean:
+	$(MAKE) -f ncnn/examples/CMakeFiles/scrfd.dir/build.make ncnn/examples/CMakeFiles/scrfd.dir/clean
+.PHONY : ncnn/examples/CMakeFiles/scrfd.dir/clean
 
 # clean rule for target.
-clean: ncnn-20210525-full-source/examples/CMakeFiles/scrfd.dir/clean
+clean: ncnn/examples/CMakeFiles/scrfd.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target ncnn-20210525-full-source/examples/CMakeFiles/yolov3.dir
+# Target rules for target ncnn/examples/CMakeFiles/yolact.dir
 
 # All Build rule for target.
-ncnn-20210525-full-source/examples/CMakeFiles/yolov3.dir/all: ncnn-20210525-full-source/src/CMakeFiles/ncnn.dir/all
-	$(MAKE) -f ncnn-20210525-full-source/examples/CMakeFiles/yolov3.dir/build.make ncnn-20210525-full-source/examples/CMakeFiles/yolov3.dir/depend
-	$(MAKE) -f ncnn-20210525-full-source/examples/CMakeFiles/yolov3.dir/build.make ncnn-20210525-full-source/examples/CMakeFiles/yolov3.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dkdk/git/mnist-ncnn/build/CMakeFiles --progress-num= "Built target yolov3"
-.PHONY : ncnn-20210525-full-source/examples/CMakeFiles/yolov3.dir/all
+ncnn/examples/CMakeFiles/yolact.dir/all: ncnn/glslang/glslang/CMakeFiles/MachineIndependent.dir/all
+ncnn/examples/CMakeFiles/yolact.dir/all: ncnn/glslang/glslang/CMakeFiles/GenericCodeGen.dir/all
+ncnn/examples/CMakeFiles/yolact.dir/all: ncnn/glslang/glslang/CMakeFiles/glslang.dir/all
+ncnn/examples/CMakeFiles/yolact.dir/all: ncnn/glslang/glslang/OSDependent/Unix/CMakeFiles/OSDependent.dir/all
+ncnn/examples/CMakeFiles/yolact.dir/all: ncnn/glslang/OGLCompilersDLL/CMakeFiles/OGLCompiler.dir/all
+ncnn/examples/CMakeFiles/yolact.dir/all: ncnn/glslang/SPIRV/CMakeFiles/SPIRV.dir/all
+ncnn/examples/CMakeFiles/yolact.dir/all: ncnn/src/CMakeFiles/ncnn.dir/all
+	$(MAKE) -f ncnn/examples/CMakeFiles/yolact.dir/build.make ncnn/examples/CMakeFiles/yolact.dir/depend
+	$(MAKE) -f ncnn/examples/CMakeFiles/yolact.dir/build.make ncnn/examples/CMakeFiles/yolact.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dkdk/git/mnist-ncnn/build/CMakeFiles --progress-num= "Built target yolact"
+.PHONY : ncnn/examples/CMakeFiles/yolact.dir/all
 
 # Include target in all.
-all: ncnn-20210525-full-source/examples/CMakeFiles/yolov3.dir/all
+all: ncnn/examples/CMakeFiles/yolact.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-ncnn-20210525-full-source/examples/CMakeFiles/yolov3.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 78
-	$(MAKE) -f CMakeFiles/Makefile2 ncnn-20210525-full-source/examples/CMakeFiles/yolov3.dir/all
+ncnn/examples/CMakeFiles/yolact.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 90
+	$(MAKE) -f CMakeFiles/Makefile2 ncnn/examples/CMakeFiles/yolact.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 0
-.PHONY : ncnn-20210525-full-source/examples/CMakeFiles/yolov3.dir/rule
+.PHONY : ncnn/examples/CMakeFiles/yolact.dir/rule
 
 # Convenience name for target.
-yolov3: ncnn-20210525-full-source/examples/CMakeFiles/yolov3.dir/rule
-
-.PHONY : yolov3
-
-# clean rule for target.
-ncnn-20210525-full-source/examples/CMakeFiles/yolov3.dir/clean:
-	$(MAKE) -f ncnn-20210525-full-source/examples/CMakeFiles/yolov3.dir/build.make ncnn-20210525-full-source/examples/CMakeFiles/yolov3.dir/clean
-.PHONY : ncnn-20210525-full-source/examples/CMakeFiles/yolov3.dir/clean
-
-# clean rule for target.
-clean: ncnn-20210525-full-source/examples/CMakeFiles/yolov3.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target ncnn-20210525-full-source/examples/CMakeFiles/simplepose.dir
-
-# All Build rule for target.
-ncnn-20210525-full-source/examples/CMakeFiles/simplepose.dir/all: ncnn-20210525-full-source/src/CMakeFiles/ncnn.dir/all
-	$(MAKE) -f ncnn-20210525-full-source/examples/CMakeFiles/simplepose.dir/build.make ncnn-20210525-full-source/examples/CMakeFiles/simplepose.dir/depend
-	$(MAKE) -f ncnn-20210525-full-source/examples/CMakeFiles/simplepose.dir/build.make ncnn-20210525-full-source/examples/CMakeFiles/simplepose.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dkdk/git/mnist-ncnn/build/CMakeFiles --progress-num= "Built target simplepose"
-.PHONY : ncnn-20210525-full-source/examples/CMakeFiles/simplepose.dir/all
-
-# Include target in all.
-all: ncnn-20210525-full-source/examples/CMakeFiles/simplepose.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-ncnn-20210525-full-source/examples/CMakeFiles/simplepose.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 78
-	$(MAKE) -f CMakeFiles/Makefile2 ncnn-20210525-full-source/examples/CMakeFiles/simplepose.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 0
-.PHONY : ncnn-20210525-full-source/examples/CMakeFiles/simplepose.dir/rule
-
-# Convenience name for target.
-simplepose: ncnn-20210525-full-source/examples/CMakeFiles/simplepose.dir/rule
-
-.PHONY : simplepose
-
-# clean rule for target.
-ncnn-20210525-full-source/examples/CMakeFiles/simplepose.dir/clean:
-	$(MAKE) -f ncnn-20210525-full-source/examples/CMakeFiles/simplepose.dir/build.make ncnn-20210525-full-source/examples/CMakeFiles/simplepose.dir/clean
-.PHONY : ncnn-20210525-full-source/examples/CMakeFiles/simplepose.dir/clean
-
-# clean rule for target.
-clean: ncnn-20210525-full-source/examples/CMakeFiles/simplepose.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target ncnn-20210525-full-source/examples/CMakeFiles/rfcn.dir
-
-# All Build rule for target.
-ncnn-20210525-full-source/examples/CMakeFiles/rfcn.dir/all: ncnn-20210525-full-source/src/CMakeFiles/ncnn.dir/all
-	$(MAKE) -f ncnn-20210525-full-source/examples/CMakeFiles/rfcn.dir/build.make ncnn-20210525-full-source/examples/CMakeFiles/rfcn.dir/depend
-	$(MAKE) -f ncnn-20210525-full-source/examples/CMakeFiles/rfcn.dir/build.make ncnn-20210525-full-source/examples/CMakeFiles/rfcn.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dkdk/git/mnist-ncnn/build/CMakeFiles --progress-num= "Built target rfcn"
-.PHONY : ncnn-20210525-full-source/examples/CMakeFiles/rfcn.dir/all
-
-# Include target in all.
-all: ncnn-20210525-full-source/examples/CMakeFiles/rfcn.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-ncnn-20210525-full-source/examples/CMakeFiles/rfcn.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 78
-	$(MAKE) -f CMakeFiles/Makefile2 ncnn-20210525-full-source/examples/CMakeFiles/rfcn.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 0
-.PHONY : ncnn-20210525-full-source/examples/CMakeFiles/rfcn.dir/rule
-
-# Convenience name for target.
-rfcn: ncnn-20210525-full-source/examples/CMakeFiles/rfcn.dir/rule
-
-.PHONY : rfcn
-
-# clean rule for target.
-ncnn-20210525-full-source/examples/CMakeFiles/rfcn.dir/clean:
-	$(MAKE) -f ncnn-20210525-full-source/examples/CMakeFiles/rfcn.dir/build.make ncnn-20210525-full-source/examples/CMakeFiles/rfcn.dir/clean
-.PHONY : ncnn-20210525-full-source/examples/CMakeFiles/rfcn.dir/clean
-
-# clean rule for target.
-clean: ncnn-20210525-full-source/examples/CMakeFiles/rfcn.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target ncnn-20210525-full-source/examples/CMakeFiles/nanodet.dir
-
-# All Build rule for target.
-ncnn-20210525-full-source/examples/CMakeFiles/nanodet.dir/all: ncnn-20210525-full-source/src/CMakeFiles/ncnn.dir/all
-	$(MAKE) -f ncnn-20210525-full-source/examples/CMakeFiles/nanodet.dir/build.make ncnn-20210525-full-source/examples/CMakeFiles/nanodet.dir/depend
-	$(MAKE) -f ncnn-20210525-full-source/examples/CMakeFiles/nanodet.dir/build.make ncnn-20210525-full-source/examples/CMakeFiles/nanodet.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dkdk/git/mnist-ncnn/build/CMakeFiles --progress-num=7 "Built target nanodet"
-.PHONY : ncnn-20210525-full-source/examples/CMakeFiles/nanodet.dir/all
-
-# Include target in all.
-all: ncnn-20210525-full-source/examples/CMakeFiles/nanodet.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-ncnn-20210525-full-source/examples/CMakeFiles/nanodet.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 79
-	$(MAKE) -f CMakeFiles/Makefile2 ncnn-20210525-full-source/examples/CMakeFiles/nanodet.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 0
-.PHONY : ncnn-20210525-full-source/examples/CMakeFiles/nanodet.dir/rule
-
-# Convenience name for target.
-nanodet: ncnn-20210525-full-source/examples/CMakeFiles/nanodet.dir/rule
-
-.PHONY : nanodet
-
-# clean rule for target.
-ncnn-20210525-full-source/examples/CMakeFiles/nanodet.dir/clean:
-	$(MAKE) -f ncnn-20210525-full-source/examples/CMakeFiles/nanodet.dir/build.make ncnn-20210525-full-source/examples/CMakeFiles/nanodet.dir/clean
-.PHONY : ncnn-20210525-full-source/examples/CMakeFiles/nanodet.dir/clean
-
-# clean rule for target.
-clean: ncnn-20210525-full-source/examples/CMakeFiles/nanodet.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target ncnn-20210525-full-source/examples/CMakeFiles/shufflenetv2.dir
-
-# All Build rule for target.
-ncnn-20210525-full-source/examples/CMakeFiles/shufflenetv2.dir/all: ncnn-20210525-full-source/src/CMakeFiles/ncnn.dir/all
-	$(MAKE) -f ncnn-20210525-full-source/examples/CMakeFiles/shufflenetv2.dir/build.make ncnn-20210525-full-source/examples/CMakeFiles/shufflenetv2.dir/depend
-	$(MAKE) -f ncnn-20210525-full-source/examples/CMakeFiles/shufflenetv2.dir/build.make ncnn-20210525-full-source/examples/CMakeFiles/shufflenetv2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dkdk/git/mnist-ncnn/build/CMakeFiles --progress-num=94 "Built target shufflenetv2"
-.PHONY : ncnn-20210525-full-source/examples/CMakeFiles/shufflenetv2.dir/all
-
-# Include target in all.
-all: ncnn-20210525-full-source/examples/CMakeFiles/shufflenetv2.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-ncnn-20210525-full-source/examples/CMakeFiles/shufflenetv2.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 79
-	$(MAKE) -f CMakeFiles/Makefile2 ncnn-20210525-full-source/examples/CMakeFiles/shufflenetv2.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 0
-.PHONY : ncnn-20210525-full-source/examples/CMakeFiles/shufflenetv2.dir/rule
-
-# Convenience name for target.
-shufflenetv2: ncnn-20210525-full-source/examples/CMakeFiles/shufflenetv2.dir/rule
-
-.PHONY : shufflenetv2
-
-# clean rule for target.
-ncnn-20210525-full-source/examples/CMakeFiles/shufflenetv2.dir/clean:
-	$(MAKE) -f ncnn-20210525-full-source/examples/CMakeFiles/shufflenetv2.dir/build.make ncnn-20210525-full-source/examples/CMakeFiles/shufflenetv2.dir/clean
-.PHONY : ncnn-20210525-full-source/examples/CMakeFiles/shufflenetv2.dir/clean
-
-# clean rule for target.
-clean: ncnn-20210525-full-source/examples/CMakeFiles/shufflenetv2.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target ncnn-20210525-full-source/examples/CMakeFiles/yolov4.dir
-
-# All Build rule for target.
-ncnn-20210525-full-source/examples/CMakeFiles/yolov4.dir/all: ncnn-20210525-full-source/src/CMakeFiles/ncnn.dir/all
-	$(MAKE) -f ncnn-20210525-full-source/examples/CMakeFiles/yolov4.dir/build.make ncnn-20210525-full-source/examples/CMakeFiles/yolov4.dir/depend
-	$(MAKE) -f ncnn-20210525-full-source/examples/CMakeFiles/yolov4.dir/build.make ncnn-20210525-full-source/examples/CMakeFiles/yolov4.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dkdk/git/mnist-ncnn/build/CMakeFiles --progress-num=99 "Built target yolov4"
-.PHONY : ncnn-20210525-full-source/examples/CMakeFiles/yolov4.dir/all
-
-# Include target in all.
-all: ncnn-20210525-full-source/examples/CMakeFiles/yolov4.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-ncnn-20210525-full-source/examples/CMakeFiles/yolov4.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 79
-	$(MAKE) -f CMakeFiles/Makefile2 ncnn-20210525-full-source/examples/CMakeFiles/yolov4.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 0
-.PHONY : ncnn-20210525-full-source/examples/CMakeFiles/yolov4.dir/rule
-
-# Convenience name for target.
-yolov4: ncnn-20210525-full-source/examples/CMakeFiles/yolov4.dir/rule
-
-.PHONY : yolov4
-
-# clean rule for target.
-ncnn-20210525-full-source/examples/CMakeFiles/yolov4.dir/clean:
-	$(MAKE) -f ncnn-20210525-full-source/examples/CMakeFiles/yolov4.dir/build.make ncnn-20210525-full-source/examples/CMakeFiles/yolov4.dir/clean
-.PHONY : ncnn-20210525-full-source/examples/CMakeFiles/yolov4.dir/clean
-
-# clean rule for target.
-clean: ncnn-20210525-full-source/examples/CMakeFiles/yolov4.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target ncnn-20210525-full-source/examples/CMakeFiles/squeezenet.dir
-
-# All Build rule for target.
-ncnn-20210525-full-source/examples/CMakeFiles/squeezenet.dir/all: ncnn-20210525-full-source/src/CMakeFiles/ncnn.dir/all
-	$(MAKE) -f ncnn-20210525-full-source/examples/CMakeFiles/squeezenet.dir/build.make ncnn-20210525-full-source/examples/CMakeFiles/squeezenet.dir/depend
-	$(MAKE) -f ncnn-20210525-full-source/examples/CMakeFiles/squeezenet.dir/build.make ncnn-20210525-full-source/examples/CMakeFiles/squeezenet.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dkdk/git/mnist-ncnn/build/CMakeFiles --progress-num=95 "Built target squeezenet"
-.PHONY : ncnn-20210525-full-source/examples/CMakeFiles/squeezenet.dir/all
-
-# Include target in all.
-all: ncnn-20210525-full-source/examples/CMakeFiles/squeezenet.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-ncnn-20210525-full-source/examples/CMakeFiles/squeezenet.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 79
-	$(MAKE) -f CMakeFiles/Makefile2 ncnn-20210525-full-source/examples/CMakeFiles/squeezenet.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 0
-.PHONY : ncnn-20210525-full-source/examples/CMakeFiles/squeezenet.dir/rule
-
-# Convenience name for target.
-squeezenet: ncnn-20210525-full-source/examples/CMakeFiles/squeezenet.dir/rule
-
-.PHONY : squeezenet
-
-# clean rule for target.
-ncnn-20210525-full-source/examples/CMakeFiles/squeezenet.dir/clean:
-	$(MAKE) -f ncnn-20210525-full-source/examples/CMakeFiles/squeezenet.dir/build.make ncnn-20210525-full-source/examples/CMakeFiles/squeezenet.dir/clean
-.PHONY : ncnn-20210525-full-source/examples/CMakeFiles/squeezenet.dir/clean
-
-# clean rule for target.
-clean: ncnn-20210525-full-source/examples/CMakeFiles/squeezenet.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target ncnn-20210525-full-source/examples/CMakeFiles/squeezenet_c_api.dir
-
-# All Build rule for target.
-ncnn-20210525-full-source/examples/CMakeFiles/squeezenet_c_api.dir/all: ncnn-20210525-full-source/src/CMakeFiles/ncnn.dir/all
-	$(MAKE) -f ncnn-20210525-full-source/examples/CMakeFiles/squeezenet_c_api.dir/build.make ncnn-20210525-full-source/examples/CMakeFiles/squeezenet_c_api.dir/depend
-	$(MAKE) -f ncnn-20210525-full-source/examples/CMakeFiles/squeezenet_c_api.dir/build.make ncnn-20210525-full-source/examples/CMakeFiles/squeezenet_c_api.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dkdk/git/mnist-ncnn/build/CMakeFiles --progress-num=96 "Built target squeezenet_c_api"
-.PHONY : ncnn-20210525-full-source/examples/CMakeFiles/squeezenet_c_api.dir/all
-
-# Include target in all.
-all: ncnn-20210525-full-source/examples/CMakeFiles/squeezenet_c_api.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-ncnn-20210525-full-source/examples/CMakeFiles/squeezenet_c_api.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 79
-	$(MAKE) -f CMakeFiles/Makefile2 ncnn-20210525-full-source/examples/CMakeFiles/squeezenet_c_api.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 0
-.PHONY : ncnn-20210525-full-source/examples/CMakeFiles/squeezenet_c_api.dir/rule
-
-# Convenience name for target.
-squeezenet_c_api: ncnn-20210525-full-source/examples/CMakeFiles/squeezenet_c_api.dir/rule
-
-.PHONY : squeezenet_c_api
-
-# clean rule for target.
-ncnn-20210525-full-source/examples/CMakeFiles/squeezenet_c_api.dir/clean:
-	$(MAKE) -f ncnn-20210525-full-source/examples/CMakeFiles/squeezenet_c_api.dir/build.make ncnn-20210525-full-source/examples/CMakeFiles/squeezenet_c_api.dir/clean
-.PHONY : ncnn-20210525-full-source/examples/CMakeFiles/squeezenet_c_api.dir/clean
-
-# clean rule for target.
-clean: ncnn-20210525-full-source/examples/CMakeFiles/squeezenet_c_api.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target ncnn-20210525-full-source/examples/CMakeFiles/yolov5.dir
-
-# All Build rule for target.
-ncnn-20210525-full-source/examples/CMakeFiles/yolov5.dir/all: ncnn-20210525-full-source/src/CMakeFiles/ncnn.dir/all
-	$(MAKE) -f ncnn-20210525-full-source/examples/CMakeFiles/yolov5.dir/build.make ncnn-20210525-full-source/examples/CMakeFiles/yolov5.dir/depend
-	$(MAKE) -f ncnn-20210525-full-source/examples/CMakeFiles/yolov5.dir/build.make ncnn-20210525-full-source/examples/CMakeFiles/yolov5.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dkdk/git/mnist-ncnn/build/CMakeFiles --progress-num=100 "Built target yolov5"
-.PHONY : ncnn-20210525-full-source/examples/CMakeFiles/yolov5.dir/all
-
-# Include target in all.
-all: ncnn-20210525-full-source/examples/CMakeFiles/yolov5.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-ncnn-20210525-full-source/examples/CMakeFiles/yolov5.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 79
-	$(MAKE) -f CMakeFiles/Makefile2 ncnn-20210525-full-source/examples/CMakeFiles/yolov5.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 0
-.PHONY : ncnn-20210525-full-source/examples/CMakeFiles/yolov5.dir/rule
-
-# Convenience name for target.
-yolov5: ncnn-20210525-full-source/examples/CMakeFiles/yolov5.dir/rule
-
-.PHONY : yolov5
-
-# clean rule for target.
-ncnn-20210525-full-source/examples/CMakeFiles/yolov5.dir/clean:
-	$(MAKE) -f ncnn-20210525-full-source/examples/CMakeFiles/yolov5.dir/build.make ncnn-20210525-full-source/examples/CMakeFiles/yolov5.dir/clean
-.PHONY : ncnn-20210525-full-source/examples/CMakeFiles/yolov5.dir/clean
-
-# clean rule for target.
-clean: ncnn-20210525-full-source/examples/CMakeFiles/yolov5.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target ncnn-20210525-full-source/examples/CMakeFiles/yolov2.dir
-
-# All Build rule for target.
-ncnn-20210525-full-source/examples/CMakeFiles/yolov2.dir/all: ncnn-20210525-full-source/src/CMakeFiles/ncnn.dir/all
-	$(MAKE) -f ncnn-20210525-full-source/examples/CMakeFiles/yolov2.dir/build.make ncnn-20210525-full-source/examples/CMakeFiles/yolov2.dir/depend
-	$(MAKE) -f ncnn-20210525-full-source/examples/CMakeFiles/yolov2.dir/build.make ncnn-20210525-full-source/examples/CMakeFiles/yolov2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dkdk/git/mnist-ncnn/build/CMakeFiles --progress-num=98 "Built target yolov2"
-.PHONY : ncnn-20210525-full-source/examples/CMakeFiles/yolov2.dir/all
-
-# Include target in all.
-all: ncnn-20210525-full-source/examples/CMakeFiles/yolov2.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-ncnn-20210525-full-source/examples/CMakeFiles/yolov2.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 79
-	$(MAKE) -f CMakeFiles/Makefile2 ncnn-20210525-full-source/examples/CMakeFiles/yolov2.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 0
-.PHONY : ncnn-20210525-full-source/examples/CMakeFiles/yolov2.dir/rule
-
-# Convenience name for target.
-yolov2: ncnn-20210525-full-source/examples/CMakeFiles/yolov2.dir/rule
-
-.PHONY : yolov2
-
-# clean rule for target.
-ncnn-20210525-full-source/examples/CMakeFiles/yolov2.dir/clean:
-	$(MAKE) -f ncnn-20210525-full-source/examples/CMakeFiles/yolov2.dir/build.make ncnn-20210525-full-source/examples/CMakeFiles/yolov2.dir/clean
-.PHONY : ncnn-20210525-full-source/examples/CMakeFiles/yolov2.dir/clean
-
-# clean rule for target.
-clean: ncnn-20210525-full-source/examples/CMakeFiles/yolov2.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target ncnn-20210525-full-source/examples/CMakeFiles/mobilenetv2ssdlite.dir
-
-# All Build rule for target.
-ncnn-20210525-full-source/examples/CMakeFiles/mobilenetv2ssdlite.dir/all: ncnn-20210525-full-source/src/CMakeFiles/ncnn.dir/all
-	$(MAKE) -f ncnn-20210525-full-source/examples/CMakeFiles/mobilenetv2ssdlite.dir/build.make ncnn-20210525-full-source/examples/CMakeFiles/mobilenetv2ssdlite.dir/depend
-	$(MAKE) -f ncnn-20210525-full-source/examples/CMakeFiles/mobilenetv2ssdlite.dir/build.make ncnn-20210525-full-source/examples/CMakeFiles/mobilenetv2ssdlite.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dkdk/git/mnist-ncnn/build/CMakeFiles --progress-num= "Built target mobilenetv2ssdlite"
-.PHONY : ncnn-20210525-full-source/examples/CMakeFiles/mobilenetv2ssdlite.dir/all
-
-# Include target in all.
-all: ncnn-20210525-full-source/examples/CMakeFiles/mobilenetv2ssdlite.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-ncnn-20210525-full-source/examples/CMakeFiles/mobilenetv2ssdlite.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 78
-	$(MAKE) -f CMakeFiles/Makefile2 ncnn-20210525-full-source/examples/CMakeFiles/mobilenetv2ssdlite.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 0
-.PHONY : ncnn-20210525-full-source/examples/CMakeFiles/mobilenetv2ssdlite.dir/rule
-
-# Convenience name for target.
-mobilenetv2ssdlite: ncnn-20210525-full-source/examples/CMakeFiles/mobilenetv2ssdlite.dir/rule
-
-.PHONY : mobilenetv2ssdlite
-
-# clean rule for target.
-ncnn-20210525-full-source/examples/CMakeFiles/mobilenetv2ssdlite.dir/clean:
-	$(MAKE) -f ncnn-20210525-full-source/examples/CMakeFiles/mobilenetv2ssdlite.dir/build.make ncnn-20210525-full-source/examples/CMakeFiles/mobilenetv2ssdlite.dir/clean
-.PHONY : ncnn-20210525-full-source/examples/CMakeFiles/mobilenetv2ssdlite.dir/clean
-
-# clean rule for target.
-clean: ncnn-20210525-full-source/examples/CMakeFiles/mobilenetv2ssdlite.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target ncnn-20210525-full-source/examples/CMakeFiles/mobilenetssd.dir
-
-# All Build rule for target.
-ncnn-20210525-full-source/examples/CMakeFiles/mobilenetssd.dir/all: ncnn-20210525-full-source/src/CMakeFiles/ncnn.dir/all
-	$(MAKE) -f ncnn-20210525-full-source/examples/CMakeFiles/mobilenetssd.dir/build.make ncnn-20210525-full-source/examples/CMakeFiles/mobilenetssd.dir/depend
-	$(MAKE) -f ncnn-20210525-full-source/examples/CMakeFiles/mobilenetssd.dir/build.make ncnn-20210525-full-source/examples/CMakeFiles/mobilenetssd.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dkdk/git/mnist-ncnn/build/CMakeFiles --progress-num=5 "Built target mobilenetssd"
-.PHONY : ncnn-20210525-full-source/examples/CMakeFiles/mobilenetssd.dir/all
-
-# Include target in all.
-all: ncnn-20210525-full-source/examples/CMakeFiles/mobilenetssd.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-ncnn-20210525-full-source/examples/CMakeFiles/mobilenetssd.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 79
-	$(MAKE) -f CMakeFiles/Makefile2 ncnn-20210525-full-source/examples/CMakeFiles/mobilenetssd.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 0
-.PHONY : ncnn-20210525-full-source/examples/CMakeFiles/mobilenetssd.dir/rule
-
-# Convenience name for target.
-mobilenetssd: ncnn-20210525-full-source/examples/CMakeFiles/mobilenetssd.dir/rule
-
-.PHONY : mobilenetssd
-
-# clean rule for target.
-ncnn-20210525-full-source/examples/CMakeFiles/mobilenetssd.dir/clean:
-	$(MAKE) -f ncnn-20210525-full-source/examples/CMakeFiles/mobilenetssd.dir/build.make ncnn-20210525-full-source/examples/CMakeFiles/mobilenetssd.dir/clean
-.PHONY : ncnn-20210525-full-source/examples/CMakeFiles/mobilenetssd.dir/clean
-
-# clean rule for target.
-clean: ncnn-20210525-full-source/examples/CMakeFiles/mobilenetssd.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target ncnn-20210525-full-source/examples/CMakeFiles/squeezenetssd.dir
-
-# All Build rule for target.
-ncnn-20210525-full-source/examples/CMakeFiles/squeezenetssd.dir/all: ncnn-20210525-full-source/src/CMakeFiles/ncnn.dir/all
-	$(MAKE) -f ncnn-20210525-full-source/examples/CMakeFiles/squeezenetssd.dir/build.make ncnn-20210525-full-source/examples/CMakeFiles/squeezenetssd.dir/depend
-	$(MAKE) -f ncnn-20210525-full-source/examples/CMakeFiles/squeezenetssd.dir/build.make ncnn-20210525-full-source/examples/CMakeFiles/squeezenetssd.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dkdk/git/mnist-ncnn/build/CMakeFiles --progress-num= "Built target squeezenetssd"
-.PHONY : ncnn-20210525-full-source/examples/CMakeFiles/squeezenetssd.dir/all
-
-# Include target in all.
-all: ncnn-20210525-full-source/examples/CMakeFiles/squeezenetssd.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-ncnn-20210525-full-source/examples/CMakeFiles/squeezenetssd.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 78
-	$(MAKE) -f CMakeFiles/Makefile2 ncnn-20210525-full-source/examples/CMakeFiles/squeezenetssd.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 0
-.PHONY : ncnn-20210525-full-source/examples/CMakeFiles/squeezenetssd.dir/rule
-
-# Convenience name for target.
-squeezenetssd: ncnn-20210525-full-source/examples/CMakeFiles/squeezenetssd.dir/rule
-
-.PHONY : squeezenetssd
-
-# clean rule for target.
-ncnn-20210525-full-source/examples/CMakeFiles/squeezenetssd.dir/clean:
-	$(MAKE) -f ncnn-20210525-full-source/examples/CMakeFiles/squeezenetssd.dir/build.make ncnn-20210525-full-source/examples/CMakeFiles/squeezenetssd.dir/clean
-.PHONY : ncnn-20210525-full-source/examples/CMakeFiles/squeezenetssd.dir/clean
-
-# clean rule for target.
-clean: ncnn-20210525-full-source/examples/CMakeFiles/squeezenetssd.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target ncnn-20210525-full-source/examples/CMakeFiles/peleenetssd_seg.dir
-
-# All Build rule for target.
-ncnn-20210525-full-source/examples/CMakeFiles/peleenetssd_seg.dir/all: ncnn-20210525-full-source/src/CMakeFiles/ncnn.dir/all
-	$(MAKE) -f ncnn-20210525-full-source/examples/CMakeFiles/peleenetssd_seg.dir/build.make ncnn-20210525-full-source/examples/CMakeFiles/peleenetssd_seg.dir/depend
-	$(MAKE) -f ncnn-20210525-full-source/examples/CMakeFiles/peleenetssd_seg.dir/build.make ncnn-20210525-full-source/examples/CMakeFiles/peleenetssd_seg.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dkdk/git/mnist-ncnn/build/CMakeFiles --progress-num=91 "Built target peleenetssd_seg"
-.PHONY : ncnn-20210525-full-source/examples/CMakeFiles/peleenetssd_seg.dir/all
-
-# Include target in all.
-all: ncnn-20210525-full-source/examples/CMakeFiles/peleenetssd_seg.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-ncnn-20210525-full-source/examples/CMakeFiles/peleenetssd_seg.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 79
-	$(MAKE) -f CMakeFiles/Makefile2 ncnn-20210525-full-source/examples/CMakeFiles/peleenetssd_seg.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 0
-.PHONY : ncnn-20210525-full-source/examples/CMakeFiles/peleenetssd_seg.dir/rule
-
-# Convenience name for target.
-peleenetssd_seg: ncnn-20210525-full-source/examples/CMakeFiles/peleenetssd_seg.dir/rule
-
-.PHONY : peleenetssd_seg
-
-# clean rule for target.
-ncnn-20210525-full-source/examples/CMakeFiles/peleenetssd_seg.dir/clean:
-	$(MAKE) -f ncnn-20210525-full-source/examples/CMakeFiles/peleenetssd_seg.dir/build.make ncnn-20210525-full-source/examples/CMakeFiles/peleenetssd_seg.dir/clean
-.PHONY : ncnn-20210525-full-source/examples/CMakeFiles/peleenetssd_seg.dir/clean
-
-# clean rule for target.
-clean: ncnn-20210525-full-source/examples/CMakeFiles/peleenetssd_seg.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target ncnn-20210525-full-source/examples/CMakeFiles/fasterrcnn.dir
-
-# All Build rule for target.
-ncnn-20210525-full-source/examples/CMakeFiles/fasterrcnn.dir/all: ncnn-20210525-full-source/src/CMakeFiles/ncnn.dir/all
-	$(MAKE) -f ncnn-20210525-full-source/examples/CMakeFiles/fasterrcnn.dir/build.make ncnn-20210525-full-source/examples/CMakeFiles/fasterrcnn.dir/depend
-	$(MAKE) -f ncnn-20210525-full-source/examples/CMakeFiles/fasterrcnn.dir/build.make ncnn-20210525-full-source/examples/CMakeFiles/fasterrcnn.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dkdk/git/mnist-ncnn/build/CMakeFiles --progress-num= "Built target fasterrcnn"
-.PHONY : ncnn-20210525-full-source/examples/CMakeFiles/fasterrcnn.dir/all
-
-# Include target in all.
-all: ncnn-20210525-full-source/examples/CMakeFiles/fasterrcnn.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-ncnn-20210525-full-source/examples/CMakeFiles/fasterrcnn.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 78
-	$(MAKE) -f CMakeFiles/Makefile2 ncnn-20210525-full-source/examples/CMakeFiles/fasterrcnn.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 0
-.PHONY : ncnn-20210525-full-source/examples/CMakeFiles/fasterrcnn.dir/rule
-
-# Convenience name for target.
-fasterrcnn: ncnn-20210525-full-source/examples/CMakeFiles/fasterrcnn.dir/rule
-
-.PHONY : fasterrcnn
-
-# clean rule for target.
-ncnn-20210525-full-source/examples/CMakeFiles/fasterrcnn.dir/clean:
-	$(MAKE) -f ncnn-20210525-full-source/examples/CMakeFiles/fasterrcnn.dir/build.make ncnn-20210525-full-source/examples/CMakeFiles/fasterrcnn.dir/clean
-.PHONY : ncnn-20210525-full-source/examples/CMakeFiles/fasterrcnn.dir/clean
-
-# clean rule for target.
-clean: ncnn-20210525-full-source/examples/CMakeFiles/fasterrcnn.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target ncnn-20210525-full-source/examples/CMakeFiles/retinaface.dir
-
-# All Build rule for target.
-ncnn-20210525-full-source/examples/CMakeFiles/retinaface.dir/all: ncnn-20210525-full-source/src/CMakeFiles/ncnn.dir/all
-	$(MAKE) -f ncnn-20210525-full-source/examples/CMakeFiles/retinaface.dir/build.make ncnn-20210525-full-source/examples/CMakeFiles/retinaface.dir/depend
-	$(MAKE) -f ncnn-20210525-full-source/examples/CMakeFiles/retinaface.dir/build.make ncnn-20210525-full-source/examples/CMakeFiles/retinaface.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dkdk/git/mnist-ncnn/build/CMakeFiles --progress-num=92 "Built target retinaface"
-.PHONY : ncnn-20210525-full-source/examples/CMakeFiles/retinaface.dir/all
-
-# Include target in all.
-all: ncnn-20210525-full-source/examples/CMakeFiles/retinaface.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-ncnn-20210525-full-source/examples/CMakeFiles/retinaface.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 79
-	$(MAKE) -f CMakeFiles/Makefile2 ncnn-20210525-full-source/examples/CMakeFiles/retinaface.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 0
-.PHONY : ncnn-20210525-full-source/examples/CMakeFiles/retinaface.dir/rule
-
-# Convenience name for target.
-retinaface: ncnn-20210525-full-source/examples/CMakeFiles/retinaface.dir/rule
-
-.PHONY : retinaface
-
-# clean rule for target.
-ncnn-20210525-full-source/examples/CMakeFiles/retinaface.dir/clean:
-	$(MAKE) -f ncnn-20210525-full-source/examples/CMakeFiles/retinaface.dir/build.make ncnn-20210525-full-source/examples/CMakeFiles/retinaface.dir/clean
-.PHONY : ncnn-20210525-full-source/examples/CMakeFiles/retinaface.dir/clean
-
-# clean rule for target.
-clean: ncnn-20210525-full-source/examples/CMakeFiles/retinaface.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target ncnn-20210525-full-source/examples/CMakeFiles/yolact.dir
-
-# All Build rule for target.
-ncnn-20210525-full-source/examples/CMakeFiles/yolact.dir/all: ncnn-20210525-full-source/src/CMakeFiles/ncnn.dir/all
-	$(MAKE) -f ncnn-20210525-full-source/examples/CMakeFiles/yolact.dir/build.make ncnn-20210525-full-source/examples/CMakeFiles/yolact.dir/depend
-	$(MAKE) -f ncnn-20210525-full-source/examples/CMakeFiles/yolact.dir/build.make ncnn-20210525-full-source/examples/CMakeFiles/yolact.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dkdk/git/mnist-ncnn/build/CMakeFiles --progress-num=97 "Built target yolact"
-.PHONY : ncnn-20210525-full-source/examples/CMakeFiles/yolact.dir/all
-
-# Include target in all.
-all: ncnn-20210525-full-source/examples/CMakeFiles/yolact.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-ncnn-20210525-full-source/examples/CMakeFiles/yolact.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 79
-	$(MAKE) -f CMakeFiles/Makefile2 ncnn-20210525-full-source/examples/CMakeFiles/yolact.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 0
-.PHONY : ncnn-20210525-full-source/examples/CMakeFiles/yolact.dir/rule
-
-# Convenience name for target.
-yolact: ncnn-20210525-full-source/examples/CMakeFiles/yolact.dir/rule
+yolact: ncnn/examples/CMakeFiles/yolact.dir/rule
 
 .PHONY : yolact
 
 # clean rule for target.
-ncnn-20210525-full-source/examples/CMakeFiles/yolact.dir/clean:
-	$(MAKE) -f ncnn-20210525-full-source/examples/CMakeFiles/yolact.dir/build.make ncnn-20210525-full-source/examples/CMakeFiles/yolact.dir/clean
-.PHONY : ncnn-20210525-full-source/examples/CMakeFiles/yolact.dir/clean
+ncnn/examples/CMakeFiles/yolact.dir/clean:
+	$(MAKE) -f ncnn/examples/CMakeFiles/yolact.dir/build.make ncnn/examples/CMakeFiles/yolact.dir/clean
+.PHONY : ncnn/examples/CMakeFiles/yolact.dir/clean
 
 # clean rule for target.
-clean: ncnn-20210525-full-source/examples/CMakeFiles/yolact.dir/clean
+clean: ncnn/examples/CMakeFiles/yolact.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Directory level rules for directory ncnn-20210525-full-source/tools
-
-# Convenience name for "all" pass in the directory.
-ncnn-20210525-full-source/tools/all: ncnn-20210525-full-source/tools/CMakeFiles/ncnnoptimize.dir/all
-ncnn-20210525-full-source/tools/all: ncnn-20210525-full-source/tools/CMakeFiles/ncnnmerge.dir/all
-ncnn-20210525-full-source/tools/all: ncnn-20210525-full-source/tools/CMakeFiles/ncnn2mem.dir/all
-ncnn-20210525-full-source/tools/all: ncnn-20210525-full-source/tools/caffe/all
-ncnn-20210525-full-source/tools/all: ncnn-20210525-full-source/tools/mxnet/all
-ncnn-20210525-full-source/tools/all: ncnn-20210525-full-source/tools/onnx/all
-ncnn-20210525-full-source/tools/all: ncnn-20210525-full-source/tools/darknet/all
-ncnn-20210525-full-source/tools/all: ncnn-20210525-full-source/tools/quantize/all
-
-.PHONY : ncnn-20210525-full-source/tools/all
-
-# Convenience name for "clean" pass in the directory.
-ncnn-20210525-full-source/tools/clean: ncnn-20210525-full-source/tools/CMakeFiles/ncnnoptimize.dir/clean
-ncnn-20210525-full-source/tools/clean: ncnn-20210525-full-source/tools/CMakeFiles/ncnnmerge.dir/clean
-ncnn-20210525-full-source/tools/clean: ncnn-20210525-full-source/tools/CMakeFiles/ncnn2mem.dir/clean
-ncnn-20210525-full-source/tools/clean: ncnn-20210525-full-source/tools/caffe/clean
-ncnn-20210525-full-source/tools/clean: ncnn-20210525-full-source/tools/mxnet/clean
-ncnn-20210525-full-source/tools/clean: ncnn-20210525-full-source/tools/onnx/clean
-ncnn-20210525-full-source/tools/clean: ncnn-20210525-full-source/tools/darknet/clean
-ncnn-20210525-full-source/tools/clean: ncnn-20210525-full-source/tools/quantize/clean
-
-.PHONY : ncnn-20210525-full-source/tools/clean
-
-# Convenience name for "preinstall" pass in the directory.
-ncnn-20210525-full-source/tools/preinstall: ncnn-20210525-full-source/tools/caffe/preinstall
-ncnn-20210525-full-source/tools/preinstall: ncnn-20210525-full-source/tools/mxnet/preinstall
-ncnn-20210525-full-source/tools/preinstall: ncnn-20210525-full-source/tools/onnx/preinstall
-ncnn-20210525-full-source/tools/preinstall: ncnn-20210525-full-source/tools/darknet/preinstall
-ncnn-20210525-full-source/tools/preinstall: ncnn-20210525-full-source/tools/quantize/preinstall
-
-.PHONY : ncnn-20210525-full-source/tools/preinstall
-
-#=============================================================================
-# Target rules for target ncnn-20210525-full-source/tools/CMakeFiles/ncnnoptimize.dir
+# Target rules for target ncnn/examples/CMakeFiles/yolov3.dir
 
 # All Build rule for target.
-ncnn-20210525-full-source/tools/CMakeFiles/ncnnoptimize.dir/all: ncnn-20210525-full-source/src/CMakeFiles/ncnn.dir/all
-	$(MAKE) -f ncnn-20210525-full-source/tools/CMakeFiles/ncnnoptimize.dir/build.make ncnn-20210525-full-source/tools/CMakeFiles/ncnnoptimize.dir/depend
-	$(MAKE) -f ncnn-20210525-full-source/tools/CMakeFiles/ncnnoptimize.dir/build.make ncnn-20210525-full-source/tools/CMakeFiles/ncnnoptimize.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dkdk/git/mnist-ncnn/build/CMakeFiles --progress-num=89 "Built target ncnnoptimize"
-.PHONY : ncnn-20210525-full-source/tools/CMakeFiles/ncnnoptimize.dir/all
+ncnn/examples/CMakeFiles/yolov3.dir/all: ncnn/glslang/glslang/CMakeFiles/MachineIndependent.dir/all
+ncnn/examples/CMakeFiles/yolov3.dir/all: ncnn/glslang/glslang/CMakeFiles/GenericCodeGen.dir/all
+ncnn/examples/CMakeFiles/yolov3.dir/all: ncnn/glslang/glslang/CMakeFiles/glslang.dir/all
+ncnn/examples/CMakeFiles/yolov3.dir/all: ncnn/glslang/glslang/OSDependent/Unix/CMakeFiles/OSDependent.dir/all
+ncnn/examples/CMakeFiles/yolov3.dir/all: ncnn/glslang/OGLCompilersDLL/CMakeFiles/OGLCompiler.dir/all
+ncnn/examples/CMakeFiles/yolov3.dir/all: ncnn/glslang/SPIRV/CMakeFiles/SPIRV.dir/all
+ncnn/examples/CMakeFiles/yolov3.dir/all: ncnn/src/CMakeFiles/ncnn.dir/all
+	$(MAKE) -f ncnn/examples/CMakeFiles/yolov3.dir/build.make ncnn/examples/CMakeFiles/yolov3.dir/depend
+	$(MAKE) -f ncnn/examples/CMakeFiles/yolov3.dir/build.make ncnn/examples/CMakeFiles/yolov3.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dkdk/git/mnist-ncnn/build/CMakeFiles --progress-num= "Built target yolov3"
+.PHONY : ncnn/examples/CMakeFiles/yolov3.dir/all
 
 # Include target in all.
-all: ncnn-20210525-full-source/tools/CMakeFiles/ncnnoptimize.dir/all
+all: ncnn/examples/CMakeFiles/yolov3.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-ncnn-20210525-full-source/tools/CMakeFiles/ncnnoptimize.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 79
-	$(MAKE) -f CMakeFiles/Makefile2 ncnn-20210525-full-source/tools/CMakeFiles/ncnnoptimize.dir/all
+ncnn/examples/CMakeFiles/yolov3.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 90
+	$(MAKE) -f CMakeFiles/Makefile2 ncnn/examples/CMakeFiles/yolov3.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 0
-.PHONY : ncnn-20210525-full-source/tools/CMakeFiles/ncnnoptimize.dir/rule
+.PHONY : ncnn/examples/CMakeFiles/yolov3.dir/rule
 
 # Convenience name for target.
-ncnnoptimize: ncnn-20210525-full-source/tools/CMakeFiles/ncnnoptimize.dir/rule
+yolov3: ncnn/examples/CMakeFiles/yolov3.dir/rule
+
+.PHONY : yolov3
+
+# clean rule for target.
+ncnn/examples/CMakeFiles/yolov3.dir/clean:
+	$(MAKE) -f ncnn/examples/CMakeFiles/yolov3.dir/build.make ncnn/examples/CMakeFiles/yolov3.dir/clean
+.PHONY : ncnn/examples/CMakeFiles/yolov3.dir/clean
+
+# clean rule for target.
+clean: ncnn/examples/CMakeFiles/yolov3.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target ncnn/examples/CMakeFiles/simplepose.dir
+
+# All Build rule for target.
+ncnn/examples/CMakeFiles/simplepose.dir/all: ncnn/glslang/glslang/CMakeFiles/MachineIndependent.dir/all
+ncnn/examples/CMakeFiles/simplepose.dir/all: ncnn/glslang/glslang/CMakeFiles/GenericCodeGen.dir/all
+ncnn/examples/CMakeFiles/simplepose.dir/all: ncnn/glslang/glslang/CMakeFiles/glslang.dir/all
+ncnn/examples/CMakeFiles/simplepose.dir/all: ncnn/glslang/glslang/OSDependent/Unix/CMakeFiles/OSDependent.dir/all
+ncnn/examples/CMakeFiles/simplepose.dir/all: ncnn/glslang/OGLCompilersDLL/CMakeFiles/OGLCompiler.dir/all
+ncnn/examples/CMakeFiles/simplepose.dir/all: ncnn/glslang/SPIRV/CMakeFiles/SPIRV.dir/all
+ncnn/examples/CMakeFiles/simplepose.dir/all: ncnn/src/CMakeFiles/ncnn.dir/all
+	$(MAKE) -f ncnn/examples/CMakeFiles/simplepose.dir/build.make ncnn/examples/CMakeFiles/simplepose.dir/depend
+	$(MAKE) -f ncnn/examples/CMakeFiles/simplepose.dir/build.make ncnn/examples/CMakeFiles/simplepose.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dkdk/git/mnist-ncnn/build/CMakeFiles --progress-num= "Built target simplepose"
+.PHONY : ncnn/examples/CMakeFiles/simplepose.dir/all
+
+# Include target in all.
+all: ncnn/examples/CMakeFiles/simplepose.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+ncnn/examples/CMakeFiles/simplepose.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 90
+	$(MAKE) -f CMakeFiles/Makefile2 ncnn/examples/CMakeFiles/simplepose.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 0
+.PHONY : ncnn/examples/CMakeFiles/simplepose.dir/rule
+
+# Convenience name for target.
+simplepose: ncnn/examples/CMakeFiles/simplepose.dir/rule
+
+.PHONY : simplepose
+
+# clean rule for target.
+ncnn/examples/CMakeFiles/simplepose.dir/clean:
+	$(MAKE) -f ncnn/examples/CMakeFiles/simplepose.dir/build.make ncnn/examples/CMakeFiles/simplepose.dir/clean
+.PHONY : ncnn/examples/CMakeFiles/simplepose.dir/clean
+
+# clean rule for target.
+clean: ncnn/examples/CMakeFiles/simplepose.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target ncnn/examples/CMakeFiles/nanodet.dir
+
+# All Build rule for target.
+ncnn/examples/CMakeFiles/nanodet.dir/all: ncnn/glslang/glslang/CMakeFiles/MachineIndependent.dir/all
+ncnn/examples/CMakeFiles/nanodet.dir/all: ncnn/glslang/glslang/CMakeFiles/GenericCodeGen.dir/all
+ncnn/examples/CMakeFiles/nanodet.dir/all: ncnn/glslang/glslang/CMakeFiles/glslang.dir/all
+ncnn/examples/CMakeFiles/nanodet.dir/all: ncnn/glslang/glslang/OSDependent/Unix/CMakeFiles/OSDependent.dir/all
+ncnn/examples/CMakeFiles/nanodet.dir/all: ncnn/glslang/OGLCompilersDLL/CMakeFiles/OGLCompiler.dir/all
+ncnn/examples/CMakeFiles/nanodet.dir/all: ncnn/glslang/SPIRV/CMakeFiles/SPIRV.dir/all
+ncnn/examples/CMakeFiles/nanodet.dir/all: ncnn/src/CMakeFiles/ncnn.dir/all
+	$(MAKE) -f ncnn/examples/CMakeFiles/nanodet.dir/build.make ncnn/examples/CMakeFiles/nanodet.dir/depend
+	$(MAKE) -f ncnn/examples/CMakeFiles/nanodet.dir/build.make ncnn/examples/CMakeFiles/nanodet.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dkdk/git/mnist-ncnn/build/CMakeFiles --progress-num= "Built target nanodet"
+.PHONY : ncnn/examples/CMakeFiles/nanodet.dir/all
+
+# Include target in all.
+all: ncnn/examples/CMakeFiles/nanodet.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+ncnn/examples/CMakeFiles/nanodet.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 90
+	$(MAKE) -f CMakeFiles/Makefile2 ncnn/examples/CMakeFiles/nanodet.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 0
+.PHONY : ncnn/examples/CMakeFiles/nanodet.dir/rule
+
+# Convenience name for target.
+nanodet: ncnn/examples/CMakeFiles/nanodet.dir/rule
+
+.PHONY : nanodet
+
+# clean rule for target.
+ncnn/examples/CMakeFiles/nanodet.dir/clean:
+	$(MAKE) -f ncnn/examples/CMakeFiles/nanodet.dir/build.make ncnn/examples/CMakeFiles/nanodet.dir/clean
+.PHONY : ncnn/examples/CMakeFiles/nanodet.dir/clean
+
+# clean rule for target.
+clean: ncnn/examples/CMakeFiles/nanodet.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target ncnn/examples/CMakeFiles/shufflenetv2.dir
+
+# All Build rule for target.
+ncnn/examples/CMakeFiles/shufflenetv2.dir/all: ncnn/glslang/glslang/CMakeFiles/MachineIndependent.dir/all
+ncnn/examples/CMakeFiles/shufflenetv2.dir/all: ncnn/glslang/glslang/CMakeFiles/GenericCodeGen.dir/all
+ncnn/examples/CMakeFiles/shufflenetv2.dir/all: ncnn/glslang/glslang/CMakeFiles/glslang.dir/all
+ncnn/examples/CMakeFiles/shufflenetv2.dir/all: ncnn/glslang/glslang/OSDependent/Unix/CMakeFiles/OSDependent.dir/all
+ncnn/examples/CMakeFiles/shufflenetv2.dir/all: ncnn/glslang/OGLCompilersDLL/CMakeFiles/OGLCompiler.dir/all
+ncnn/examples/CMakeFiles/shufflenetv2.dir/all: ncnn/glslang/SPIRV/CMakeFiles/SPIRV.dir/all
+ncnn/examples/CMakeFiles/shufflenetv2.dir/all: ncnn/src/CMakeFiles/ncnn.dir/all
+	$(MAKE) -f ncnn/examples/CMakeFiles/shufflenetv2.dir/build.make ncnn/examples/CMakeFiles/shufflenetv2.dir/depend
+	$(MAKE) -f ncnn/examples/CMakeFiles/shufflenetv2.dir/build.make ncnn/examples/CMakeFiles/shufflenetv2.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dkdk/git/mnist-ncnn/build/CMakeFiles --progress-num= "Built target shufflenetv2"
+.PHONY : ncnn/examples/CMakeFiles/shufflenetv2.dir/all
+
+# Include target in all.
+all: ncnn/examples/CMakeFiles/shufflenetv2.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+ncnn/examples/CMakeFiles/shufflenetv2.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 90
+	$(MAKE) -f CMakeFiles/Makefile2 ncnn/examples/CMakeFiles/shufflenetv2.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 0
+.PHONY : ncnn/examples/CMakeFiles/shufflenetv2.dir/rule
+
+# Convenience name for target.
+shufflenetv2: ncnn/examples/CMakeFiles/shufflenetv2.dir/rule
+
+.PHONY : shufflenetv2
+
+# clean rule for target.
+ncnn/examples/CMakeFiles/shufflenetv2.dir/clean:
+	$(MAKE) -f ncnn/examples/CMakeFiles/shufflenetv2.dir/build.make ncnn/examples/CMakeFiles/shufflenetv2.dir/clean
+.PHONY : ncnn/examples/CMakeFiles/shufflenetv2.dir/clean
+
+# clean rule for target.
+clean: ncnn/examples/CMakeFiles/shufflenetv2.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target ncnn/examples/CMakeFiles/yolov4.dir
+
+# All Build rule for target.
+ncnn/examples/CMakeFiles/yolov4.dir/all: ncnn/glslang/glslang/CMakeFiles/MachineIndependent.dir/all
+ncnn/examples/CMakeFiles/yolov4.dir/all: ncnn/glslang/glslang/CMakeFiles/GenericCodeGen.dir/all
+ncnn/examples/CMakeFiles/yolov4.dir/all: ncnn/glslang/glslang/CMakeFiles/glslang.dir/all
+ncnn/examples/CMakeFiles/yolov4.dir/all: ncnn/glslang/glslang/OSDependent/Unix/CMakeFiles/OSDependent.dir/all
+ncnn/examples/CMakeFiles/yolov4.dir/all: ncnn/glslang/OGLCompilersDLL/CMakeFiles/OGLCompiler.dir/all
+ncnn/examples/CMakeFiles/yolov4.dir/all: ncnn/glslang/SPIRV/CMakeFiles/SPIRV.dir/all
+ncnn/examples/CMakeFiles/yolov4.dir/all: ncnn/src/CMakeFiles/ncnn.dir/all
+	$(MAKE) -f ncnn/examples/CMakeFiles/yolov4.dir/build.make ncnn/examples/CMakeFiles/yolov4.dir/depend
+	$(MAKE) -f ncnn/examples/CMakeFiles/yolov4.dir/build.make ncnn/examples/CMakeFiles/yolov4.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dkdk/git/mnist-ncnn/build/CMakeFiles --progress-num= "Built target yolov4"
+.PHONY : ncnn/examples/CMakeFiles/yolov4.dir/all
+
+# Include target in all.
+all: ncnn/examples/CMakeFiles/yolov4.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+ncnn/examples/CMakeFiles/yolov4.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 90
+	$(MAKE) -f CMakeFiles/Makefile2 ncnn/examples/CMakeFiles/yolov4.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 0
+.PHONY : ncnn/examples/CMakeFiles/yolov4.dir/rule
+
+# Convenience name for target.
+yolov4: ncnn/examples/CMakeFiles/yolov4.dir/rule
+
+.PHONY : yolov4
+
+# clean rule for target.
+ncnn/examples/CMakeFiles/yolov4.dir/clean:
+	$(MAKE) -f ncnn/examples/CMakeFiles/yolov4.dir/build.make ncnn/examples/CMakeFiles/yolov4.dir/clean
+.PHONY : ncnn/examples/CMakeFiles/yolov4.dir/clean
+
+# clean rule for target.
+clean: ncnn/examples/CMakeFiles/yolov4.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target ncnn/examples/CMakeFiles/squeezenet.dir
+
+# All Build rule for target.
+ncnn/examples/CMakeFiles/squeezenet.dir/all: ncnn/glslang/glslang/CMakeFiles/MachineIndependent.dir/all
+ncnn/examples/CMakeFiles/squeezenet.dir/all: ncnn/glslang/glslang/CMakeFiles/GenericCodeGen.dir/all
+ncnn/examples/CMakeFiles/squeezenet.dir/all: ncnn/glslang/glslang/CMakeFiles/glslang.dir/all
+ncnn/examples/CMakeFiles/squeezenet.dir/all: ncnn/glslang/glslang/OSDependent/Unix/CMakeFiles/OSDependent.dir/all
+ncnn/examples/CMakeFiles/squeezenet.dir/all: ncnn/glslang/OGLCompilersDLL/CMakeFiles/OGLCompiler.dir/all
+ncnn/examples/CMakeFiles/squeezenet.dir/all: ncnn/glslang/SPIRV/CMakeFiles/SPIRV.dir/all
+ncnn/examples/CMakeFiles/squeezenet.dir/all: ncnn/src/CMakeFiles/ncnn.dir/all
+	$(MAKE) -f ncnn/examples/CMakeFiles/squeezenet.dir/build.make ncnn/examples/CMakeFiles/squeezenet.dir/depend
+	$(MAKE) -f ncnn/examples/CMakeFiles/squeezenet.dir/build.make ncnn/examples/CMakeFiles/squeezenet.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dkdk/git/mnist-ncnn/build/CMakeFiles --progress-num=98 "Built target squeezenet"
+.PHONY : ncnn/examples/CMakeFiles/squeezenet.dir/all
+
+# Include target in all.
+all: ncnn/examples/CMakeFiles/squeezenet.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+ncnn/examples/CMakeFiles/squeezenet.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 91
+	$(MAKE) -f CMakeFiles/Makefile2 ncnn/examples/CMakeFiles/squeezenet.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 0
+.PHONY : ncnn/examples/CMakeFiles/squeezenet.dir/rule
+
+# Convenience name for target.
+squeezenet: ncnn/examples/CMakeFiles/squeezenet.dir/rule
+
+.PHONY : squeezenet
+
+# clean rule for target.
+ncnn/examples/CMakeFiles/squeezenet.dir/clean:
+	$(MAKE) -f ncnn/examples/CMakeFiles/squeezenet.dir/build.make ncnn/examples/CMakeFiles/squeezenet.dir/clean
+.PHONY : ncnn/examples/CMakeFiles/squeezenet.dir/clean
+
+# clean rule for target.
+clean: ncnn/examples/CMakeFiles/squeezenet.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target ncnn/examples/CMakeFiles/squeezenet_c_api.dir
+
+# All Build rule for target.
+ncnn/examples/CMakeFiles/squeezenet_c_api.dir/all: ncnn/glslang/glslang/CMakeFiles/MachineIndependent.dir/all
+ncnn/examples/CMakeFiles/squeezenet_c_api.dir/all: ncnn/glslang/glslang/CMakeFiles/GenericCodeGen.dir/all
+ncnn/examples/CMakeFiles/squeezenet_c_api.dir/all: ncnn/glslang/glslang/CMakeFiles/glslang.dir/all
+ncnn/examples/CMakeFiles/squeezenet_c_api.dir/all: ncnn/glslang/glslang/OSDependent/Unix/CMakeFiles/OSDependent.dir/all
+ncnn/examples/CMakeFiles/squeezenet_c_api.dir/all: ncnn/glslang/OGLCompilersDLL/CMakeFiles/OGLCompiler.dir/all
+ncnn/examples/CMakeFiles/squeezenet_c_api.dir/all: ncnn/glslang/SPIRV/CMakeFiles/SPIRV.dir/all
+ncnn/examples/CMakeFiles/squeezenet_c_api.dir/all: ncnn/src/CMakeFiles/ncnn.dir/all
+	$(MAKE) -f ncnn/examples/CMakeFiles/squeezenet_c_api.dir/build.make ncnn/examples/CMakeFiles/squeezenet_c_api.dir/depend
+	$(MAKE) -f ncnn/examples/CMakeFiles/squeezenet_c_api.dir/build.make ncnn/examples/CMakeFiles/squeezenet_c_api.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dkdk/git/mnist-ncnn/build/CMakeFiles --progress-num= "Built target squeezenet_c_api"
+.PHONY : ncnn/examples/CMakeFiles/squeezenet_c_api.dir/all
+
+# Include target in all.
+all: ncnn/examples/CMakeFiles/squeezenet_c_api.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+ncnn/examples/CMakeFiles/squeezenet_c_api.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 90
+	$(MAKE) -f CMakeFiles/Makefile2 ncnn/examples/CMakeFiles/squeezenet_c_api.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 0
+.PHONY : ncnn/examples/CMakeFiles/squeezenet_c_api.dir/rule
+
+# Convenience name for target.
+squeezenet_c_api: ncnn/examples/CMakeFiles/squeezenet_c_api.dir/rule
+
+.PHONY : squeezenet_c_api
+
+# clean rule for target.
+ncnn/examples/CMakeFiles/squeezenet_c_api.dir/clean:
+	$(MAKE) -f ncnn/examples/CMakeFiles/squeezenet_c_api.dir/build.make ncnn/examples/CMakeFiles/squeezenet_c_api.dir/clean
+.PHONY : ncnn/examples/CMakeFiles/squeezenet_c_api.dir/clean
+
+# clean rule for target.
+clean: ncnn/examples/CMakeFiles/squeezenet_c_api.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target ncnn/examples/CMakeFiles/yolov5.dir
+
+# All Build rule for target.
+ncnn/examples/CMakeFiles/yolov5.dir/all: ncnn/glslang/glslang/CMakeFiles/MachineIndependent.dir/all
+ncnn/examples/CMakeFiles/yolov5.dir/all: ncnn/glslang/glslang/CMakeFiles/GenericCodeGen.dir/all
+ncnn/examples/CMakeFiles/yolov5.dir/all: ncnn/glslang/glslang/CMakeFiles/glslang.dir/all
+ncnn/examples/CMakeFiles/yolov5.dir/all: ncnn/glslang/glslang/OSDependent/Unix/CMakeFiles/OSDependent.dir/all
+ncnn/examples/CMakeFiles/yolov5.dir/all: ncnn/glslang/OGLCompilersDLL/CMakeFiles/OGLCompiler.dir/all
+ncnn/examples/CMakeFiles/yolov5.dir/all: ncnn/glslang/SPIRV/CMakeFiles/SPIRV.dir/all
+ncnn/examples/CMakeFiles/yolov5.dir/all: ncnn/src/CMakeFiles/ncnn.dir/all
+	$(MAKE) -f ncnn/examples/CMakeFiles/yolov5.dir/build.make ncnn/examples/CMakeFiles/yolov5.dir/depend
+	$(MAKE) -f ncnn/examples/CMakeFiles/yolov5.dir/build.make ncnn/examples/CMakeFiles/yolov5.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dkdk/git/mnist-ncnn/build/CMakeFiles --progress-num= "Built target yolov5"
+.PHONY : ncnn/examples/CMakeFiles/yolov5.dir/all
+
+# Include target in all.
+all: ncnn/examples/CMakeFiles/yolov5.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+ncnn/examples/CMakeFiles/yolov5.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 90
+	$(MAKE) -f CMakeFiles/Makefile2 ncnn/examples/CMakeFiles/yolov5.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 0
+.PHONY : ncnn/examples/CMakeFiles/yolov5.dir/rule
+
+# Convenience name for target.
+yolov5: ncnn/examples/CMakeFiles/yolov5.dir/rule
+
+.PHONY : yolov5
+
+# clean rule for target.
+ncnn/examples/CMakeFiles/yolov5.dir/clean:
+	$(MAKE) -f ncnn/examples/CMakeFiles/yolov5.dir/build.make ncnn/examples/CMakeFiles/yolov5.dir/clean
+.PHONY : ncnn/examples/CMakeFiles/yolov5.dir/clean
+
+# clean rule for target.
+clean: ncnn/examples/CMakeFiles/yolov5.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target ncnn/examples/CMakeFiles/rfcn.dir
+
+# All Build rule for target.
+ncnn/examples/CMakeFiles/rfcn.dir/all: ncnn/glslang/glslang/CMakeFiles/MachineIndependent.dir/all
+ncnn/examples/CMakeFiles/rfcn.dir/all: ncnn/glslang/glslang/CMakeFiles/GenericCodeGen.dir/all
+ncnn/examples/CMakeFiles/rfcn.dir/all: ncnn/glslang/glslang/CMakeFiles/glslang.dir/all
+ncnn/examples/CMakeFiles/rfcn.dir/all: ncnn/glslang/glslang/OSDependent/Unix/CMakeFiles/OSDependent.dir/all
+ncnn/examples/CMakeFiles/rfcn.dir/all: ncnn/glslang/OGLCompilersDLL/CMakeFiles/OGLCompiler.dir/all
+ncnn/examples/CMakeFiles/rfcn.dir/all: ncnn/glslang/SPIRV/CMakeFiles/SPIRV.dir/all
+ncnn/examples/CMakeFiles/rfcn.dir/all: ncnn/src/CMakeFiles/ncnn.dir/all
+	$(MAKE) -f ncnn/examples/CMakeFiles/rfcn.dir/build.make ncnn/examples/CMakeFiles/rfcn.dir/depend
+	$(MAKE) -f ncnn/examples/CMakeFiles/rfcn.dir/build.make ncnn/examples/CMakeFiles/rfcn.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dkdk/git/mnist-ncnn/build/CMakeFiles --progress-num= "Built target rfcn"
+.PHONY : ncnn/examples/CMakeFiles/rfcn.dir/all
+
+# Include target in all.
+all: ncnn/examples/CMakeFiles/rfcn.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+ncnn/examples/CMakeFiles/rfcn.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 90
+	$(MAKE) -f CMakeFiles/Makefile2 ncnn/examples/CMakeFiles/rfcn.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 0
+.PHONY : ncnn/examples/CMakeFiles/rfcn.dir/rule
+
+# Convenience name for target.
+rfcn: ncnn/examples/CMakeFiles/rfcn.dir/rule
+
+.PHONY : rfcn
+
+# clean rule for target.
+ncnn/examples/CMakeFiles/rfcn.dir/clean:
+	$(MAKE) -f ncnn/examples/CMakeFiles/rfcn.dir/build.make ncnn/examples/CMakeFiles/rfcn.dir/clean
+.PHONY : ncnn/examples/CMakeFiles/rfcn.dir/clean
+
+# clean rule for target.
+clean: ncnn/examples/CMakeFiles/rfcn.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target ncnn/examples/CMakeFiles/yolox.dir
+
+# All Build rule for target.
+ncnn/examples/CMakeFiles/yolox.dir/all: ncnn/glslang/glslang/CMakeFiles/MachineIndependent.dir/all
+ncnn/examples/CMakeFiles/yolox.dir/all: ncnn/glslang/glslang/CMakeFiles/GenericCodeGen.dir/all
+ncnn/examples/CMakeFiles/yolox.dir/all: ncnn/glslang/glslang/CMakeFiles/glslang.dir/all
+ncnn/examples/CMakeFiles/yolox.dir/all: ncnn/glslang/glslang/OSDependent/Unix/CMakeFiles/OSDependent.dir/all
+ncnn/examples/CMakeFiles/yolox.dir/all: ncnn/glslang/OGLCompilersDLL/CMakeFiles/OGLCompiler.dir/all
+ncnn/examples/CMakeFiles/yolox.dir/all: ncnn/glslang/SPIRV/CMakeFiles/SPIRV.dir/all
+ncnn/examples/CMakeFiles/yolox.dir/all: ncnn/src/CMakeFiles/ncnn.dir/all
+	$(MAKE) -f ncnn/examples/CMakeFiles/yolox.dir/build.make ncnn/examples/CMakeFiles/yolox.dir/depend
+	$(MAKE) -f ncnn/examples/CMakeFiles/yolox.dir/build.make ncnn/examples/CMakeFiles/yolox.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dkdk/git/mnist-ncnn/build/CMakeFiles --progress-num=100 "Built target yolox"
+.PHONY : ncnn/examples/CMakeFiles/yolox.dir/all
+
+# Include target in all.
+all: ncnn/examples/CMakeFiles/yolox.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+ncnn/examples/CMakeFiles/yolox.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 91
+	$(MAKE) -f CMakeFiles/Makefile2 ncnn/examples/CMakeFiles/yolox.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 0
+.PHONY : ncnn/examples/CMakeFiles/yolox.dir/rule
+
+# Convenience name for target.
+yolox: ncnn/examples/CMakeFiles/yolox.dir/rule
+
+.PHONY : yolox
+
+# clean rule for target.
+ncnn/examples/CMakeFiles/yolox.dir/clean:
+	$(MAKE) -f ncnn/examples/CMakeFiles/yolox.dir/build.make ncnn/examples/CMakeFiles/yolox.dir/clean
+.PHONY : ncnn/examples/CMakeFiles/yolox.dir/clean
+
+# clean rule for target.
+clean: ncnn/examples/CMakeFiles/yolox.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target ncnn/examples/CMakeFiles/yolov2.dir
+
+# All Build rule for target.
+ncnn/examples/CMakeFiles/yolov2.dir/all: ncnn/glslang/glslang/CMakeFiles/MachineIndependent.dir/all
+ncnn/examples/CMakeFiles/yolov2.dir/all: ncnn/glslang/glslang/CMakeFiles/GenericCodeGen.dir/all
+ncnn/examples/CMakeFiles/yolov2.dir/all: ncnn/glslang/glslang/CMakeFiles/glslang.dir/all
+ncnn/examples/CMakeFiles/yolov2.dir/all: ncnn/glslang/glslang/OSDependent/Unix/CMakeFiles/OSDependent.dir/all
+ncnn/examples/CMakeFiles/yolov2.dir/all: ncnn/glslang/OGLCompilersDLL/CMakeFiles/OGLCompiler.dir/all
+ncnn/examples/CMakeFiles/yolov2.dir/all: ncnn/glslang/SPIRV/CMakeFiles/SPIRV.dir/all
+ncnn/examples/CMakeFiles/yolov2.dir/all: ncnn/src/CMakeFiles/ncnn.dir/all
+	$(MAKE) -f ncnn/examples/CMakeFiles/yolov2.dir/build.make ncnn/examples/CMakeFiles/yolov2.dir/depend
+	$(MAKE) -f ncnn/examples/CMakeFiles/yolov2.dir/build.make ncnn/examples/CMakeFiles/yolov2.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dkdk/git/mnist-ncnn/build/CMakeFiles --progress-num=99 "Built target yolov2"
+.PHONY : ncnn/examples/CMakeFiles/yolov2.dir/all
+
+# Include target in all.
+all: ncnn/examples/CMakeFiles/yolov2.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+ncnn/examples/CMakeFiles/yolov2.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 91
+	$(MAKE) -f CMakeFiles/Makefile2 ncnn/examples/CMakeFiles/yolov2.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 0
+.PHONY : ncnn/examples/CMakeFiles/yolov2.dir/rule
+
+# Convenience name for target.
+yolov2: ncnn/examples/CMakeFiles/yolov2.dir/rule
+
+.PHONY : yolov2
+
+# clean rule for target.
+ncnn/examples/CMakeFiles/yolov2.dir/clean:
+	$(MAKE) -f ncnn/examples/CMakeFiles/yolov2.dir/build.make ncnn/examples/CMakeFiles/yolov2.dir/clean
+.PHONY : ncnn/examples/CMakeFiles/yolov2.dir/clean
+
+# clean rule for target.
+clean: ncnn/examples/CMakeFiles/yolov2.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target ncnn/examples/CMakeFiles/mobilenetv2ssdlite.dir
+
+# All Build rule for target.
+ncnn/examples/CMakeFiles/mobilenetv2ssdlite.dir/all: ncnn/glslang/glslang/CMakeFiles/MachineIndependent.dir/all
+ncnn/examples/CMakeFiles/mobilenetv2ssdlite.dir/all: ncnn/glslang/glslang/CMakeFiles/GenericCodeGen.dir/all
+ncnn/examples/CMakeFiles/mobilenetv2ssdlite.dir/all: ncnn/glslang/glslang/CMakeFiles/glslang.dir/all
+ncnn/examples/CMakeFiles/mobilenetv2ssdlite.dir/all: ncnn/glslang/glslang/OSDependent/Unix/CMakeFiles/OSDependent.dir/all
+ncnn/examples/CMakeFiles/mobilenetv2ssdlite.dir/all: ncnn/glslang/OGLCompilersDLL/CMakeFiles/OGLCompiler.dir/all
+ncnn/examples/CMakeFiles/mobilenetv2ssdlite.dir/all: ncnn/glslang/SPIRV/CMakeFiles/SPIRV.dir/all
+ncnn/examples/CMakeFiles/mobilenetv2ssdlite.dir/all: ncnn/src/CMakeFiles/ncnn.dir/all
+	$(MAKE) -f ncnn/examples/CMakeFiles/mobilenetv2ssdlite.dir/build.make ncnn/examples/CMakeFiles/mobilenetv2ssdlite.dir/depend
+	$(MAKE) -f ncnn/examples/CMakeFiles/mobilenetv2ssdlite.dir/build.make ncnn/examples/CMakeFiles/mobilenetv2ssdlite.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dkdk/git/mnist-ncnn/build/CMakeFiles --progress-num=8 "Built target mobilenetv2ssdlite"
+.PHONY : ncnn/examples/CMakeFiles/mobilenetv2ssdlite.dir/all
+
+# Include target in all.
+all: ncnn/examples/CMakeFiles/mobilenetv2ssdlite.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+ncnn/examples/CMakeFiles/mobilenetv2ssdlite.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 91
+	$(MAKE) -f CMakeFiles/Makefile2 ncnn/examples/CMakeFiles/mobilenetv2ssdlite.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 0
+.PHONY : ncnn/examples/CMakeFiles/mobilenetv2ssdlite.dir/rule
+
+# Convenience name for target.
+mobilenetv2ssdlite: ncnn/examples/CMakeFiles/mobilenetv2ssdlite.dir/rule
+
+.PHONY : mobilenetv2ssdlite
+
+# clean rule for target.
+ncnn/examples/CMakeFiles/mobilenetv2ssdlite.dir/clean:
+	$(MAKE) -f ncnn/examples/CMakeFiles/mobilenetv2ssdlite.dir/build.make ncnn/examples/CMakeFiles/mobilenetv2ssdlite.dir/clean
+.PHONY : ncnn/examples/CMakeFiles/mobilenetv2ssdlite.dir/clean
+
+# clean rule for target.
+clean: ncnn/examples/CMakeFiles/mobilenetv2ssdlite.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target ncnn/examples/CMakeFiles/mobilenetssd.dir
+
+# All Build rule for target.
+ncnn/examples/CMakeFiles/mobilenetssd.dir/all: ncnn/glslang/glslang/CMakeFiles/MachineIndependent.dir/all
+ncnn/examples/CMakeFiles/mobilenetssd.dir/all: ncnn/glslang/glslang/CMakeFiles/GenericCodeGen.dir/all
+ncnn/examples/CMakeFiles/mobilenetssd.dir/all: ncnn/glslang/glslang/CMakeFiles/glslang.dir/all
+ncnn/examples/CMakeFiles/mobilenetssd.dir/all: ncnn/glslang/glslang/OSDependent/Unix/CMakeFiles/OSDependent.dir/all
+ncnn/examples/CMakeFiles/mobilenetssd.dir/all: ncnn/glslang/OGLCompilersDLL/CMakeFiles/OGLCompiler.dir/all
+ncnn/examples/CMakeFiles/mobilenetssd.dir/all: ncnn/glslang/SPIRV/CMakeFiles/SPIRV.dir/all
+ncnn/examples/CMakeFiles/mobilenetssd.dir/all: ncnn/src/CMakeFiles/ncnn.dir/all
+	$(MAKE) -f ncnn/examples/CMakeFiles/mobilenetssd.dir/build.make ncnn/examples/CMakeFiles/mobilenetssd.dir/depend
+	$(MAKE) -f ncnn/examples/CMakeFiles/mobilenetssd.dir/build.make ncnn/examples/CMakeFiles/mobilenetssd.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dkdk/git/mnist-ncnn/build/CMakeFiles --progress-num= "Built target mobilenetssd"
+.PHONY : ncnn/examples/CMakeFiles/mobilenetssd.dir/all
+
+# Include target in all.
+all: ncnn/examples/CMakeFiles/mobilenetssd.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+ncnn/examples/CMakeFiles/mobilenetssd.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 90
+	$(MAKE) -f CMakeFiles/Makefile2 ncnn/examples/CMakeFiles/mobilenetssd.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 0
+.PHONY : ncnn/examples/CMakeFiles/mobilenetssd.dir/rule
+
+# Convenience name for target.
+mobilenetssd: ncnn/examples/CMakeFiles/mobilenetssd.dir/rule
+
+.PHONY : mobilenetssd
+
+# clean rule for target.
+ncnn/examples/CMakeFiles/mobilenetssd.dir/clean:
+	$(MAKE) -f ncnn/examples/CMakeFiles/mobilenetssd.dir/build.make ncnn/examples/CMakeFiles/mobilenetssd.dir/clean
+.PHONY : ncnn/examples/CMakeFiles/mobilenetssd.dir/clean
+
+# clean rule for target.
+clean: ncnn/examples/CMakeFiles/mobilenetssd.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target ncnn/examples/CMakeFiles/squeezenetssd.dir
+
+# All Build rule for target.
+ncnn/examples/CMakeFiles/squeezenetssd.dir/all: ncnn/glslang/glslang/CMakeFiles/MachineIndependent.dir/all
+ncnn/examples/CMakeFiles/squeezenetssd.dir/all: ncnn/glslang/glslang/CMakeFiles/GenericCodeGen.dir/all
+ncnn/examples/CMakeFiles/squeezenetssd.dir/all: ncnn/glslang/glslang/CMakeFiles/glslang.dir/all
+ncnn/examples/CMakeFiles/squeezenetssd.dir/all: ncnn/glslang/glslang/OSDependent/Unix/CMakeFiles/OSDependent.dir/all
+ncnn/examples/CMakeFiles/squeezenetssd.dir/all: ncnn/glslang/OGLCompilersDLL/CMakeFiles/OGLCompiler.dir/all
+ncnn/examples/CMakeFiles/squeezenetssd.dir/all: ncnn/glslang/SPIRV/CMakeFiles/SPIRV.dir/all
+ncnn/examples/CMakeFiles/squeezenetssd.dir/all: ncnn/src/CMakeFiles/ncnn.dir/all
+	$(MAKE) -f ncnn/examples/CMakeFiles/squeezenetssd.dir/build.make ncnn/examples/CMakeFiles/squeezenetssd.dir/depend
+	$(MAKE) -f ncnn/examples/CMakeFiles/squeezenetssd.dir/build.make ncnn/examples/CMakeFiles/squeezenetssd.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dkdk/git/mnist-ncnn/build/CMakeFiles --progress-num= "Built target squeezenetssd"
+.PHONY : ncnn/examples/CMakeFiles/squeezenetssd.dir/all
+
+# Include target in all.
+all: ncnn/examples/CMakeFiles/squeezenetssd.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+ncnn/examples/CMakeFiles/squeezenetssd.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 90
+	$(MAKE) -f CMakeFiles/Makefile2 ncnn/examples/CMakeFiles/squeezenetssd.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 0
+.PHONY : ncnn/examples/CMakeFiles/squeezenetssd.dir/rule
+
+# Convenience name for target.
+squeezenetssd: ncnn/examples/CMakeFiles/squeezenetssd.dir/rule
+
+.PHONY : squeezenetssd
+
+# clean rule for target.
+ncnn/examples/CMakeFiles/squeezenetssd.dir/clean:
+	$(MAKE) -f ncnn/examples/CMakeFiles/squeezenetssd.dir/build.make ncnn/examples/CMakeFiles/squeezenetssd.dir/clean
+.PHONY : ncnn/examples/CMakeFiles/squeezenetssd.dir/clean
+
+# clean rule for target.
+clean: ncnn/examples/CMakeFiles/squeezenetssd.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target ncnn/examples/CMakeFiles/peleenetssd_seg.dir
+
+# All Build rule for target.
+ncnn/examples/CMakeFiles/peleenetssd_seg.dir/all: ncnn/glslang/glslang/CMakeFiles/MachineIndependent.dir/all
+ncnn/examples/CMakeFiles/peleenetssd_seg.dir/all: ncnn/glslang/glslang/CMakeFiles/GenericCodeGen.dir/all
+ncnn/examples/CMakeFiles/peleenetssd_seg.dir/all: ncnn/glslang/glslang/CMakeFiles/glslang.dir/all
+ncnn/examples/CMakeFiles/peleenetssd_seg.dir/all: ncnn/glslang/glslang/OSDependent/Unix/CMakeFiles/OSDependent.dir/all
+ncnn/examples/CMakeFiles/peleenetssd_seg.dir/all: ncnn/glslang/OGLCompilersDLL/CMakeFiles/OGLCompiler.dir/all
+ncnn/examples/CMakeFiles/peleenetssd_seg.dir/all: ncnn/glslang/SPIRV/CMakeFiles/SPIRV.dir/all
+ncnn/examples/CMakeFiles/peleenetssd_seg.dir/all: ncnn/src/CMakeFiles/ncnn.dir/all
+	$(MAKE) -f ncnn/examples/CMakeFiles/peleenetssd_seg.dir/build.make ncnn/examples/CMakeFiles/peleenetssd_seg.dir/depend
+	$(MAKE) -f ncnn/examples/CMakeFiles/peleenetssd_seg.dir/build.make ncnn/examples/CMakeFiles/peleenetssd_seg.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dkdk/git/mnist-ncnn/build/CMakeFiles --progress-num=96 "Built target peleenetssd_seg"
+.PHONY : ncnn/examples/CMakeFiles/peleenetssd_seg.dir/all
+
+# Include target in all.
+all: ncnn/examples/CMakeFiles/peleenetssd_seg.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+ncnn/examples/CMakeFiles/peleenetssd_seg.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 91
+	$(MAKE) -f CMakeFiles/Makefile2 ncnn/examples/CMakeFiles/peleenetssd_seg.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 0
+.PHONY : ncnn/examples/CMakeFiles/peleenetssd_seg.dir/rule
+
+# Convenience name for target.
+peleenetssd_seg: ncnn/examples/CMakeFiles/peleenetssd_seg.dir/rule
+
+.PHONY : peleenetssd_seg
+
+# clean rule for target.
+ncnn/examples/CMakeFiles/peleenetssd_seg.dir/clean:
+	$(MAKE) -f ncnn/examples/CMakeFiles/peleenetssd_seg.dir/build.make ncnn/examples/CMakeFiles/peleenetssd_seg.dir/clean
+.PHONY : ncnn/examples/CMakeFiles/peleenetssd_seg.dir/clean
+
+# clean rule for target.
+clean: ncnn/examples/CMakeFiles/peleenetssd_seg.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target ncnn/examples/CMakeFiles/fasterrcnn.dir
+
+# All Build rule for target.
+ncnn/examples/CMakeFiles/fasterrcnn.dir/all: ncnn/glslang/glslang/CMakeFiles/MachineIndependent.dir/all
+ncnn/examples/CMakeFiles/fasterrcnn.dir/all: ncnn/glslang/glslang/CMakeFiles/GenericCodeGen.dir/all
+ncnn/examples/CMakeFiles/fasterrcnn.dir/all: ncnn/glslang/glslang/CMakeFiles/glslang.dir/all
+ncnn/examples/CMakeFiles/fasterrcnn.dir/all: ncnn/glslang/glslang/OSDependent/Unix/CMakeFiles/OSDependent.dir/all
+ncnn/examples/CMakeFiles/fasterrcnn.dir/all: ncnn/glslang/OGLCompilersDLL/CMakeFiles/OGLCompiler.dir/all
+ncnn/examples/CMakeFiles/fasterrcnn.dir/all: ncnn/glslang/SPIRV/CMakeFiles/SPIRV.dir/all
+ncnn/examples/CMakeFiles/fasterrcnn.dir/all: ncnn/src/CMakeFiles/ncnn.dir/all
+	$(MAKE) -f ncnn/examples/CMakeFiles/fasterrcnn.dir/build.make ncnn/examples/CMakeFiles/fasterrcnn.dir/depend
+	$(MAKE) -f ncnn/examples/CMakeFiles/fasterrcnn.dir/build.make ncnn/examples/CMakeFiles/fasterrcnn.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dkdk/git/mnist-ncnn/build/CMakeFiles --progress-num=7 "Built target fasterrcnn"
+.PHONY : ncnn/examples/CMakeFiles/fasterrcnn.dir/all
+
+# Include target in all.
+all: ncnn/examples/CMakeFiles/fasterrcnn.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+ncnn/examples/CMakeFiles/fasterrcnn.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 91
+	$(MAKE) -f CMakeFiles/Makefile2 ncnn/examples/CMakeFiles/fasterrcnn.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 0
+.PHONY : ncnn/examples/CMakeFiles/fasterrcnn.dir/rule
+
+# Convenience name for target.
+fasterrcnn: ncnn/examples/CMakeFiles/fasterrcnn.dir/rule
+
+.PHONY : fasterrcnn
+
+# clean rule for target.
+ncnn/examples/CMakeFiles/fasterrcnn.dir/clean:
+	$(MAKE) -f ncnn/examples/CMakeFiles/fasterrcnn.dir/build.make ncnn/examples/CMakeFiles/fasterrcnn.dir/clean
+.PHONY : ncnn/examples/CMakeFiles/fasterrcnn.dir/clean
+
+# clean rule for target.
+clean: ncnn/examples/CMakeFiles/fasterrcnn.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target ncnn/examples/CMakeFiles/retinaface.dir
+
+# All Build rule for target.
+ncnn/examples/CMakeFiles/retinaface.dir/all: ncnn/glslang/glslang/CMakeFiles/MachineIndependent.dir/all
+ncnn/examples/CMakeFiles/retinaface.dir/all: ncnn/glslang/glslang/CMakeFiles/GenericCodeGen.dir/all
+ncnn/examples/CMakeFiles/retinaface.dir/all: ncnn/glslang/glslang/CMakeFiles/glslang.dir/all
+ncnn/examples/CMakeFiles/retinaface.dir/all: ncnn/glslang/glslang/OSDependent/Unix/CMakeFiles/OSDependent.dir/all
+ncnn/examples/CMakeFiles/retinaface.dir/all: ncnn/glslang/OGLCompilersDLL/CMakeFiles/OGLCompiler.dir/all
+ncnn/examples/CMakeFiles/retinaface.dir/all: ncnn/glslang/SPIRV/CMakeFiles/SPIRV.dir/all
+ncnn/examples/CMakeFiles/retinaface.dir/all: ncnn/src/CMakeFiles/ncnn.dir/all
+	$(MAKE) -f ncnn/examples/CMakeFiles/retinaface.dir/build.make ncnn/examples/CMakeFiles/retinaface.dir/depend
+	$(MAKE) -f ncnn/examples/CMakeFiles/retinaface.dir/build.make ncnn/examples/CMakeFiles/retinaface.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dkdk/git/mnist-ncnn/build/CMakeFiles --progress-num= "Built target retinaface"
+.PHONY : ncnn/examples/CMakeFiles/retinaface.dir/all
+
+# Include target in all.
+all: ncnn/examples/CMakeFiles/retinaface.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+ncnn/examples/CMakeFiles/retinaface.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 90
+	$(MAKE) -f CMakeFiles/Makefile2 ncnn/examples/CMakeFiles/retinaface.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 0
+.PHONY : ncnn/examples/CMakeFiles/retinaface.dir/rule
+
+# Convenience name for target.
+retinaface: ncnn/examples/CMakeFiles/retinaface.dir/rule
+
+.PHONY : retinaface
+
+# clean rule for target.
+ncnn/examples/CMakeFiles/retinaface.dir/clean:
+	$(MAKE) -f ncnn/examples/CMakeFiles/retinaface.dir/build.make ncnn/examples/CMakeFiles/retinaface.dir/clean
+.PHONY : ncnn/examples/CMakeFiles/retinaface.dir/clean
+
+# clean rule for target.
+clean: ncnn/examples/CMakeFiles/retinaface.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory ncnn/tools
+
+# Convenience name for "all" pass in the directory.
+ncnn/tools/all: ncnn/tools/CMakeFiles/ncnnoptimize.dir/all
+ncnn/tools/all: ncnn/tools/CMakeFiles/ncnnmerge.dir/all
+ncnn/tools/all: ncnn/tools/CMakeFiles/ncnn2mem.dir/all
+ncnn/tools/all: ncnn/tools/caffe/all
+ncnn/tools/all: ncnn/tools/mxnet/all
+ncnn/tools/all: ncnn/tools/onnx/all
+ncnn/tools/all: ncnn/tools/darknet/all
+ncnn/tools/all: ncnn/tools/quantize/all
+
+.PHONY : ncnn/tools/all
+
+# Convenience name for "clean" pass in the directory.
+ncnn/tools/clean: ncnn/tools/CMakeFiles/ncnnoptimize.dir/clean
+ncnn/tools/clean: ncnn/tools/CMakeFiles/ncnnmerge.dir/clean
+ncnn/tools/clean: ncnn/tools/CMakeFiles/ncnn2mem.dir/clean
+ncnn/tools/clean: ncnn/tools/caffe/clean
+ncnn/tools/clean: ncnn/tools/mxnet/clean
+ncnn/tools/clean: ncnn/tools/onnx/clean
+ncnn/tools/clean: ncnn/tools/darknet/clean
+ncnn/tools/clean: ncnn/tools/quantize/clean
+
+.PHONY : ncnn/tools/clean
+
+# Convenience name for "preinstall" pass in the directory.
+ncnn/tools/preinstall: ncnn/tools/caffe/preinstall
+ncnn/tools/preinstall: ncnn/tools/mxnet/preinstall
+ncnn/tools/preinstall: ncnn/tools/onnx/preinstall
+ncnn/tools/preinstall: ncnn/tools/darknet/preinstall
+ncnn/tools/preinstall: ncnn/tools/quantize/preinstall
+
+.PHONY : ncnn/tools/preinstall
+
+#=============================================================================
+# Target rules for target ncnn/tools/CMakeFiles/ncnnoptimize.dir
+
+# All Build rule for target.
+ncnn/tools/CMakeFiles/ncnnoptimize.dir/all: ncnn/glslang/glslang/CMakeFiles/MachineIndependent.dir/all
+ncnn/tools/CMakeFiles/ncnnoptimize.dir/all: ncnn/glslang/glslang/CMakeFiles/GenericCodeGen.dir/all
+ncnn/tools/CMakeFiles/ncnnoptimize.dir/all: ncnn/glslang/glslang/CMakeFiles/glslang.dir/all
+ncnn/tools/CMakeFiles/ncnnoptimize.dir/all: ncnn/glslang/glslang/OSDependent/Unix/CMakeFiles/OSDependent.dir/all
+ncnn/tools/CMakeFiles/ncnnoptimize.dir/all: ncnn/glslang/OGLCompilersDLL/CMakeFiles/OGLCompiler.dir/all
+ncnn/tools/CMakeFiles/ncnnoptimize.dir/all: ncnn/glslang/SPIRV/CMakeFiles/SPIRV.dir/all
+ncnn/tools/CMakeFiles/ncnnoptimize.dir/all: ncnn/src/CMakeFiles/ncnn.dir/all
+	$(MAKE) -f ncnn/tools/CMakeFiles/ncnnoptimize.dir/build.make ncnn/tools/CMakeFiles/ncnnoptimize.dir/depend
+	$(MAKE) -f ncnn/tools/CMakeFiles/ncnnoptimize.dir/build.make ncnn/tools/CMakeFiles/ncnnoptimize.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dkdk/git/mnist-ncnn/build/CMakeFiles --progress-num= "Built target ncnnoptimize"
+.PHONY : ncnn/tools/CMakeFiles/ncnnoptimize.dir/all
+
+# Include target in all.
+all: ncnn/tools/CMakeFiles/ncnnoptimize.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+ncnn/tools/CMakeFiles/ncnnoptimize.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 90
+	$(MAKE) -f CMakeFiles/Makefile2 ncnn/tools/CMakeFiles/ncnnoptimize.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 0
+.PHONY : ncnn/tools/CMakeFiles/ncnnoptimize.dir/rule
+
+# Convenience name for target.
+ncnnoptimize: ncnn/tools/CMakeFiles/ncnnoptimize.dir/rule
 
 .PHONY : ncnnoptimize
 
 # clean rule for target.
-ncnn-20210525-full-source/tools/CMakeFiles/ncnnoptimize.dir/clean:
-	$(MAKE) -f ncnn-20210525-full-source/tools/CMakeFiles/ncnnoptimize.dir/build.make ncnn-20210525-full-source/tools/CMakeFiles/ncnnoptimize.dir/clean
-.PHONY : ncnn-20210525-full-source/tools/CMakeFiles/ncnnoptimize.dir/clean
+ncnn/tools/CMakeFiles/ncnnoptimize.dir/clean:
+	$(MAKE) -f ncnn/tools/CMakeFiles/ncnnoptimize.dir/build.make ncnn/tools/CMakeFiles/ncnnoptimize.dir/clean
+.PHONY : ncnn/tools/CMakeFiles/ncnnoptimize.dir/clean
 
 # clean rule for target.
-clean: ncnn-20210525-full-source/tools/CMakeFiles/ncnnoptimize.dir/clean
+clean: ncnn/tools/CMakeFiles/ncnnoptimize.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target ncnn-20210525-full-source/tools/CMakeFiles/ncnnmerge.dir
+# Target rules for target ncnn/tools/CMakeFiles/ncnnmerge.dir
 
 # All Build rule for target.
-ncnn-20210525-full-source/tools/CMakeFiles/ncnnmerge.dir/all:
-	$(MAKE) -f ncnn-20210525-full-source/tools/CMakeFiles/ncnnmerge.dir/build.make ncnn-20210525-full-source/tools/CMakeFiles/ncnnmerge.dir/depend
-	$(MAKE) -f ncnn-20210525-full-source/tools/CMakeFiles/ncnnmerge.dir/build.make ncnn-20210525-full-source/tools/CMakeFiles/ncnnmerge.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dkdk/git/mnist-ncnn/build/CMakeFiles --progress-num= "Built target ncnnmerge"
-.PHONY : ncnn-20210525-full-source/tools/CMakeFiles/ncnnmerge.dir/all
+ncnn/tools/CMakeFiles/ncnnmerge.dir/all:
+	$(MAKE) -f ncnn/tools/CMakeFiles/ncnnmerge.dir/build.make ncnn/tools/CMakeFiles/ncnnmerge.dir/depend
+	$(MAKE) -f ncnn/tools/CMakeFiles/ncnnmerge.dir/build.make ncnn/tools/CMakeFiles/ncnnmerge.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dkdk/git/mnist-ncnn/build/CMakeFiles --progress-num=95 "Built target ncnnmerge"
+.PHONY : ncnn/tools/CMakeFiles/ncnnmerge.dir/all
 
 # Include target in all.
-all: ncnn-20210525-full-source/tools/CMakeFiles/ncnnmerge.dir/all
+all: ncnn/tools/CMakeFiles/ncnnmerge.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-ncnn-20210525-full-source/tools/CMakeFiles/ncnnmerge.dir/rule: cmake_check_build_system
+ncnn/tools/CMakeFiles/ncnnmerge.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 ncnn/tools/CMakeFiles/ncnnmerge.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 ncnn-20210525-full-source/tools/CMakeFiles/ncnnmerge.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 0
-.PHONY : ncnn-20210525-full-source/tools/CMakeFiles/ncnnmerge.dir/rule
+.PHONY : ncnn/tools/CMakeFiles/ncnnmerge.dir/rule
 
 # Convenience name for target.
-ncnnmerge: ncnn-20210525-full-source/tools/CMakeFiles/ncnnmerge.dir/rule
+ncnnmerge: ncnn/tools/CMakeFiles/ncnnmerge.dir/rule
 
 .PHONY : ncnnmerge
 
 # clean rule for target.
-ncnn-20210525-full-source/tools/CMakeFiles/ncnnmerge.dir/clean:
-	$(MAKE) -f ncnn-20210525-full-source/tools/CMakeFiles/ncnnmerge.dir/build.make ncnn-20210525-full-source/tools/CMakeFiles/ncnnmerge.dir/clean
-.PHONY : ncnn-20210525-full-source/tools/CMakeFiles/ncnnmerge.dir/clean
+ncnn/tools/CMakeFiles/ncnnmerge.dir/clean:
+	$(MAKE) -f ncnn/tools/CMakeFiles/ncnnmerge.dir/build.make ncnn/tools/CMakeFiles/ncnnmerge.dir/clean
+.PHONY : ncnn/tools/CMakeFiles/ncnnmerge.dir/clean
 
 # clean rule for target.
-clean: ncnn-20210525-full-source/tools/CMakeFiles/ncnnmerge.dir/clean
+clean: ncnn/tools/CMakeFiles/ncnnmerge.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target ncnn-20210525-full-source/tools/CMakeFiles/ncnn2mem.dir
+# Target rules for target ncnn/tools/CMakeFiles/ncnn2mem.dir
 
 # All Build rule for target.
-ncnn-20210525-full-source/tools/CMakeFiles/ncnn2mem.dir/all: ncnn-20210525-full-source/src/CMakeFiles/ncnn.dir/all
-	$(MAKE) -f ncnn-20210525-full-source/tools/CMakeFiles/ncnn2mem.dir/build.make ncnn-20210525-full-source/tools/CMakeFiles/ncnn2mem.dir/depend
-	$(MAKE) -f ncnn-20210525-full-source/tools/CMakeFiles/ncnn2mem.dir/build.make ncnn-20210525-full-source/tools/CMakeFiles/ncnn2mem.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dkdk/git/mnist-ncnn/build/CMakeFiles --progress-num=87 "Built target ncnn2mem"
-.PHONY : ncnn-20210525-full-source/tools/CMakeFiles/ncnn2mem.dir/all
+ncnn/tools/CMakeFiles/ncnn2mem.dir/all: ncnn/glslang/glslang/CMakeFiles/MachineIndependent.dir/all
+ncnn/tools/CMakeFiles/ncnn2mem.dir/all: ncnn/glslang/glslang/CMakeFiles/GenericCodeGen.dir/all
+ncnn/tools/CMakeFiles/ncnn2mem.dir/all: ncnn/glslang/glslang/CMakeFiles/glslang.dir/all
+ncnn/tools/CMakeFiles/ncnn2mem.dir/all: ncnn/glslang/glslang/OSDependent/Unix/CMakeFiles/OSDependent.dir/all
+ncnn/tools/CMakeFiles/ncnn2mem.dir/all: ncnn/glslang/OGLCompilersDLL/CMakeFiles/OGLCompiler.dir/all
+ncnn/tools/CMakeFiles/ncnn2mem.dir/all: ncnn/glslang/SPIRV/CMakeFiles/SPIRV.dir/all
+ncnn/tools/CMakeFiles/ncnn2mem.dir/all: ncnn/src/CMakeFiles/ncnn.dir/all
+	$(MAKE) -f ncnn/tools/CMakeFiles/ncnn2mem.dir/build.make ncnn/tools/CMakeFiles/ncnn2mem.dir/depend
+	$(MAKE) -f ncnn/tools/CMakeFiles/ncnn2mem.dir/build.make ncnn/tools/CMakeFiles/ncnn2mem.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dkdk/git/mnist-ncnn/build/CMakeFiles --progress-num= "Built target ncnn2mem"
+.PHONY : ncnn/tools/CMakeFiles/ncnn2mem.dir/all
 
 # Include target in all.
-all: ncnn-20210525-full-source/tools/CMakeFiles/ncnn2mem.dir/all
+all: ncnn/tools/CMakeFiles/ncnn2mem.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-ncnn-20210525-full-source/tools/CMakeFiles/ncnn2mem.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 79
-	$(MAKE) -f CMakeFiles/Makefile2 ncnn-20210525-full-source/tools/CMakeFiles/ncnn2mem.dir/all
+ncnn/tools/CMakeFiles/ncnn2mem.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 90
+	$(MAKE) -f CMakeFiles/Makefile2 ncnn/tools/CMakeFiles/ncnn2mem.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 0
-.PHONY : ncnn-20210525-full-source/tools/CMakeFiles/ncnn2mem.dir/rule
+.PHONY : ncnn/tools/CMakeFiles/ncnn2mem.dir/rule
 
 # Convenience name for target.
-ncnn2mem: ncnn-20210525-full-source/tools/CMakeFiles/ncnn2mem.dir/rule
+ncnn2mem: ncnn/tools/CMakeFiles/ncnn2mem.dir/rule
 
 .PHONY : ncnn2mem
 
 # clean rule for target.
-ncnn-20210525-full-source/tools/CMakeFiles/ncnn2mem.dir/clean:
-	$(MAKE) -f ncnn-20210525-full-source/tools/CMakeFiles/ncnn2mem.dir/build.make ncnn-20210525-full-source/tools/CMakeFiles/ncnn2mem.dir/clean
-.PHONY : ncnn-20210525-full-source/tools/CMakeFiles/ncnn2mem.dir/clean
+ncnn/tools/CMakeFiles/ncnn2mem.dir/clean:
+	$(MAKE) -f ncnn/tools/CMakeFiles/ncnn2mem.dir/build.make ncnn/tools/CMakeFiles/ncnn2mem.dir/clean
+.PHONY : ncnn/tools/CMakeFiles/ncnn2mem.dir/clean
 
 # clean rule for target.
-clean: ncnn-20210525-full-source/tools/CMakeFiles/ncnn2mem.dir/clean
+clean: ncnn/tools/CMakeFiles/ncnn2mem.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Directory level rules for directory ncnn-20210525-full-source/tools/caffe
+# Directory level rules for directory ncnn/tools/caffe
 
 # Convenience name for "all" pass in the directory.
-ncnn-20210525-full-source/tools/caffe/all: ncnn-20210525-full-source/tools/caffe/CMakeFiles/caffe2ncnn.dir/all
+ncnn/tools/caffe/all: ncnn/tools/caffe/CMakeFiles/caffe2ncnn.dir/all
 
-.PHONY : ncnn-20210525-full-source/tools/caffe/all
+.PHONY : ncnn/tools/caffe/all
 
 # Convenience name for "clean" pass in the directory.
-ncnn-20210525-full-source/tools/caffe/clean: ncnn-20210525-full-source/tools/caffe/CMakeFiles/caffe2ncnn.dir/clean
+ncnn/tools/caffe/clean: ncnn/tools/caffe/CMakeFiles/caffe2ncnn.dir/clean
 
-.PHONY : ncnn-20210525-full-source/tools/caffe/clean
+.PHONY : ncnn/tools/caffe/clean
 
 # Convenience name for "preinstall" pass in the directory.
-ncnn-20210525-full-source/tools/caffe/preinstall:
+ncnn/tools/caffe/preinstall:
 
-.PHONY : ncnn-20210525-full-source/tools/caffe/preinstall
+.PHONY : ncnn/tools/caffe/preinstall
 
 #=============================================================================
-# Target rules for target ncnn-20210525-full-source/tools/caffe/CMakeFiles/caffe2ncnn.dir
+# Target rules for target ncnn/tools/caffe/CMakeFiles/caffe2ncnn.dir
 
 # All Build rule for target.
-ncnn-20210525-full-source/tools/caffe/CMakeFiles/caffe2ncnn.dir/all:
-	$(MAKE) -f ncnn-20210525-full-source/tools/caffe/CMakeFiles/caffe2ncnn.dir/build.make ncnn-20210525-full-source/tools/caffe/CMakeFiles/caffe2ncnn.dir/depend
-	$(MAKE) -f ncnn-20210525-full-source/tools/caffe/CMakeFiles/caffe2ncnn.dir/build.make ncnn-20210525-full-source/tools/caffe/CMakeFiles/caffe2ncnn.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dkdk/git/mnist-ncnn/build/CMakeFiles --progress-num=2 "Built target caffe2ncnn"
-.PHONY : ncnn-20210525-full-source/tools/caffe/CMakeFiles/caffe2ncnn.dir/all
+ncnn/tools/caffe/CMakeFiles/caffe2ncnn.dir/all:
+	$(MAKE) -f ncnn/tools/caffe/CMakeFiles/caffe2ncnn.dir/build.make ncnn/tools/caffe/CMakeFiles/caffe2ncnn.dir/depend
+	$(MAKE) -f ncnn/tools/caffe/CMakeFiles/caffe2ncnn.dir/build.make ncnn/tools/caffe/CMakeFiles/caffe2ncnn.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dkdk/git/mnist-ncnn/build/CMakeFiles --progress-num= "Built target caffe2ncnn"
+.PHONY : ncnn/tools/caffe/CMakeFiles/caffe2ncnn.dir/all
 
 # Include target in all.
-all: ncnn-20210525-full-source/tools/caffe/CMakeFiles/caffe2ncnn.dir/all
+all: ncnn/tools/caffe/CMakeFiles/caffe2ncnn.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-ncnn-20210525-full-source/tools/caffe/CMakeFiles/caffe2ncnn.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 1
-	$(MAKE) -f CMakeFiles/Makefile2 ncnn-20210525-full-source/tools/caffe/CMakeFiles/caffe2ncnn.dir/all
+ncnn/tools/caffe/CMakeFiles/caffe2ncnn.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 0
-.PHONY : ncnn-20210525-full-source/tools/caffe/CMakeFiles/caffe2ncnn.dir/rule
+	$(MAKE) -f CMakeFiles/Makefile2 ncnn/tools/caffe/CMakeFiles/caffe2ncnn.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 0
+.PHONY : ncnn/tools/caffe/CMakeFiles/caffe2ncnn.dir/rule
 
 # Convenience name for target.
-caffe2ncnn: ncnn-20210525-full-source/tools/caffe/CMakeFiles/caffe2ncnn.dir/rule
+caffe2ncnn: ncnn/tools/caffe/CMakeFiles/caffe2ncnn.dir/rule
 
 .PHONY : caffe2ncnn
 
 # clean rule for target.
-ncnn-20210525-full-source/tools/caffe/CMakeFiles/caffe2ncnn.dir/clean:
-	$(MAKE) -f ncnn-20210525-full-source/tools/caffe/CMakeFiles/caffe2ncnn.dir/build.make ncnn-20210525-full-source/tools/caffe/CMakeFiles/caffe2ncnn.dir/clean
-.PHONY : ncnn-20210525-full-source/tools/caffe/CMakeFiles/caffe2ncnn.dir/clean
+ncnn/tools/caffe/CMakeFiles/caffe2ncnn.dir/clean:
+	$(MAKE) -f ncnn/tools/caffe/CMakeFiles/caffe2ncnn.dir/build.make ncnn/tools/caffe/CMakeFiles/caffe2ncnn.dir/clean
+.PHONY : ncnn/tools/caffe/CMakeFiles/caffe2ncnn.dir/clean
 
 # clean rule for target.
-clean: ncnn-20210525-full-source/tools/caffe/CMakeFiles/caffe2ncnn.dir/clean
+clean: ncnn/tools/caffe/CMakeFiles/caffe2ncnn.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Directory level rules for directory ncnn-20210525-full-source/tools/mxnet
+# Directory level rules for directory ncnn/tools/mxnet
 
 # Convenience name for "all" pass in the directory.
-ncnn-20210525-full-source/tools/mxnet/all: ncnn-20210525-full-source/tools/mxnet/CMakeFiles/mxnet2ncnn.dir/all
+ncnn/tools/mxnet/all: ncnn/tools/mxnet/CMakeFiles/mxnet2ncnn.dir/all
 
-.PHONY : ncnn-20210525-full-source/tools/mxnet/all
+.PHONY : ncnn/tools/mxnet/all
 
 # Convenience name for "clean" pass in the directory.
-ncnn-20210525-full-source/tools/mxnet/clean: ncnn-20210525-full-source/tools/mxnet/CMakeFiles/mxnet2ncnn.dir/clean
+ncnn/tools/mxnet/clean: ncnn/tools/mxnet/CMakeFiles/mxnet2ncnn.dir/clean
 
-.PHONY : ncnn-20210525-full-source/tools/mxnet/clean
+.PHONY : ncnn/tools/mxnet/clean
 
 # Convenience name for "preinstall" pass in the directory.
-ncnn-20210525-full-source/tools/mxnet/preinstall:
+ncnn/tools/mxnet/preinstall:
 
-.PHONY : ncnn-20210525-full-source/tools/mxnet/preinstall
+.PHONY : ncnn/tools/mxnet/preinstall
 
 #=============================================================================
-# Target rules for target ncnn-20210525-full-source/tools/mxnet/CMakeFiles/mxnet2ncnn.dir
+# Target rules for target ncnn/tools/mxnet/CMakeFiles/mxnet2ncnn.dir
 
 # All Build rule for target.
-ncnn-20210525-full-source/tools/mxnet/CMakeFiles/mxnet2ncnn.dir/all:
-	$(MAKE) -f ncnn-20210525-full-source/tools/mxnet/CMakeFiles/mxnet2ncnn.dir/build.make ncnn-20210525-full-source/tools/mxnet/CMakeFiles/mxnet2ncnn.dir/depend
-	$(MAKE) -f ncnn-20210525-full-source/tools/mxnet/CMakeFiles/mxnet2ncnn.dir/build.make ncnn-20210525-full-source/tools/mxnet/CMakeFiles/mxnet2ncnn.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dkdk/git/mnist-ncnn/build/CMakeFiles --progress-num=6 "Built target mxnet2ncnn"
-.PHONY : ncnn-20210525-full-source/tools/mxnet/CMakeFiles/mxnet2ncnn.dir/all
+ncnn/tools/mxnet/CMakeFiles/mxnet2ncnn.dir/all:
+	$(MAKE) -f ncnn/tools/mxnet/CMakeFiles/mxnet2ncnn.dir/build.make ncnn/tools/mxnet/CMakeFiles/mxnet2ncnn.dir/depend
+	$(MAKE) -f ncnn/tools/mxnet/CMakeFiles/mxnet2ncnn.dir/build.make ncnn/tools/mxnet/CMakeFiles/mxnet2ncnn.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dkdk/git/mnist-ncnn/build/CMakeFiles --progress-num= "Built target mxnet2ncnn"
+.PHONY : ncnn/tools/mxnet/CMakeFiles/mxnet2ncnn.dir/all
 
 # Include target in all.
-all: ncnn-20210525-full-source/tools/mxnet/CMakeFiles/mxnet2ncnn.dir/all
+all: ncnn/tools/mxnet/CMakeFiles/mxnet2ncnn.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-ncnn-20210525-full-source/tools/mxnet/CMakeFiles/mxnet2ncnn.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 1
-	$(MAKE) -f CMakeFiles/Makefile2 ncnn-20210525-full-source/tools/mxnet/CMakeFiles/mxnet2ncnn.dir/all
+ncnn/tools/mxnet/CMakeFiles/mxnet2ncnn.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 0
-.PHONY : ncnn-20210525-full-source/tools/mxnet/CMakeFiles/mxnet2ncnn.dir/rule
+	$(MAKE) -f CMakeFiles/Makefile2 ncnn/tools/mxnet/CMakeFiles/mxnet2ncnn.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 0
+.PHONY : ncnn/tools/mxnet/CMakeFiles/mxnet2ncnn.dir/rule
 
 # Convenience name for target.
-mxnet2ncnn: ncnn-20210525-full-source/tools/mxnet/CMakeFiles/mxnet2ncnn.dir/rule
+mxnet2ncnn: ncnn/tools/mxnet/CMakeFiles/mxnet2ncnn.dir/rule
 
 .PHONY : mxnet2ncnn
 
 # clean rule for target.
-ncnn-20210525-full-source/tools/mxnet/CMakeFiles/mxnet2ncnn.dir/clean:
-	$(MAKE) -f ncnn-20210525-full-source/tools/mxnet/CMakeFiles/mxnet2ncnn.dir/build.make ncnn-20210525-full-source/tools/mxnet/CMakeFiles/mxnet2ncnn.dir/clean
-.PHONY : ncnn-20210525-full-source/tools/mxnet/CMakeFiles/mxnet2ncnn.dir/clean
+ncnn/tools/mxnet/CMakeFiles/mxnet2ncnn.dir/clean:
+	$(MAKE) -f ncnn/tools/mxnet/CMakeFiles/mxnet2ncnn.dir/build.make ncnn/tools/mxnet/CMakeFiles/mxnet2ncnn.dir/clean
+.PHONY : ncnn/tools/mxnet/CMakeFiles/mxnet2ncnn.dir/clean
 
 # clean rule for target.
-clean: ncnn-20210525-full-source/tools/mxnet/CMakeFiles/mxnet2ncnn.dir/clean
+clean: ncnn/tools/mxnet/CMakeFiles/mxnet2ncnn.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Directory level rules for directory ncnn-20210525-full-source/tools/onnx
+# Directory level rules for directory ncnn/tools/onnx
 
 # Convenience name for "all" pass in the directory.
-ncnn-20210525-full-source/tools/onnx/all: ncnn-20210525-full-source/tools/onnx/CMakeFiles/onnx2ncnn.dir/all
+ncnn/tools/onnx/all: ncnn/tools/onnx/CMakeFiles/onnx2ncnn.dir/all
 
-.PHONY : ncnn-20210525-full-source/tools/onnx/all
+.PHONY : ncnn/tools/onnx/all
 
 # Convenience name for "clean" pass in the directory.
-ncnn-20210525-full-source/tools/onnx/clean: ncnn-20210525-full-source/tools/onnx/CMakeFiles/onnx2ncnn.dir/clean
+ncnn/tools/onnx/clean: ncnn/tools/onnx/CMakeFiles/onnx2ncnn.dir/clean
 
-.PHONY : ncnn-20210525-full-source/tools/onnx/clean
+.PHONY : ncnn/tools/onnx/clean
 
 # Convenience name for "preinstall" pass in the directory.
-ncnn-20210525-full-source/tools/onnx/preinstall:
+ncnn/tools/onnx/preinstall:
 
-.PHONY : ncnn-20210525-full-source/tools/onnx/preinstall
+.PHONY : ncnn/tools/onnx/preinstall
 
 #=============================================================================
-# Target rules for target ncnn-20210525-full-source/tools/onnx/CMakeFiles/onnx2ncnn.dir
+# Target rules for target ncnn/tools/onnx/CMakeFiles/onnx2ncnn.dir
 
 # All Build rule for target.
-ncnn-20210525-full-source/tools/onnx/CMakeFiles/onnx2ncnn.dir/all:
-	$(MAKE) -f ncnn-20210525-full-source/tools/onnx/CMakeFiles/onnx2ncnn.dir/build.make ncnn-20210525-full-source/tools/onnx/CMakeFiles/onnx2ncnn.dir/depend
-	$(MAKE) -f ncnn-20210525-full-source/tools/onnx/CMakeFiles/onnx2ncnn.dir/build.make ncnn-20210525-full-source/tools/onnx/CMakeFiles/onnx2ncnn.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dkdk/git/mnist-ncnn/build/CMakeFiles --progress-num=90 "Built target onnx2ncnn"
-.PHONY : ncnn-20210525-full-source/tools/onnx/CMakeFiles/onnx2ncnn.dir/all
+ncnn/tools/onnx/CMakeFiles/onnx2ncnn.dir/all:
+	$(MAKE) -f ncnn/tools/onnx/CMakeFiles/onnx2ncnn.dir/build.make ncnn/tools/onnx/CMakeFiles/onnx2ncnn.dir/depend
+	$(MAKE) -f ncnn/tools/onnx/CMakeFiles/onnx2ncnn.dir/build.make ncnn/tools/onnx/CMakeFiles/onnx2ncnn.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dkdk/git/mnist-ncnn/build/CMakeFiles --progress-num= "Built target onnx2ncnn"
+.PHONY : ncnn/tools/onnx/CMakeFiles/onnx2ncnn.dir/all
 
 # Include target in all.
-all: ncnn-20210525-full-source/tools/onnx/CMakeFiles/onnx2ncnn.dir/all
+all: ncnn/tools/onnx/CMakeFiles/onnx2ncnn.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-ncnn-20210525-full-source/tools/onnx/CMakeFiles/onnx2ncnn.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 1
-	$(MAKE) -f CMakeFiles/Makefile2 ncnn-20210525-full-source/tools/onnx/CMakeFiles/onnx2ncnn.dir/all
+ncnn/tools/onnx/CMakeFiles/onnx2ncnn.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 0
-.PHONY : ncnn-20210525-full-source/tools/onnx/CMakeFiles/onnx2ncnn.dir/rule
+	$(MAKE) -f CMakeFiles/Makefile2 ncnn/tools/onnx/CMakeFiles/onnx2ncnn.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 0
+.PHONY : ncnn/tools/onnx/CMakeFiles/onnx2ncnn.dir/rule
 
 # Convenience name for target.
-onnx2ncnn: ncnn-20210525-full-source/tools/onnx/CMakeFiles/onnx2ncnn.dir/rule
+onnx2ncnn: ncnn/tools/onnx/CMakeFiles/onnx2ncnn.dir/rule
 
 .PHONY : onnx2ncnn
 
 # clean rule for target.
-ncnn-20210525-full-source/tools/onnx/CMakeFiles/onnx2ncnn.dir/clean:
-	$(MAKE) -f ncnn-20210525-full-source/tools/onnx/CMakeFiles/onnx2ncnn.dir/build.make ncnn-20210525-full-source/tools/onnx/CMakeFiles/onnx2ncnn.dir/clean
-.PHONY : ncnn-20210525-full-source/tools/onnx/CMakeFiles/onnx2ncnn.dir/clean
+ncnn/tools/onnx/CMakeFiles/onnx2ncnn.dir/clean:
+	$(MAKE) -f ncnn/tools/onnx/CMakeFiles/onnx2ncnn.dir/build.make ncnn/tools/onnx/CMakeFiles/onnx2ncnn.dir/clean
+.PHONY : ncnn/tools/onnx/CMakeFiles/onnx2ncnn.dir/clean
 
 # clean rule for target.
-clean: ncnn-20210525-full-source/tools/onnx/CMakeFiles/onnx2ncnn.dir/clean
+clean: ncnn/tools/onnx/CMakeFiles/onnx2ncnn.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Directory level rules for directory ncnn-20210525-full-source/tools/darknet
+# Directory level rules for directory ncnn/tools/darknet
 
 # Convenience name for "all" pass in the directory.
-ncnn-20210525-full-source/tools/darknet/all: ncnn-20210525-full-source/tools/darknet/CMakeFiles/darknet2ncnn.dir/all
+ncnn/tools/darknet/all: ncnn/tools/darknet/CMakeFiles/darknet2ncnn.dir/all
 
-.PHONY : ncnn-20210525-full-source/tools/darknet/all
+.PHONY : ncnn/tools/darknet/all
 
 # Convenience name for "clean" pass in the directory.
-ncnn-20210525-full-source/tools/darknet/clean: ncnn-20210525-full-source/tools/darknet/CMakeFiles/darknet2ncnn.dir/clean
+ncnn/tools/darknet/clean: ncnn/tools/darknet/CMakeFiles/darknet2ncnn.dir/clean
 
-.PHONY : ncnn-20210525-full-source/tools/darknet/clean
+.PHONY : ncnn/tools/darknet/clean
 
 # Convenience name for "preinstall" pass in the directory.
-ncnn-20210525-full-source/tools/darknet/preinstall:
+ncnn/tools/darknet/preinstall:
 
-.PHONY : ncnn-20210525-full-source/tools/darknet/preinstall
+.PHONY : ncnn/tools/darknet/preinstall
 
 #=============================================================================
-# Target rules for target ncnn-20210525-full-source/tools/darknet/CMakeFiles/darknet2ncnn.dir
+# Target rules for target ncnn/tools/darknet/CMakeFiles/darknet2ncnn.dir
 
 # All Build rule for target.
-ncnn-20210525-full-source/tools/darknet/CMakeFiles/darknet2ncnn.dir/all:
-	$(MAKE) -f ncnn-20210525-full-source/tools/darknet/CMakeFiles/darknet2ncnn.dir/build.make ncnn-20210525-full-source/tools/darknet/CMakeFiles/darknet2ncnn.dir/depend
-	$(MAKE) -f ncnn-20210525-full-source/tools/darknet/CMakeFiles/darknet2ncnn.dir/build.make ncnn-20210525-full-source/tools/darknet/CMakeFiles/darknet2ncnn.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dkdk/git/mnist-ncnn/build/CMakeFiles --progress-num=3 "Built target darknet2ncnn"
-.PHONY : ncnn-20210525-full-source/tools/darknet/CMakeFiles/darknet2ncnn.dir/all
+ncnn/tools/darknet/CMakeFiles/darknet2ncnn.dir/all:
+	$(MAKE) -f ncnn/tools/darknet/CMakeFiles/darknet2ncnn.dir/build.make ncnn/tools/darknet/CMakeFiles/darknet2ncnn.dir/depend
+	$(MAKE) -f ncnn/tools/darknet/CMakeFiles/darknet2ncnn.dir/build.make ncnn/tools/darknet/CMakeFiles/darknet2ncnn.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dkdk/git/mnist-ncnn/build/CMakeFiles --progress-num= "Built target darknet2ncnn"
+.PHONY : ncnn/tools/darknet/CMakeFiles/darknet2ncnn.dir/all
 
 # Include target in all.
-all: ncnn-20210525-full-source/tools/darknet/CMakeFiles/darknet2ncnn.dir/all
+all: ncnn/tools/darknet/CMakeFiles/darknet2ncnn.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-ncnn-20210525-full-source/tools/darknet/CMakeFiles/darknet2ncnn.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 1
-	$(MAKE) -f CMakeFiles/Makefile2 ncnn-20210525-full-source/tools/darknet/CMakeFiles/darknet2ncnn.dir/all
+ncnn/tools/darknet/CMakeFiles/darknet2ncnn.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 0
-.PHONY : ncnn-20210525-full-source/tools/darknet/CMakeFiles/darknet2ncnn.dir/rule
+	$(MAKE) -f CMakeFiles/Makefile2 ncnn/tools/darknet/CMakeFiles/darknet2ncnn.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 0
+.PHONY : ncnn/tools/darknet/CMakeFiles/darknet2ncnn.dir/rule
 
 # Convenience name for target.
-darknet2ncnn: ncnn-20210525-full-source/tools/darknet/CMakeFiles/darknet2ncnn.dir/rule
+darknet2ncnn: ncnn/tools/darknet/CMakeFiles/darknet2ncnn.dir/rule
 
 .PHONY : darknet2ncnn
 
 # clean rule for target.
-ncnn-20210525-full-source/tools/darknet/CMakeFiles/darknet2ncnn.dir/clean:
-	$(MAKE) -f ncnn-20210525-full-source/tools/darknet/CMakeFiles/darknet2ncnn.dir/build.make ncnn-20210525-full-source/tools/darknet/CMakeFiles/darknet2ncnn.dir/clean
-.PHONY : ncnn-20210525-full-source/tools/darknet/CMakeFiles/darknet2ncnn.dir/clean
+ncnn/tools/darknet/CMakeFiles/darknet2ncnn.dir/clean:
+	$(MAKE) -f ncnn/tools/darknet/CMakeFiles/darknet2ncnn.dir/build.make ncnn/tools/darknet/CMakeFiles/darknet2ncnn.dir/clean
+.PHONY : ncnn/tools/darknet/CMakeFiles/darknet2ncnn.dir/clean
 
 # clean rule for target.
-clean: ncnn-20210525-full-source/tools/darknet/CMakeFiles/darknet2ncnn.dir/clean
+clean: ncnn/tools/darknet/CMakeFiles/darknet2ncnn.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Directory level rules for directory ncnn-20210525-full-source/tools/quantize
+# Directory level rules for directory ncnn/tools/quantize
 
 # Convenience name for "all" pass in the directory.
-ncnn-20210525-full-source/tools/quantize/all: ncnn-20210525-full-source/tools/quantize/CMakeFiles/ncnn2int8.dir/all
-ncnn-20210525-full-source/tools/quantize/all: ncnn-20210525-full-source/tools/quantize/CMakeFiles/ncnn2table.dir/all
+ncnn/tools/quantize/all: ncnn/tools/quantize/CMakeFiles/ncnn2int8.dir/all
+ncnn/tools/quantize/all: ncnn/tools/quantize/CMakeFiles/ncnn2table.dir/all
 
-.PHONY : ncnn-20210525-full-source/tools/quantize/all
+.PHONY : ncnn/tools/quantize/all
 
 # Convenience name for "clean" pass in the directory.
-ncnn-20210525-full-source/tools/quantize/clean: ncnn-20210525-full-source/tools/quantize/CMakeFiles/ncnn2int8.dir/clean
-ncnn-20210525-full-source/tools/quantize/clean: ncnn-20210525-full-source/tools/quantize/CMakeFiles/ncnn2table.dir/clean
+ncnn/tools/quantize/clean: ncnn/tools/quantize/CMakeFiles/ncnn2int8.dir/clean
+ncnn/tools/quantize/clean: ncnn/tools/quantize/CMakeFiles/ncnn2table.dir/clean
 
-.PHONY : ncnn-20210525-full-source/tools/quantize/clean
+.PHONY : ncnn/tools/quantize/clean
 
 # Convenience name for "preinstall" pass in the directory.
-ncnn-20210525-full-source/tools/quantize/preinstall:
+ncnn/tools/quantize/preinstall:
 
-.PHONY : ncnn-20210525-full-source/tools/quantize/preinstall
+.PHONY : ncnn/tools/quantize/preinstall
 
 #=============================================================================
-# Target rules for target ncnn-20210525-full-source/tools/quantize/CMakeFiles/ncnn2int8.dir
+# Target rules for target ncnn/tools/quantize/CMakeFiles/ncnn2int8.dir
 
 # All Build rule for target.
-ncnn-20210525-full-source/tools/quantize/CMakeFiles/ncnn2int8.dir/all: ncnn-20210525-full-source/src/CMakeFiles/ncnn.dir/all
-	$(MAKE) -f ncnn-20210525-full-source/tools/quantize/CMakeFiles/ncnn2int8.dir/build.make ncnn-20210525-full-source/tools/quantize/CMakeFiles/ncnn2int8.dir/depend
-	$(MAKE) -f ncnn-20210525-full-source/tools/quantize/CMakeFiles/ncnn2int8.dir/build.make ncnn-20210525-full-source/tools/quantize/CMakeFiles/ncnn2int8.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dkdk/git/mnist-ncnn/build/CMakeFiles --progress-num=86 "Built target ncnn2int8"
-.PHONY : ncnn-20210525-full-source/tools/quantize/CMakeFiles/ncnn2int8.dir/all
+ncnn/tools/quantize/CMakeFiles/ncnn2int8.dir/all: ncnn/glslang/glslang/CMakeFiles/MachineIndependent.dir/all
+ncnn/tools/quantize/CMakeFiles/ncnn2int8.dir/all: ncnn/glslang/glslang/CMakeFiles/GenericCodeGen.dir/all
+ncnn/tools/quantize/CMakeFiles/ncnn2int8.dir/all: ncnn/glslang/glslang/CMakeFiles/glslang.dir/all
+ncnn/tools/quantize/CMakeFiles/ncnn2int8.dir/all: ncnn/glslang/glslang/OSDependent/Unix/CMakeFiles/OSDependent.dir/all
+ncnn/tools/quantize/CMakeFiles/ncnn2int8.dir/all: ncnn/glslang/OGLCompilersDLL/CMakeFiles/OGLCompiler.dir/all
+ncnn/tools/quantize/CMakeFiles/ncnn2int8.dir/all: ncnn/glslang/SPIRV/CMakeFiles/SPIRV.dir/all
+ncnn/tools/quantize/CMakeFiles/ncnn2int8.dir/all: ncnn/src/CMakeFiles/ncnn.dir/all
+	$(MAKE) -f ncnn/tools/quantize/CMakeFiles/ncnn2int8.dir/build.make ncnn/tools/quantize/CMakeFiles/ncnn2int8.dir/depend
+	$(MAKE) -f ncnn/tools/quantize/CMakeFiles/ncnn2int8.dir/build.make ncnn/tools/quantize/CMakeFiles/ncnn2int8.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dkdk/git/mnist-ncnn/build/CMakeFiles --progress-num=94 "Built target ncnn2int8"
+.PHONY : ncnn/tools/quantize/CMakeFiles/ncnn2int8.dir/all
 
 # Include target in all.
-all: ncnn-20210525-full-source/tools/quantize/CMakeFiles/ncnn2int8.dir/all
+all: ncnn/tools/quantize/CMakeFiles/ncnn2int8.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-ncnn-20210525-full-source/tools/quantize/CMakeFiles/ncnn2int8.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 79
-	$(MAKE) -f CMakeFiles/Makefile2 ncnn-20210525-full-source/tools/quantize/CMakeFiles/ncnn2int8.dir/all
+ncnn/tools/quantize/CMakeFiles/ncnn2int8.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 91
+	$(MAKE) -f CMakeFiles/Makefile2 ncnn/tools/quantize/CMakeFiles/ncnn2int8.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 0
-.PHONY : ncnn-20210525-full-source/tools/quantize/CMakeFiles/ncnn2int8.dir/rule
+.PHONY : ncnn/tools/quantize/CMakeFiles/ncnn2int8.dir/rule
 
 # Convenience name for target.
-ncnn2int8: ncnn-20210525-full-source/tools/quantize/CMakeFiles/ncnn2int8.dir/rule
+ncnn2int8: ncnn/tools/quantize/CMakeFiles/ncnn2int8.dir/rule
 
 .PHONY : ncnn2int8
 
 # clean rule for target.
-ncnn-20210525-full-source/tools/quantize/CMakeFiles/ncnn2int8.dir/clean:
-	$(MAKE) -f ncnn-20210525-full-source/tools/quantize/CMakeFiles/ncnn2int8.dir/build.make ncnn-20210525-full-source/tools/quantize/CMakeFiles/ncnn2int8.dir/clean
-.PHONY : ncnn-20210525-full-source/tools/quantize/CMakeFiles/ncnn2int8.dir/clean
+ncnn/tools/quantize/CMakeFiles/ncnn2int8.dir/clean:
+	$(MAKE) -f ncnn/tools/quantize/CMakeFiles/ncnn2int8.dir/build.make ncnn/tools/quantize/CMakeFiles/ncnn2int8.dir/clean
+.PHONY : ncnn/tools/quantize/CMakeFiles/ncnn2int8.dir/clean
 
 # clean rule for target.
-clean: ncnn-20210525-full-source/tools/quantize/CMakeFiles/ncnn2int8.dir/clean
+clean: ncnn/tools/quantize/CMakeFiles/ncnn2int8.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target ncnn-20210525-full-source/tools/quantize/CMakeFiles/ncnn2table.dir
+# Target rules for target ncnn/tools/quantize/CMakeFiles/ncnn2table.dir
 
 # All Build rule for target.
-ncnn-20210525-full-source/tools/quantize/CMakeFiles/ncnn2table.dir/all: ncnn-20210525-full-source/src/CMakeFiles/ncnn.dir/all
-	$(MAKE) -f ncnn-20210525-full-source/tools/quantize/CMakeFiles/ncnn2table.dir/build.make ncnn-20210525-full-source/tools/quantize/CMakeFiles/ncnn2table.dir/depend
-	$(MAKE) -f ncnn-20210525-full-source/tools/quantize/CMakeFiles/ncnn2table.dir/build.make ncnn-20210525-full-source/tools/quantize/CMakeFiles/ncnn2table.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dkdk/git/mnist-ncnn/build/CMakeFiles --progress-num=88 "Built target ncnn2table"
-.PHONY : ncnn-20210525-full-source/tools/quantize/CMakeFiles/ncnn2table.dir/all
+ncnn/tools/quantize/CMakeFiles/ncnn2table.dir/all: ncnn/glslang/glslang/CMakeFiles/MachineIndependent.dir/all
+ncnn/tools/quantize/CMakeFiles/ncnn2table.dir/all: ncnn/glslang/glslang/CMakeFiles/GenericCodeGen.dir/all
+ncnn/tools/quantize/CMakeFiles/ncnn2table.dir/all: ncnn/glslang/glslang/CMakeFiles/glslang.dir/all
+ncnn/tools/quantize/CMakeFiles/ncnn2table.dir/all: ncnn/glslang/glslang/OSDependent/Unix/CMakeFiles/OSDependent.dir/all
+ncnn/tools/quantize/CMakeFiles/ncnn2table.dir/all: ncnn/glslang/OGLCompilersDLL/CMakeFiles/OGLCompiler.dir/all
+ncnn/tools/quantize/CMakeFiles/ncnn2table.dir/all: ncnn/glslang/SPIRV/CMakeFiles/SPIRV.dir/all
+ncnn/tools/quantize/CMakeFiles/ncnn2table.dir/all: ncnn/src/CMakeFiles/ncnn.dir/all
+	$(MAKE) -f ncnn/tools/quantize/CMakeFiles/ncnn2table.dir/build.make ncnn/tools/quantize/CMakeFiles/ncnn2table.dir/depend
+	$(MAKE) -f ncnn/tools/quantize/CMakeFiles/ncnn2table.dir/build.make ncnn/tools/quantize/CMakeFiles/ncnn2table.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dkdk/git/mnist-ncnn/build/CMakeFiles --progress-num= "Built target ncnn2table"
+.PHONY : ncnn/tools/quantize/CMakeFiles/ncnn2table.dir/all
 
 # Include target in all.
-all: ncnn-20210525-full-source/tools/quantize/CMakeFiles/ncnn2table.dir/all
+all: ncnn/tools/quantize/CMakeFiles/ncnn2table.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-ncnn-20210525-full-source/tools/quantize/CMakeFiles/ncnn2table.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 79
-	$(MAKE) -f CMakeFiles/Makefile2 ncnn-20210525-full-source/tools/quantize/CMakeFiles/ncnn2table.dir/all
+ncnn/tools/quantize/CMakeFiles/ncnn2table.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 90
+	$(MAKE) -f CMakeFiles/Makefile2 ncnn/tools/quantize/CMakeFiles/ncnn2table.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 0
-.PHONY : ncnn-20210525-full-source/tools/quantize/CMakeFiles/ncnn2table.dir/rule
+.PHONY : ncnn/tools/quantize/CMakeFiles/ncnn2table.dir/rule
 
 # Convenience name for target.
-ncnn2table: ncnn-20210525-full-source/tools/quantize/CMakeFiles/ncnn2table.dir/rule
+ncnn2table: ncnn/tools/quantize/CMakeFiles/ncnn2table.dir/rule
 
 .PHONY : ncnn2table
 
 # clean rule for target.
-ncnn-20210525-full-source/tools/quantize/CMakeFiles/ncnn2table.dir/clean:
-	$(MAKE) -f ncnn-20210525-full-source/tools/quantize/CMakeFiles/ncnn2table.dir/build.make ncnn-20210525-full-source/tools/quantize/CMakeFiles/ncnn2table.dir/clean
-.PHONY : ncnn-20210525-full-source/tools/quantize/CMakeFiles/ncnn2table.dir/clean
+ncnn/tools/quantize/CMakeFiles/ncnn2table.dir/clean:
+	$(MAKE) -f ncnn/tools/quantize/CMakeFiles/ncnn2table.dir/build.make ncnn/tools/quantize/CMakeFiles/ncnn2table.dir/clean
+.PHONY : ncnn/tools/quantize/CMakeFiles/ncnn2table.dir/clean
 
 # clean rule for target.
-clean: ncnn-20210525-full-source/tools/quantize/CMakeFiles/ncnn2table.dir/clean
+clean: ncnn/tools/quantize/CMakeFiles/ncnn2table.dir/clean
 
 .PHONY : clean
 
@@ -1432,7 +2046,13 @@ src/preinstall:
 # Target rules for target src/CMakeFiles/VisionEngine.dir
 
 # All Build rule for target.
-src/CMakeFiles/VisionEngine.dir/all: ncnn-20210525-full-source/src/CMakeFiles/ncnn.dir/all
+src/CMakeFiles/VisionEngine.dir/all: ncnn/glslang/glslang/CMakeFiles/MachineIndependent.dir/all
+src/CMakeFiles/VisionEngine.dir/all: ncnn/glslang/glslang/CMakeFiles/GenericCodeGen.dir/all
+src/CMakeFiles/VisionEngine.dir/all: ncnn/glslang/glslang/CMakeFiles/glslang.dir/all
+src/CMakeFiles/VisionEngine.dir/all: ncnn/glslang/glslang/OSDependent/Unix/CMakeFiles/OSDependent.dir/all
+src/CMakeFiles/VisionEngine.dir/all: ncnn/glslang/OGLCompilersDLL/CMakeFiles/OGLCompiler.dir/all
+src/CMakeFiles/VisionEngine.dir/all: ncnn/glslang/SPIRV/CMakeFiles/SPIRV.dir/all
+src/CMakeFiles/VisionEngine.dir/all: ncnn/src/CMakeFiles/ncnn.dir/all
 	$(MAKE) -f src/CMakeFiles/VisionEngine.dir/build.make src/CMakeFiles/VisionEngine.dir/depend
 	$(MAKE) -f src/CMakeFiles/VisionEngine.dir/build.make src/CMakeFiles/VisionEngine.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dkdk/git/mnist-ncnn/build/CMakeFiles --progress-num= "Built target VisionEngine"
@@ -1445,7 +2065,7 @@ all: src/CMakeFiles/VisionEngine.dir/all
 
 # Build rule for subdir invocation for target.
 src/CMakeFiles/VisionEngine.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 78
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 90
 	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/VisionEngine.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 0
 .PHONY : src/CMakeFiles/VisionEngine.dir/rule
@@ -1469,11 +2089,17 @@ clean: src/CMakeFiles/VisionEngine.dir/clean
 # Target rules for target src/CMakeFiles/mnist.dir
 
 # All Build rule for target.
-src/CMakeFiles/mnist.dir/all: ncnn-20210525-full-source/src/CMakeFiles/ncnn.dir/all
+src/CMakeFiles/mnist.dir/all: ncnn/glslang/glslang/CMakeFiles/MachineIndependent.dir/all
+src/CMakeFiles/mnist.dir/all: ncnn/glslang/glslang/CMakeFiles/GenericCodeGen.dir/all
+src/CMakeFiles/mnist.dir/all: ncnn/glslang/glslang/CMakeFiles/glslang.dir/all
+src/CMakeFiles/mnist.dir/all: ncnn/glslang/glslang/OSDependent/Unix/CMakeFiles/OSDependent.dir/all
+src/CMakeFiles/mnist.dir/all: ncnn/glslang/OGLCompilersDLL/CMakeFiles/OGLCompiler.dir/all
+src/CMakeFiles/mnist.dir/all: ncnn/glslang/SPIRV/CMakeFiles/SPIRV.dir/all
+src/CMakeFiles/mnist.dir/all: ncnn/src/CMakeFiles/ncnn.dir/all
 src/CMakeFiles/mnist.dir/all: src/CMakeFiles/VisionEngine.dir/all
 	$(MAKE) -f src/CMakeFiles/mnist.dir/build.make src/CMakeFiles/mnist.dir/depend
 	$(MAKE) -f src/CMakeFiles/mnist.dir/build.make src/CMakeFiles/mnist.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dkdk/git/mnist-ncnn/build/CMakeFiles --progress-num=4 "Built target mnist"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dkdk/git/mnist-ncnn/build/CMakeFiles --progress-num= "Built target mnist"
 .PHONY : src/CMakeFiles/mnist.dir/all
 
 # Include target in all.
@@ -1483,7 +2109,7 @@ all: src/CMakeFiles/mnist.dir/all
 
 # Build rule for subdir invocation for target.
 src/CMakeFiles/mnist.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 79
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 90
 	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/mnist.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/dkdk/git/mnist-ncnn/build/CMakeFiles 0
 .PHONY : src/CMakeFiles/mnist.dir/rule

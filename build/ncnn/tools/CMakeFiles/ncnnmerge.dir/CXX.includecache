@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/dkdk/git/mnist-ncnn/ncnn/tools/ncnnmerge.cpp
+stdio.h
+-
+string.h
+-
+string
+-
+
